@@ -169,14 +169,14 @@ const Navbar = () => {
             <a
               to="/"
               className="block text-black font-kode-mono font-semibold bg-white hover:bg-green-100 hover:text-green-900 px-3 py-2"
-              onClick={isOpen}
+              onClick={() => setIsOpen(!isOpen)}
             >
               Home
             </a>
             <a
               to="/about"
               className="block text-black font-kode-mono font-semibold bg-white hover:bg-green-100 hover:text-green-900 px-3 py-2"
-              onClick={isOpen}
+              onClick={() => setIsOpen(!isOpen)}
             >
               About
             </a>
@@ -194,14 +194,14 @@ const Navbar = () => {
                     <a
                       to="/cosmeceuticals"
                       className="block px-4 py-2 text-sm bg-green-300 text-black hover:bg-gray-100"
-                      onClick={isOpen}
+                      onClick={() => setIsOpen(!isOpen)}
                     >
                       Cosmecuticals
                     </a>
                     <a
                       href="https://www.vionabiopharma.com/undenatured-native-chicken-collagen-type-ii.php"
                       className="block px-4 py-2 text-sm bg-green-300 text-black hover:bg-gray-100"
-                      onClick={isOpen}
+                      onClick={() => setIsOpen(!isOpen)}
                     >
                       
                       Cosmeceuticals Brochure
@@ -223,7 +223,7 @@ const Navbar = () => {
                     <a
                       href="https://www.vyomchem.com/pdf/Cosmeceuticals-Brochure.pdf"
                       className="block px-4 py-2 bg-green-300 text-sm text-black hover:bg-gray-100"
-                      onClick={isOpen}
+                      onClick={() => setIsOpen(!isOpen)}
                     >
                       Undenatured Chicken collagen Type II (Smarticol)
                     </a>
@@ -244,7 +244,7 @@ const Navbar = () => {
                     <a
                       to="/Principle"
                       className="block px-4 py-2 bg-green-300 text-sm text-black hover:bg-gray-100"
-                      onClick={isOpen}
+                      onClick={() => setIsOpen(!isOpen)}
                     >
                       Cosmecuticals
                     </a>
@@ -254,7 +254,7 @@ const Navbar = () => {
               <a
                 to="/contact"
                 className="block text-black font-kode-mono font-semibold bg-white hover:bg-green-100 hover:text-green-900 px-3 py-2"
-                onClick={isOpen}
+                onClick={() => setIsOpen(!isOpen)}
               >
                 Contact
               </a>

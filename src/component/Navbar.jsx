@@ -165,25 +165,25 @@ const Navbar = () => {
         <div className="md:flex z-10">
           <div
             className={`md:hidden ${isOpen ? "block" : "hidden"}`}
-            // onClick={toggleMenu}
-            >
-            <a
-              href="/"
+            onClick={toggleMenu}
+          >
+            <NavLink
+              to="/"
               className="block text-black font-kode-mono font-semibold bg-white hover:bg-green-100 hover:text-green-900 px-3 py-2"
             >
               Home
-            </a>
-            <a
-              href="/about"
+            </NavLink>
+            <NavLink
+              to="/about"
               className="block text-black font-kode-mono font-semibold bg-white hover:bg-green-100 hover:text-green-900 px-3 py-2"
             >
               About
-            </a>
+            </NavLink>
           </div>
           <div className={`md:hiddem ${isOpen ? "block" : "hidden"}`}>
             <div className=" relative block md:hidden">
-              <a
-                href="#"
+              <NavLink
+                to="#"
                 className=" block text-black font-kode-mono font-semibold bg-white   hover:bg-green-100 hover:text-green-900 px-3 py-2"
                 onClick={toggleDropdown}
               >
@@ -191,28 +191,28 @@ const Navbar = () => {
                 {dropdown && (
                   <div
                     className=" top-full left- mt-1 bg-white shadow-md rounded-md"
-                    // onClick={toggleMenu}
+                    onClick={toggleMenu}
                   >
-                    <a
-                      href="/cosmeceuticals"
+                    <NavLink
+                      to="/cosmeceuticals"
                       className="block px-4 py-2 text-sm bg-green-300 text-black hover:bg-gray-100"
                     >
                       Cosmecuticals
-                    </a>
-                    <a
-                      href="https://www.vionabiopharma.com/undenatured-native-chicken-collagen-type-ii.php"
+                    </NavLink>
+                    <NavLink
+                      to="https://www.vionabiopharma.com/undenatured-native-chicken-collagen-type-ii.php"
                       className="block px-4 py-2 text-sm bg-green-300 text-black hover:bg-gray-100"
                     >
                       Cosmeceuticals Brochure
-                    </a>
+                    </NavLink>
                   </div>
                 )}
-              </a>
+              </NavLink>
             </div>
 
             <div className=" relative block md:hidden">
-              <a
-                href="#"
+              <NavLink
+                to="#"
                 className=" block text-black font-kode-mono font-semibold bg-white  hover:bg-green-100 hover:text-green-900 px-3 py-2"
                 onClick={toggleDropdown2}
               >
@@ -220,45 +220,43 @@ const Navbar = () => {
                 {dropdown2 && (
                   <div
                     className=" top-full left- mt-1 bg-white shadow-md rounded-md"
-                    // onClick={toggleMenu}
+                    onClick={toggleMenu}
                   >
-                    <a
-                      href="https://www.vyomchem.com/pdf/Cosmeceuticals-Brochure.pdf"
+                    <NavLink
+                      to="https://www.vyomchem.com/pdf/Cosmeceuticals-Brochure.pdf"
                       className="block px-4 py-2 bg-green-300 text-sm text-black hover:bg-gray-100"
                     >
                       Undenatured Chicken collagen Type II (Smarticol)
-                    </a>
+                    </NavLink>
                   </div>
                 )}
-              </a>
+              </NavLink>
             </div>
 
-            <div className=" relative block md:hidden">
-              <a
-                href="#"
+            <div className=" relative block md:hidden" onClick={toggleMenu}>
+              <NavLink
+                to="#"
                 className=" block text-black font-kode-mono font-semibold bg-white  hover:bg-green-100 hover:text-green-900 px-3 py-2"
                 onClick={toggleDropdown3}
               >
                 Our Principles
                 {dropdown3 && (
-                  <div
-                    className="  top-full left- mt-1 bg-white shadow-md rounded-md"
-                  >
-                    <a
-                      href="/Principle"
+                  <div className="  top-full left- mt-1 bg-white shadow-md rounded-md">
+                    <NavLink
+                      to="/Principle"
                       className="block px-4 py-2 bg-green-300 text-sm text-black hover:bg-gray-100"
                     >
                       Cosmecuticals
-                    </a>
+                    </NavLink>
                   </div>
                 )}
-              </a>
-              <a
-                href="/contact"
+              </NavLink>
+              <NavLink
+                to="/contact"
                 className="block text-black font-kode-mono font-semibold bg-white hover:bg-green-100 hover:text-green-900 px-3 py-2"
               >
                 Contact
-              </a>
+              </NavLink>
             </div>
           </div>
         </div>

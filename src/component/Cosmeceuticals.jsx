@@ -38,8 +38,9 @@ const Cosmeceuticals = () => {
       image2: "./image/more.jpg",
       text: "Pearlising Agent and more",
       text2: "MORE",
-
-      link: "/cosmeceuticals",
+       link:<Route path="/cosmeceuticals" /> 
+          ,
+      // link: "/cosmeceuticals",
     },
   ];
   return (

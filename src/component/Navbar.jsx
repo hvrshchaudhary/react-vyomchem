@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { HiMenu } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 const Navbar = () => {
+  
   const [isOpen, setIsOpen] = useState(false);
   const [dropdown, setDropdown] = useState(false);
   const [dropdown2, setDropdown2] = useState(false);
@@ -220,7 +221,7 @@ const Navbar = () => {
                 {dropdown2 && (
                   <div
                     className=" top-full left- mt-1 bg-white shadow-md rounded-md"
-                    onClick={toggleMenu}
+                    onClick={toggleMenu} 
                   >
                     <NavLink
                       to="https://www.vyomchem.com/pdf/Cosmeceuticals-Brochure.pdf"

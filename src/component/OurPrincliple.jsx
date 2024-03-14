@@ -26,7 +26,7 @@ const ImageSlider = () => {
   }, [images.length - 0]);
 
   return (
-    <div className="flex-1 justify-center flex flex-col bg-gray-100 md:pt-0 md:pb-0 pt-10 pb-10 ">
+    <div className="flex-1 justify-center flex flex-col bg-gray-100 md:pt-7 md:pb-0 pt-10 pb-10 ">
       <h1 className="text-center mt-2 md:mt-0 font-bold text-3xl md:text-4xl  md:mb-0 mb-4  ">
         OUR PRINCIPLES
       </h1>

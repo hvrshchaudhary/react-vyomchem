@@ -167,14 +167,14 @@ const Navbar = () => {
         <div className="md:flex z-10">
           <div className={`md:hidden ${isOpen ? "block" : "hidden"}`}>
             <a
-              to="/"
+              href="/"
               className="block text-black font-kode-mono font-semibold bg-white hover:bg-green-100 hover:text-green-900 px-3 py-2"
               onClick={() => setIsOpen(!isOpen)}
             >
               Home
             </a>
             <a
-              to="/about"
+              href="/about"
               className="block text-black font-kode-mono font-semibold bg-white hover:bg-green-100 hover:text-green-900 px-3 py-2"
               onClick={() => setIsOpen(!isOpen)}
             >
@@ -192,7 +192,7 @@ const Navbar = () => {
                 {dropdown && (
                   <div className=" top-full left- mt-1 bg-white shadow-md rounded-md">
                     <a
-                      to="/cosmeceuticals"
+                      href="/cosmeceuticals"
                       className="block px-4 py-2 text-sm bg-green-300 text-black hover:bg-gray-100"
                       onClick={() => setIsOpen(!isOpen)}
                     >
@@ -242,7 +242,7 @@ const Navbar = () => {
                 {dropdown3 && (
                   <div className="  top-full left- mt-1 bg-white shadow-md rounded-md">
                     <a
-                      to="/Principle"
+                      href="/Principle"
                       className="block px-4 py-2 bg-green-300 text-sm text-black hover:bg-gray-100"
                       onClick={() => setIsOpen(!isOpen)}
                     >
@@ -252,7 +252,7 @@ const Navbar = () => {
                 )}
               </a>
               <a
-                to="/contact"
+                href="/contact"
                 className="block text-black font-kode-mono font-semibold bg-white hover:bg-green-100 hover:text-green-900 px-3 py-2"
                 onClick={() => setIsOpen(!isOpen)}
               >

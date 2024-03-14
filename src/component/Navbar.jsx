@@ -242,7 +242,7 @@ const Navbar = () => {
                 {dropdown3 && (
                   <div className="  top-full left- mt-1 bg-white shadow-md rounded-md">
                     <NavLink
-                      to="/principle"
+                      to="/Principle"
                       className="block px-4 py-2 bg-green-300 text-sm text-black hover:bg-gray-100"
                       onClick={isOpen}
                     >

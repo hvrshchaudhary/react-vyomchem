@@ -9,7 +9,7 @@ const OurPrinciplepage = () => {
           style={{
             filter: "brightness(50%)",
           }}
-          src="./public/image/more.jpg"
+          src="./image/more.jpg"
           alt=""
         />
         <div
@@ -25,40 +25,40 @@ const OurPrinciplepage = () => {
         <div className="w-4/5 h-full flex flex-wrap mt-6 mb-6 bg-white justify-evenly">
             <div className="flex flex-wrap justify-between">
           <div className="border-black border m-4 ">
-            <img src="./public/image/our-clients-01.png" alt="" />
+            <img src="./image/our-clients-01.png" alt="" />
           </div>
           <div className="border-black border m-4">
-            <img src="./public/image/our-clients-02.png" alt="" />
+            <img src="./image/our-clients-02.png" alt="" />
           </div>
           <div className="border-black border m-4">
-            <img src="./public/image/our-clients-03.png" alt="" />
+            <img src="./image/our-clients-03.png" alt="" />
           </div>
           <div className="border-black border m-4">
-            <img src="./public/image/our-clients-04.png" alt="" />
+            <img src="./image/our-clients-04.png" alt="" />
           </div>
           <div className="border-black border m-4">
-            <img src="./public/image/our-clients-05.png" alt="" />
+            <img src="./image/our-clients-05.png" alt="" />
           </div>
           <div className="border-black border m-4">
-            <img src="./public/image/our-clients-06.png" alt="" />
+            <img src="./image/our-clients-06.png" alt="" />
           </div>
           <div className="border-black border m-4">
-            <img src="./public/image/our-clients-07.png" alt="" />
+            <img src="./image/our-clients-07.png" alt="" />
           </div>
           <div className="border-black border m-4">
-            <img src="./public/image/our-clients-08.png" alt="" />
+            <img src="./image/our-clients-08.png" alt="" />
           </div>
           <div className="border-black border m-4">
-            <img src="./public/image/our-clients-09.png" alt="" />
+            <img src="./image/our-clients-09.png" alt="" />
           </div>
           <div className="border-black border m-4">
-                <img src="./public/image/our-clients-10.png" alt="" />
+                <img src="./image/our-clients-10.png" alt="" />
             </div>
             <div className="border-black border m-4">
-                <img src="./public/image/our-clients-11.png" alt="" />
+                <img src="./image/our-clients-11.png" alt="" />
             </div>
             <div className="border-black border m-4">
-                <img src="./public/image/our-clients-12.png" alt="" />
+                <img src="./image/our-clients-12.png" alt="" />
             </div>
             </div>
         </div>

@@ -44,7 +44,7 @@ const Banner = () => {
         </div>
         <div data-aos="fade-left" className="md:w-1/2 md:mt-0 mt-2">
           <img
-            src="./public/image/Ayurvedic-image.jpg"
+            src="./image/Ayurvedic-image.jpg"
             alt="Your Image"
             className="w-full h-full object-cover"
           />

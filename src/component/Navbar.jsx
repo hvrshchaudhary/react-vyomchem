@@ -79,7 +79,6 @@ const Navbar = () => {
                 {dropdown && (
                   <div className="absolute top-full left-0 mt-1 bg-white shadow-md rounded-md">
                     <NavLink
-                      
                       to="/cosmeceuticals"
                       className="block px-4 py-2 text-sm text-black hover:bg-gray-100"
                     >
@@ -154,7 +153,6 @@ const Navbar = () => {
               About
             </NavLink>
             <NavLink
-              
               to="/contact"
               className="font-kode-mono text-black font-semibold hover:text-green-500 px-3 py-2"
             >
@@ -165,18 +163,19 @@ const Navbar = () => {
 
         {/* Mobile Menu (visible on smaller screens) */}
         <div className="md:flex z-10">
-          <div className={`md:hidden ${isOpen ? "block" : "hidden"}`}>
+          <div
+            className={`md:hidden ${isOpen ? "block" : "hidden"}`}
+            onClick={() => setIsOpen(!isOpen)}
+          >
             <a
               href="/"
               className="block text-black font-kode-mono font-semibold bg-white hover:bg-green-100 hover:text-green-900 px-3 py-2"
-              onClick={() => setIsOpen(!isOpen)}
             >
               Home
             </a>
             <a
               href="/about"
               className="block text-black font-kode-mono font-semibold bg-white hover:bg-green-100 hover:text-green-900 px-3 py-2"
-              onClick={() => setIsOpen(!isOpen)}
             >
               About
             </a>
@@ -190,20 +189,20 @@ const Navbar = () => {
               >
                 Product
                 {dropdown && (
-                  <div className=" top-full left- mt-1 bg-white shadow-md rounded-md">
+                  <div
+                    className=" top-full left- mt-1 bg-white shadow-md rounded-md"
+                    onClick={() => setIsOpen(!isOpen)}
+                  >
                     <a
                       href="/cosmeceuticals"
                       className="block px-4 py-2 text-sm bg-green-300 text-black hover:bg-gray-100"
-                      onClick={() => setIsOpen(!isOpen)}
                     >
                       Cosmecuticals
                     </a>
                     <a
                       href="https://www.vionabiopharma.com/undenatured-native-chicken-collagen-type-ii.php"
                       className="block px-4 py-2 text-sm bg-green-300 text-black hover:bg-gray-100"
-                      onClick={() => setIsOpen(!isOpen)}
                     >
-                      
                       Cosmeceuticals Brochure
                     </a>
                   </div>
@@ -219,11 +218,13 @@ const Navbar = () => {
               >
                 Exclusive Product
                 {dropdown2 && (
-                  <div className=" top-full left- mt-1 bg-white shadow-md rounded-md">
+                  <div
+                    className=" top-full left- mt-1 bg-white shadow-md rounded-md"
+                    onClick={() => setIsOpen(!isOpen)}
+                  >
                     <a
                       href="https://www.vyomchem.com/pdf/Cosmeceuticals-Brochure.pdf"
                       className="block px-4 py-2 bg-green-300 text-sm text-black hover:bg-gray-100"
-                      onClick={() => setIsOpen(!isOpen)}
                     >
                       Undenatured Chicken collagen Type II (Smarticol)
                     </a>
@@ -240,11 +241,13 @@ const Navbar = () => {
               >
                 Our Principles
                 {dropdown3 && (
-                  <div className="  top-full left- mt-1 bg-white shadow-md rounded-md">
+                  <div
+                    className="  top-full left- mt-1 bg-white shadow-md rounded-md"
+                    onClick={() => setIsOpen(!isOpen)}
+                  >
                     <a
                       href="/Principle"
                       className="block px-4 py-2 bg-green-300 text-sm text-black hover:bg-gray-100"
-                      onClick={() => setIsOpen(!isOpen)}
                     >
                       Cosmecuticals
                     </a>
@@ -254,7 +257,6 @@ const Navbar = () => {
               <a
                 href="/contact"
                 className="block text-black font-kode-mono font-semibold bg-white hover:bg-green-100 hover:text-green-900 px-3 py-2"
-                onClick={() => setIsOpen(!isOpen)}
               >
                 Contact
               </a>

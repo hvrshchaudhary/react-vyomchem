@@ -9,7 +9,7 @@ const OurPrinciplepage = () => {
           style={{
             filter: "brightness(50%)",
           }}
-          src="./public/image/ourprinciple.jpeg"
+          src="./public/image/more.jpg"
           alt=""
         />
         <div

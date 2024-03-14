@@ -4,8 +4,8 @@ const AboutUs = () => {
   return (
     <>
     <div className='h-full '>
-    <img className='h-40  w-full md:h-52' src="./public/image/aboutus.png" alt="" />
-    <div className='top-36 md:left-16 left-8 text-white font-bold text-4xl absolute'>About Us</div>
+    <img className='h-40  w-full md:h-52 object-cover' src="./public/image/contactus.jpg" alt="" />
+    <div className='md:top-36 top-28 md:left-16 left-5 text-white font-bold text-4xl absolute'>About Us</div>
     <div className='text-container flex items-center justify-center flex-col mt-10 mb-10  md:mt-20 md:mb-20'>
     <div className='flex flex-col w-4/5 md:w-8/12 justify-between text-justify' >
         <span className='font-bold text-xl mb-3'>ABOUT US</span>

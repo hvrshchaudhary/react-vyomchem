@@ -1,7 +1,7 @@
 import React from "react";
 
 const CosmeceuticalsProduct = () => {
-  const a = [
+  const b = [
     {
       Extract: [
         {
@@ -248,25 +248,6 @@ const CosmeceuticalsProduct = () => {
       ],
     },
     {
-      "Alcohol Sulphate": [
-        {
-          product: "Ammonium Lauryl Ether Sulphate(ALES)",
-        },
-        {
-          product: "Ammonium Lauryl Sulphate",
-        },
-        {
-          product: "Disodium Laureth Sulfosuccinate",
-        },
-        {
-          product: "Sodium Lauryl Ether Sulphate",
-        },
-        {
-          product: "Sodium Lauryl Sulphate",
-        },
-      ],
-    },
-    {
       "Wax & Butter": [
         {
           product: "Aloe Vera butter",
@@ -357,6 +338,68 @@ const CosmeceuticalsProduct = () => {
         },
         {
           product: "& many more….....",
+        },
+      ],
+    },
+    {
+      Fixatives: [
+        {
+          product: "Polyvinyl Pyrolydinone (PVP K30)",
+        },
+        {
+          product: "Polyvinyl Pyrolydinone (PVP K90)",
+        },
+        {
+          product: "PVP VA 64",
+        },
+      ],
+    },
+    {
+      Boosters: [
+        {
+          product: "CAPB(Coco Amido Propyl Betaine)",
+        },
+        {
+          product: "Cocobetaine",
+        },
+        {
+          product: "Cocodiethanolamide",
+        },
+        {
+          product: "Cocomonoethanolamide",
+        },
+        {
+          product: "Lauric Monoethanolamide",
+        },
+        {
+          product: "Lauryl Myristyl  Amidopropyl Amine Oxide",
+        },
+        {
+          product: "Lauryl Myristyl  Amine oxide",
+        },
+        {
+          product: "Sobitan Caprylate",
+        },
+      ],
+    },
+  ];
+  const a = [
+    {
+      "Alcohol Sulphate": [
+        {
+          product: "Ammonium Lauryl Ether Sulphate(ALES)",
+        },
+        {
+          product: "Ammonium Lauryl Sulphate",
+        },
+        {
+          product: "Disodium Laureth Sulfosuccinate",
+        },
+        {
+          product: "Sodium Lauryl Ether Sulphate",
+        },
+        {
+          product: "Sodium Lauryl Sulphate",
         },
       ],
     },
@@ -710,52 +753,12 @@ const CosmeceuticalsProduct = () => {
         },
       ],
     },
-    {
-      Boosters: [
-        {
-          product: "CAPB(Coco Amido Propyl Betaine)",
-        },
-        {
-          product: "Cocobetaine",
-        },
-        {
-          product: "Cocodiethanolamide",
-        },
-        {
-          product: "Cocomonoethanolamide",
-        },
-        {
-          product: "Lauric Monoethanolamide",
-        },
-        {
-          product: "Lauryl Myristyl  Amidopropyl Amine Oxide",
-        },
-        {
-          product: "Lauryl Myristyl  Amine oxide",
-        },
-        {
-          product: "Sobitan Caprylate",
-        },
-      ],
-    },{
-      Fixatives: [
-        {
-          product: "Polyvinyl Pyrolydinone (PVP K30)",
-        },
-        {
-          product: "Polyvinyl Pyrolydinone (PVP K90)",
-        },
-        {
-          product: "PVP VA 64",
-        },
-      ],
-    }
   ];
 
   return (
     <div>
       <div className=" w-full flex flex-col justify-center">
-      <img
+        <img
           className="h-40  w-full md:h-52 object-cover"
           style={{
             filter: "brightness(50%)",
@@ -763,28 +766,58 @@ const CosmeceuticalsProduct = () => {
           src="./public/image/contactus.jpg"
           alt=""
         />
-        <div className="w-4/5 flex-col justify-center flex bg-gray-200">
-      
-          {a.map((category, index) => {
-            return (
-              <div className="w-full  ">
-                <div className="pl-[25px] pr-[25px]  flex flex-wrap flex-col">
-                  <span className="pl-1 border-b-2 mb-2 font-semibold border-black text-2xl">
-                    {Object.keys(category)[0]}
-                  </span>
-                  {category[Object.keys(category)[0]].map((ele) => {
-                    return (
-                      <div className="bg-green-400 hover:bg-white hover:font-semibold mt-2">
-                        <li className="flex justify-between  products-center pl-1 py-2 ">
-                          <span>{ele.product}</span>
-                        </li>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            );
-          })}
+         <div
+          className="md:top-36 top-28 md:left-16 left-5  text-white font-bold text-4xl absolute"
+          style={{
+            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+          }}
+        >
+          Cosmeceuticals
+        </div>
+        <div className="w-full md:flex  justify-center">
+          <div className="md:w-4/5 md:flex m-5 ">
+            <div className=" md:w-1/2 ">
+              {a.map((category, index) => {
+                return (
+                  <div className="pl-[25px] pr-[25px] mt-4 ">
+                    <span className="pl-1 border-b-2  font-semibold border-black text-2xl">
+                      {Object.keys(category)[0]}
+                    </span>
+                    {category[Object.keys(category)[0]].map((ele) => {
+                      return (
+                        <div className="bg-green-400 hover:text-black   hover:bg-green-200 hover:font-semibold mt-2">
+                          <li className="flex justify-between  products-center pl-1 py-2 ">
+                            <span>{ele.product}</span>
+                          </li>
+                        </div>
+                      );
+                    })}
+                  </div>
+                );
+              })}
+            </div>
+
+            <div className="md:w-1/2 ">
+              {b.map((category, index) => {
+                return (
+                  <div className="pl-[25px] pr-[25px] mt-4 ">
+                    <span className="pl-1 border-b-2  font-semibold border-black text-2xl">
+                      {Object.keys(category)[0]}
+                    </span>
+                    {category[Object.keys(category)[0]].map((ele) => {
+                      return (
+                        <div className="bg-green-400 hover:text-black   hover:bg-green-200 hover:font-semibold mt-2">
+                          <li className="flex justify-between   products-center pl-1 py-2 ">
+                            <span>{ele.product}</span>
+                          </li>
+                        </div>
+                      );
+                    })}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </div>
       </div>
     </div>

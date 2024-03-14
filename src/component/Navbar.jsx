@@ -79,6 +79,7 @@ const Navbar = () => {
                 {dropdown && (
                   <div className="absolute top-full left-0 mt-1 bg-white shadow-md rounded-md">
                     <NavLink
+                      
                       to="/cosmeceuticals"
                       className="block px-4 py-2 text-sm text-black hover:bg-gray-100"
                     >
@@ -141,13 +142,13 @@ const Navbar = () => {
             }`}
           >
             <NavLink
+              activeClassName ="text-green"
               to="/"
               className="font-kode-mono text-black font-semibold hover:text-green-500  px-3 py-2"
             >
               Home
             </NavLink>
             <NavLink
-              
               to="/About"
               className="font-kode-mono text-black font-semibold hover:text-green-500 px-3 py-2"
             >

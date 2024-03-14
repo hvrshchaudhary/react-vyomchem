@@ -1,40 +1,41 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Cosmeceuticals = () => {
   const products = [
     {
-      image: "./public/image/WAX.jpg",
-      image2: "./public/image/pearlising.jpg",
+      image: "./image/WAX.jpg",
+      image2: "./image/pearlising.jpg",
       text: "WAX AND BUTTER",
       text2: "Pearlising Agents",
     },
     {
-      image: "./public/image/extract.jpg",
-      image2: "./public/image/extract.jpg",
+      image: "./image/extract.jpg",
+      image2: "./image/extract.jpg",
       text: "Extract (Liquid)",
       text2: "Extract (Liquid)",
     },
     {
-      image: "./public/image/algae-extract-3.jpg",
-      image2: "./public/image/algae-extract-3.jpg",
+      image: "./image/algae-extract-3.jpg",
+      image2: "./image/algae-extract-3.jpg",
       text: "Alcohol Sulphate",
       text2: "Alcohol Sulphate",
     },
     {
-      image: "./public/image/melligolubous.jpg",
-      image2: "./public/image/melligolubous.jpg",
+      image: "./image/melligolubous.jpg",
+      image2: "./image/melligolubous.jpg",
       text: "Milliglobules/Microbeads",
       text2: "Milliglobules/Microbeads",
     },
     {
-      image: "./public/image/Bambooextract.jpg",
-      image2: "./public/image/Bambooextract.jpg",
+      image: "./image/Bambooextract.jpg",
+      image2: "./image/Bambooextract.jpg",
       text: "Active $ Miscellaneous",
       text2: "Active $ Miscellaneous",
     },
     {
-      image: "./public/image/more.jpg",
-      image2: "./public/image/more.jpg",
+      image: "./image/more.jpg",
+      image2: "./image/more.jpg",
       text: "Pearlising Agent and more",
       text2: "MORE",
 
@@ -48,7 +49,7 @@ const Cosmeceuticals = () => {
         display: "flex",
         justifyContent: "center",
       }}
-      className="md:py-10 md:px-10 pl-1 md:pl-0 md:h-screen  "
+      className="md:py-10 md:px-10 pl-1 md:pl-0   "
     >
       <div className="md:flex" style={{ width: "90%", alignSelf: "center" }}>
         <div
@@ -103,7 +104,7 @@ const Cosmeceuticals = () => {
               </span>
               {/* image for display view  */}
               <img
-                src="./public/image/WAX.jpg"
+                src="./image/WAX.jpg"
                 className="md:block hidden"
                 alt=""
                 style={{

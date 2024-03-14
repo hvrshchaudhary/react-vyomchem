@@ -50,7 +50,7 @@ const Footer = () => {
         </p>
         <p className="text-sm flex items-center mt-3">
           <FiMail className="mr-2" />
-          <a href="mailto:minakshi@vyomchem.com">minakshi@vyomchem.com</a>
+          <NavLink to="mailto:minakshi@vyomchem.com">minakshi@vyomchem.com</NavLink>
         </p>
         <p className="text-sm flex items-center mt-1">
           <FiPhone className="mr-2" />
@@ -58,7 +58,7 @@ const Footer = () => {
         </p>
         <p className="text-sm flex items-center mt-1">
           <FiExternalLink className="mr-2" />
-          <a href="https://www.vyomchem.com">www.vyomchem.com</a>
+          <NavLink to="https://www.vyomchem.com">www.vyomchem.com</NavLink>
         </p>
       </div>
     </div>

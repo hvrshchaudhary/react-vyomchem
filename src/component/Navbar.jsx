@@ -33,7 +33,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0 ">
             <img
-              src="./public/image/logo.png"
+              src="./image/logo.png"
               className="w-14 md:h-auto md:w-20 "
               alt="Logo"
             />
@@ -142,7 +142,6 @@ const Navbar = () => {
             }`}
           >
             <NavLink
-              activeClassName ="text-green"
               to="/"
               className="font-kode-mono text-black font-semibold hover:text-green-500  px-3 py-2"
             >

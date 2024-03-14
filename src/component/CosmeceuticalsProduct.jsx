@@ -763,7 +763,7 @@ const CosmeceuticalsProduct = () => {
           style={{
             filter: "brightness(50%)",
           }}
-          src="./public/image/contactus.jpg"
+          src="./image/contactus.jpg"
           alt=""
         />
          <div

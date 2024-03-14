@@ -45,7 +45,7 @@ const YourComponent = () => {
             data-carousel-item
           >
             <img
-              src="./public/image/banner.jpg"
+              src="./image/banner.jpg"
               className="w-full h-full "
               style={{ objectFit: "cover" }}
               alt="Image 1"
@@ -59,7 +59,7 @@ const YourComponent = () => {
             data-carousel-item
           >
             <img
-              src="./public/image/more.jpg"
+              src="./image/more.jpg"
               className="w-full h-full "
               style={{ objectFit: "cover" }}
               alt="Image 2"
@@ -73,7 +73,7 @@ const YourComponent = () => {
             data-carousel-item
           >
             <img
-              src="./public/image/WAX.jpg"
+              src="./image/WAX.jpg"
               className="w-full h-full "
               style={{ objectFit: "cover" }}
               alt="Image 3"
@@ -82,15 +82,15 @@ const YourComponent = () => {
         </div>
       </div>
       <div
-        style={{
-          "@media only screen and (max-width: 600px)": {
-            top: "20%",
-            left: "10%",
-          },
-          zIndex: 2,
-          top: "18%",
-        }}
-        className="absolute text-black p-12 justify-evenly md:left-[10%] "
+        // style={{
+        //   "@media only screen and (max-width: 600px)": {
+        //     top: "20%",
+        //     left: "10%",
+        //   },
+        //   zIndex: 2,
+        //   top: "18%",
+        // }}
+        className="absolute md:top[20%] top-[18%] md:z-0 z-[2]  text-black p-12 justify-evenly md:left-[10%] "
       >
         <h3 className="font-bold text-xl sm:text-2xl lg:text-4xl  mt-1 text-white mb-2 sm:mb-5">
           Vyomchem specialist

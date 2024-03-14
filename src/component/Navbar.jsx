@@ -166,20 +166,20 @@ const Navbar = () => {
         {/* Mobile Menu (visible on smaller screens) */}
         <div className="md:flex z-10">
           <div className={`md:hidden ${isOpen ? "block" : "hidden"}`}>
-            <NavLink
+            <a
               to="/"
               className="block text-black font-kode-mono font-semibold bg-white hover:bg-green-100 hover:text-green-900 px-3 py-2"
               onClick={isOpen}
             >
               Home
-            </NavLink>
-            <NavLink
+            </a>
+            <a
               to="/about"
               className="block text-black font-kode-mono font-semibold bg-white hover:bg-green-100 hover:text-green-900 px-3 py-2"
               onClick={isOpen}
             >
               About
-            </NavLink>
+            </a>
           </div>
           <div className={`md:hiddem ${isOpen ? "block" : "hidden"}`}>
             <div className=" relative block md:hidden">
@@ -191,13 +191,13 @@ const Navbar = () => {
                 Product
                 {dropdown && (
                   <div className=" top-full left- mt-1 bg-white shadow-md rounded-md">
-                    <NavLink
+                    <a
                       to="/cosmeceuticals"
                       className="block px-4 py-2 text-sm bg-green-300 text-black hover:bg-gray-100"
                       onClick={isOpen}
                     >
                       Cosmecuticals
-                    </NavLink>
+                    </a>
                     <a
                       href="https://www.vionabiopharma.com/undenatured-native-chicken-collagen-type-ii.php"
                       className="block px-4 py-2 text-sm bg-green-300 text-black hover:bg-gray-100"
@@ -241,23 +241,23 @@ const Navbar = () => {
                 Our Principles
                 {dropdown3 && (
                   <div className="  top-full left- mt-1 bg-white shadow-md rounded-md">
-                    <NavLink
+                    <a
                       to="/Principle"
                       className="block px-4 py-2 bg-green-300 text-sm text-black hover:bg-gray-100"
                       onClick={isOpen}
                     >
                       Cosmecuticals
-                    </NavLink>
+                    </a>
                   </div>
                 )}
               </a>
-              <NavLink
+              <a
                 to="/contact"
                 className="block text-black font-kode-mono font-semibold bg-white hover:bg-green-100 hover:text-green-900 px-3 py-2"
                 onClick={isOpen}
               >
                 Contact
-              </NavLink>
+              </a>
             </div>
           </div>
         </div>

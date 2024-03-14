@@ -148,7 +148,7 @@ const Navbar = () => {
               Home
             </NavLink>
             <NavLink
-              to="/About"
+              to="/about"
               className="font-kode-mono text-black font-semibold hover:text-green-500 px-3 py-2"
             >
               About
@@ -174,7 +174,7 @@ const Navbar = () => {
               Home
             </NavLink>
             <NavLink
-              to="/About"
+              to="/about"
               className="block text-black font-kode-mono font-semibold bg-white hover:bg-green-100 hover:text-green-900 px-3 py-2"
               onClick={isOpen}
             >

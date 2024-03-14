@@ -165,8 +165,8 @@ const Navbar = () => {
         <div className="md:flex z-10">
           <div
             className={`md:hidden ${isOpen ? "block" : "hidden"}`}
-            onClick={() => setIsOpen(!isOpen)}
-          >
+            // onClick={toggleMenu}
+            >
             <a
               href="/"
               className="block text-black font-kode-mono font-semibold bg-white hover:bg-green-100 hover:text-green-900 px-3 py-2"
@@ -191,7 +191,7 @@ const Navbar = () => {
                 {dropdown && (
                   <div
                     className=" top-full left- mt-1 bg-white shadow-md rounded-md"
-                    onClick={() => setIsOpen(!isOpen)}
+                    // onClick={toggleMenu}
                   >
                     <a
                       href="/cosmeceuticals"
@@ -220,7 +220,7 @@ const Navbar = () => {
                 {dropdown2 && (
                   <div
                     className=" top-full left- mt-1 bg-white shadow-md rounded-md"
-                    onClick={() => setIsOpen(!isOpen)}
+                    // onClick={toggleMenu}
                   >
                     <a
                       href="https://www.vyomchem.com/pdf/Cosmeceuticals-Brochure.pdf"
@@ -243,7 +243,6 @@ const Navbar = () => {
                 {dropdown3 && (
                   <div
                     className="  top-full left- mt-1 bg-white shadow-md rounded-md"
-                    onClick={() => setIsOpen(!isOpen)}
                   >
                     <a
                       href="/Principle"

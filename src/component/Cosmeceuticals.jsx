@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { Route } from "react-router-dom";
+
 const Cosmeceuticals = () => {
   const products = [
     {
@@ -38,9 +38,8 @@ const Cosmeceuticals = () => {
       image2: "./image/more.jpg",
       text: "Pearlising Agent and more",
       text2: "MORE",
-       link:<Route path="/cosmeceuticals" /> 
-          ,
-      // link: "/cosmeceuticals",
+
+      URL: "/cosmeceuticals",
     },
   ];
   return (
@@ -120,7 +119,7 @@ const Cosmeceuticals = () => {
                 {products.map((ele) => {
                   return (
                     <figure className="md:m-4 m-2  relative md:hidden  ">
-                      <a href={ele.link}>
+                      <a href={ele.URL}>
                         <img
                           className="rounded-2xl w-72 h-60 object-cover"
                           style={{
@@ -160,7 +159,7 @@ const Cosmeceuticals = () => {
             {products.map((ele) => {
               return (
                 <figure className="md:m-4 m-2 relative w-48 h-52 object-cover hover:scale-125 transition-all">
-                  <a href={ele.link}>
+                  <a href={ele.URL}>
                     <img
                       style={{
                         boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.1)",

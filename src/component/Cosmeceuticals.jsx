@@ -116,9 +116,10 @@ const Cosmeceuticals = () => {
                   zIndex: 1,
                 }}
               >
-                Wax and butter
+               Wax and butter
               </span>
               {/* image for display view  */}
+              <a href="/cosmeceuticals/#Wax & Butter">
               <img
                 src="./image/WAX.jpg"
                 className="md:block hidden"
@@ -129,6 +130,7 @@ const Cosmeceuticals = () => {
                   filter: "brightness(60%)",
                 }}
               />
+              </a> 
 
               {/* comsecetical section for mobile view this section is extra added for mobile view  */}
               <div className="  justify-center flex mt-4 mb-2 md:hidden  flex-wrap">

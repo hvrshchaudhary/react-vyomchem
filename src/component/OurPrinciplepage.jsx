@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const OurPrinciplepage = () => {
   return (
@@ -54,8 +55,8 @@ const OurPrinciplepage = () => {
             </div>
             <div className="m-4 w-[280px] flex flex-col justify-center text-">
               <div className="flex text-end">
-                <a href="/cosmeceuticals" className=" font-bold text-xl"> <button className="border-black border rounded-lg hover:bg-black hover:text-white  p-2">Our product</button>
-                  </a>
+                <NavLink to="/cosmeceuticals" className=" font-bold text-xl"> <button className="border-black border rounded-lg hover:bg-black hover:text-white  p-2">Our product</button>
+                  </NavLink>
               </div>
             </div>
           </div>

@@ -36,7 +36,7 @@ const Navbar = () => {
               <img
                 src="./image/logo.png"
                 className="w-14 md:h-auto md:w-20 "
-                alt="Logo"
+                alt=""
               />
             </NavLink>
           </div>

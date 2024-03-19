@@ -805,7 +805,10 @@ const CosmeceuticalsProduct = () => {
                 console.log(category);
                 return (
                   <div className="pl-[25px] pr-[25px] mt-4 ">
-                    <span className="pl-1 border-b-2  font-semibold border-black text-2xl">
+                    <span className="pl-1 border-b-2  font-semibold border-black text-2xl"
+                      id={Object.keys(category)[0]}
+
+                    >
                       {Object.keys(category)[0]}
                     </span>
                     {category[Object.keys(category)[0]].map((ele) => {

@@ -7,39 +7,50 @@ const Cosmeceuticals = () => {
       image: "./image/WAX.jpg",
       image2: "./image/pearlising.jpg",
       text: "WAX AND BUTTER",
+      URL: "/cosmeceuticals/#Wax & Butter",
       text2: "Pearlising Agents",
+      URL2:"/cosmeceuticals/#Pearlising Agents"
     },
     {
       image: "./image/extract.jpg",
       image2: "./image/extract.jpg",
       text: "Extract (Liquid)",
+      URL:"/cosmeceuticals/#Extract",
       text2: "Extract (Liquid)",
+      URL2:"/cosmeceuticals/#Extract"
     },
     {
       image: "./image/algae-extract-3.jpg",
       image2: "./image/algae-extract-3.jpg",
       text: "Alcohol Sulphate",
+      URL:"/cosmeceuticals/#Alcohol Sulphate",
       text2: "Alcohol Sulphate",
+      URL2:"/cosmeceuticals/#Alcohol Sulphate",
     },
     {
       image: "./image/melligolubous.jpg",
       image2: "./image/melligolubous.jpg",
       text: "Milliglobules /Microbeads",
+      URL:"/cosmeceuticals/#Milliglobules",
       text2: "Milliglobules ",
       text3: "/Microbeads",
+      URL2:"/cosmeceuticals/#Milliglobules",
     },
     {
       image: "./image/Bambooextract.jpg",
       image2: "./image/Bambooextract.jpg",
       text: "Active & Miscellaneous",
+      URL:"/cosmeceuticals/#Active & Miscellaneous",
       text2: "Active & Miscellaneous",
+      URL2:"/cosmeceuticals/#Active & Miscellaneous"
     },
     {
       image: "./image/more.jpg",
       image2: "./image/more.jpg",
       text: "Pearlising Agent ",
-      text2: "Pearlising Agent",
       URL: "/cosmeceuticals/#Pearlising Agents",
+      text2: "Proteins",
+      URL2: "/cosmeceuticals/#Proteins",
     },
   ];
 
@@ -164,7 +175,7 @@ const Cosmeceuticals = () => {
             {products.map((ele) => {
               return (
                 <div className="md:m-4 m-2 relative w-48 h-52 object-cover hover:scale-125 transition-all">
-                  <a href={ele.URL}>
+                  <a href={ele.URL2}>
                     <img
                       style={{
                         boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.1)",

@@ -32,14 +32,16 @@ const Navbar = () => {
         <div className="flex justify-between items-center md:h-16">
           {/* Logo */}
           <div className="flex-shrink-0 ">
-            <img
-              src="./image/logo.png"
-              className="w-14 md:h-auto md:w-20 "
-              alt="Logo"
-            />
+            <NavLink to="/">
+              <img
+                src="./image/logo.png"
+                className="w-14 md:h-auto md:w-20 "
+                alt="Logo"
+              />
+            </NavLink>
           </div>
           <h1 className="md:hidden text-2xl font-bold text-green-800 font-serif ">
-            Vyomchem
+           <NavLink to="/">Vyomchem</NavLink> 
             <div
               className="  sm:mb-0"
               style={{

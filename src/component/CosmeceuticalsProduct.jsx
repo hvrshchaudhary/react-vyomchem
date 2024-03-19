@@ -766,7 +766,7 @@ const CosmeceuticalsProduct = () => {
           src="./image/contactus.jpg"
           alt=""
         />
-         <div
+        <div
           className="md:top-36 top-28 md:left-16 left-5  text-white font-bold text-4xl absolute"
           style={{
             boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
@@ -780,7 +780,10 @@ const CosmeceuticalsProduct = () => {
               {a.map((category, index) => {
                 return (
                   <div className="pl-[25px] pr-[25px] mt-4 ">
-                    <span className="pl-1 border-b-2  font-semibold border-black text-2xl">
+                    <span
+                      id={Object.keys(category)[0]}
+                      className="pl-1 border-b-2  font-semibold border-black text-2xl"
+                    >
                       {Object.keys(category)[0]}
                     </span>
                     {category[Object.keys(category)[0]].map((ele) => {
@@ -799,7 +802,7 @@ const CosmeceuticalsProduct = () => {
 
             <div className="md:w-1/2 ">
               {b.map((category, index) => {
-                console.log(category)
+                console.log(category);
                 return (
                   <div className="pl-[25px] pr-[25px] mt-4 ">
                     <span className="pl-1 border-b-2  font-semibold border-black text-2xl">

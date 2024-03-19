@@ -8,14 +8,12 @@ const Cosmeceuticals = () => {
       image2: "./image/pearlising.jpg",
       text: "WAX AND BUTTER",
       text2: "Pearlising Agents",
-    
     },
     {
       image: "./image/extract.jpg",
       image2: "./image/extract.jpg",
       text: "Extract (Liquid)",
       text2: "Extract (Liquid)",
-      
     },
     {
       image: "./image/algae-extract-3.jpg",
@@ -28,7 +26,7 @@ const Cosmeceuticals = () => {
       image2: "./image/melligolubous.jpg",
       text: "Milliglobules /Microbeads",
       text2: "Milliglobules ",
-      text3:"/Microbeads"
+      text3: "/Microbeads",
     },
     {
       image: "./image/Bambooextract.jpg",
@@ -41,8 +39,7 @@ const Cosmeceuticals = () => {
       image2: "./image/more.jpg",
       text: "Pearlising Agent ",
       text2: "Pearlising Agent",
-
-      URL: "",
+      URL: "/cosmeceuticals/#Pearlising Agents",
     },
   ];
 

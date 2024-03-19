@@ -2,6 +2,15 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const OurPrinciplepage = () => {
+  const images = [
+    "./image/our-clients-03.png",
+    "./image/our-clients-04.png",
+    "./image/our-clients-05.png",
+    "./image/our-clients-06.png",
+    "./image/our-clients-07.png",
+    "./image/our-clients-11.png",
+    "./image/our-clients-12.png",
+  ];
   return (
     <div>
       <div className="h-full ">
@@ -32,27 +41,13 @@ const OurPrinciplepage = () => {
                 alt=""
               />
             </div>
-            <div className="border-black border m-4">
-              <img src="./image/our-clients-03.png" alt="" />
-            </div>
-            <div className="border-black border m-4">
-              <img src="./image/our-clients-04.png" alt="" />
-            </div>
-            <div className="border-black border m-4">
-              <img src="./image/our-clients-05.png" alt="" />
-            </div>
-            <div className="border-black border m-4">
-              <img src="./image/our-clients-06.png" alt="" />
-            </div>
-            <div className="border-black border m-4">
-              <img src="./image/our-clients-07.png" alt="" />
-            </div>
-            <div className="border-black border m-4">
-              <img src="./image/our-clients-11.png" alt="" />
-            </div>
-            <div className="border-black border m-4">
-              <img src="./image/our-clients-12.png" alt="" />
-            </div>
+            {images.map((ele)=>{
+              return(
+                <div className="border-black border m-4">
+                <img src={ele} alt="" />
+              </div>
+              )
+            })}
             <div className="m-4 w-[280px] flex flex-col justify-center text-">
               <div className="flex text-end">
                 <NavLink to="/cosmeceuticals" className=" font-bold text-xl"> <button className="border-black border rounded-lg hover:bg-black hover:text-white  p-2">Our product</button>

@@ -23,7 +23,7 @@ const Footer = () => {
           <NavLink to="/About" className="flex items-center font-semibold hover:text-green-500">
             About
           </NavLink>
-          <NavLink to="https://www.vyomchem.com/pdf/Cosmeceuticals-Brochure.pdf" className="flex items-center font-semibold hover:text-green-500">
+          <NavLink to="https://www.vionabiopharma.com/undenatured-native-chicken-collagen-type-ii.php" className="flex items-center font-semibold hover:text-green-500" target="_blank">
             Exclusive Product
           </NavLink>
         </div>
@@ -36,7 +36,7 @@ const Footer = () => {
           <NavLink to="/cosmeceuticals" className="flex items-center font-semibold hover:text-green-500">
             <FiMail className="mr-2" /> Cosmecuticals
           </NavLink>
-          <NavLink to="https://www.vionabiopharma.com/undenatured-native-chicken-collagen-type-ii.php" className="flex items-center font-semibold hover:text-green-500">
+          <NavLink to="https://www.vyomchem.com/pdf/Cosmeceuticals-Brochure.pdf" className="flex items-center font-semibold hover:text-green-500" target="_blank">
             <FiMail className="mr-2" /> Cosmeceuticals Brochure
           </NavLink>
         </div>
@@ -54,7 +54,7 @@ const Footer = () => {
         </p>
         <p className="text-sm flex items-center mt-1">
           <FiPhone className="mr-2" />
-          91234556667
+      <NavLink to = "tel:+919882020609">+91-9882020609</NavLink>
         </p>
         <p className="text-sm flex items-center mt-1">
           <FiExternalLink className="mr-2" />

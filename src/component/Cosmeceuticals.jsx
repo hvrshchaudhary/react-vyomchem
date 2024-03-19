@@ -8,12 +8,14 @@ const Cosmeceuticals = () => {
       image2: "./image/pearlising.jpg",
       text: "WAX AND BUTTER",
       text2: "Pearlising Agents",
+    
     },
     {
       image: "./image/extract.jpg",
       image2: "./image/extract.jpg",
       text: "Extract (Liquid)",
       text2: "Extract (Liquid)",
+      
     },
     {
       image: "./image/algae-extract-3.jpg",
@@ -24,32 +26,33 @@ const Cosmeceuticals = () => {
     {
       image: "./image/melligolubous.jpg",
       image2: "./image/melligolubous.jpg",
-      text: "Milliglobules/Microbeads",
-      text2: "Milliglobules/Microbeads",
+      text: "Milliglobules /Microbeads",
+      text2: "Milliglobules ",
+      text3:"/Microbeads"
     },
     {
       image: "./image/Bambooextract.jpg",
       image2: "./image/Bambooextract.jpg",
-      text: "Active $ Miscellaneous",
-      text2: "Active $ Miscellaneous",
+      text: "Active & Miscellaneous",
+      text2: "Active & Miscellaneous",
     },
     {
       image: "./image/more.jpg",
       image2: "./image/more.jpg",
-      text: "Pearlising Agent and more",
-      text2: "MORE",
+      text: "Pearlising Agent ",
+      text2: "Pearlising Agent",
 
-      URL: "/cosmeceuticals",
+      URL: "",
     },
   ];
+
   return (
     <div
       style={{
-      
         display: "flex",
         justifyContent: "center",
       }}
-      className="md:py-10 md:px-10 pl-1 md:pl-0   "
+      className="md:py-10 md:px-10 pl-1 md:pl-0 md:h-screen "
     >
       <div className="md:flex" style={{ width: "90%", alignSelf: "center" }}>
         <div
@@ -68,7 +71,12 @@ const Cosmeceuticals = () => {
             className=""
           >
             <div className="forline and span flex flex-row  md:mt-0 ">
-              <div className="forline relative bg-green-900 rounded mr-1 md:p-1 md:-mt-2 md:h-16 w-2 "></div>
+              <div
+                className="forline relative  rounded mr-1 md:p-1 md:-mt-2 md:h-16 w-2 "
+                style={{
+                  backgroundColor: "#7CE6B3",
+                }}
+              ></div>
               <span
                 className="font-bold md:font-mono text-3xl md:text-5xl"
                 style={{ fontFamily: "monospace" }}
@@ -118,7 +126,7 @@ const Cosmeceuticals = () => {
               <div className="  justify-center flex mt-4 mb-2 md:hidden  flex-wrap">
                 {products.map((ele) => {
                   return (
-                    <figure className="md:m-4 m-2  relative md:hidden  ">
+                    <div className="md:m-4 m-2  relative md:hidden  ">
                       <a href={ele.URL}>
                         <img
                           className="rounded-2xl w-72 h-60 object-cover"
@@ -129,10 +137,10 @@ const Cosmeceuticals = () => {
                           alt="image description"
                         />
                       </a>
-                      <fig className="absolute px-4 text-lg text-white font-bold bottom-6">
+                      <div className="absolute px-4 text-lg text-white font-bold bottom-6">
                         <p>{ele.text}</p>
-                      </fig>
-                    </figure>
+                      </div>
+                    </div>
                   );
                 })}
               </div>
@@ -158,7 +166,7 @@ const Cosmeceuticals = () => {
           >
             {products.map((ele) => {
               return (
-                <figure className="md:m-4 m-2 relative w-48 h-52 object-cover hover:scale-125 transition-all">
+                <div className="md:m-4 m-2 relative w-48 h-52 object-cover hover:scale-125 transition-all">
                   <a href={ele.URL}>
                     <img
                       style={{
@@ -171,10 +179,11 @@ const Cosmeceuticals = () => {
                       alt="image description"
                     />
                   </a>
-                  <fig className="absolute px-4 text-lg text-white font-bold bottom-6">
+                  <div className="absolute px-4 text-lg text-white font-bold bottom-6">
                     <p>{ele.text2}</p>
-                  </fig>
-                </figure>
+                    <p>{ele.text3}</p>
+                  </div>
+                </div>
               );
             })}
           </div>

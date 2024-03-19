@@ -1,6 +1,6 @@
 import React from "react";
 
-const Thought = () => {
+const Cards = () => {
   const cardsDetails = [
     {
       avatar_url: "./image/Indra-Nooyi.avif",
@@ -29,7 +29,7 @@ const Thought = () => {
     },
   ];
   return (
-    <div className="md:flex flex-1 bg-gray-100 justify-center relative ">
+    <div className=" md:flex flex-1 bg-gray-100 justify-center relative pt-[4px] pb-[4px]">
       <div
         style={{ width: "90%" }}
         className="md:flex  bg-gray-100 justify-center md:px-10 md:py-4 flex-wrap "
@@ -68,4 +68,4 @@ const Thought = () => {
   );
 };
 
-export default Thought;
+export default Cards;

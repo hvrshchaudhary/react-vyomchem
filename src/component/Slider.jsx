@@ -15,7 +15,7 @@ const YourComponent = () => {
   }, []);
   useEffect(() => {
     new Typewriter("#hero-title", {
-      strings: ["COSMETIC INGREDIENT"],
+      strings: ["COSMETIC INGREDIENTS"],
       autoStart: true,
       loop: true,
       // pauseFor: 1500,
@@ -34,8 +34,8 @@ const YourComponent = () => {
       >
         {/* Carousel wrapper */}
         <div
-          className="  overflow-hidden  "
-          style={{ height: "100vh", filter: "brightness(40%) blur(0.5px)" }}
+          className=" md:overflow-hidden h-screen  "
+          style={{  filter: "brightness(40%) blur(0.5px)" }}
         >
           {/* Item 1 */}
           <div
@@ -82,24 +82,16 @@ const YourComponent = () => {
         </div>
       </div>
       <div
-        // style={{
-        //   "@media only screen and (max-width: 600px)": {
-        //     top: "20%",
-        //     left: "10%",
-        //   },
-        //   zIndex: 2,
-        //   top: "18%",
-        // }}
         className="absolute md:top[20%] top-[18%] md:z-0 z-[2]  text-black p-12 justify-evenly md:left-[10%] "
       >
         <h3 className="font-bold text-xl sm:text-2xl lg:text-4xl  mt-1 text-white mb-2 sm:mb-5">
-          Vyomchem specialist
+          Vyomchem specialities
         </h3>
         <h2
           id="hero-title"
           className="text-2xl sm:text-5xl font-bold mt-1  text-white "
         >
-          COSMETIC INGREDIENT
+          COSMETIC INGREDIENTS
         </h2>
         <div
           className=" mb-3 sm:mb-0"
@@ -116,8 +108,12 @@ const YourComponent = () => {
           BEST QUALITY COMMITTED TO SUPER PRODUCT QUALITY !.
         </p>
         <NavLink to = "/contact">
-        <button className="bg-transparent hover:bg-black hover:text-white font-bold py-2 px-6 border border-white hover:border-transparent rounded sm:py-3 sm:px-8 md:py-2 md:px-10 lg:py-2 lg:px-8 xl:py-2 xl:px-6 text-white ">
-         contact us
+        <button className="bg-transparent text-xl hover:bg-black hover:text-white font-bold py-2 px-6 border border-white hover:border-transparent rounded sm:py-3 sm:px-8 md:py-2 md:px-10 lg:py-2 lg:px-8 xl:py-2 xl:px-6 text-white "
+        style={{
+          boxShadow: "0 4px 6px rgba(5, 5, 0, 0.8) white",
+        }}
+        >
+         Contact Us
         </button>
         </NavLink>
       </div>

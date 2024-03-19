@@ -3,16 +3,13 @@ import React, { useState, useEffect } from "react";
 const ImageSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const images = [
-    "./image/our-principle01.png",
-    "./image/our-principle02.png",
-    "./image/our-principle03.png",
-    "./image/our-principle04.png",
-    // "./image/our-principle05.png",
-    "./image/our-principle06.png",
-    "./image/our-principle07.png",
-    "./image/our-principle08.png",
-    "./image/our-principle09.png",
-    "./image/our-principle10.png",
+    "./image/our-clients-03.png",
+    "./image/our-clients-04.png",
+    "./image/our-clients-05.png",
+    "./image/our-clients-06.png",
+    "./image/our-clients-07.png",
+    "./image/our-clients-11.png",
+    "./image/our-clients-12.png",
   ];
 
   useEffect(() => {
@@ -47,12 +44,12 @@ const ImageSlider = () => {
           {/* this image is for mobile view */}
           <div className="flex justify-center md:hidden    border-slate-950 border-solid ">
             {images
-              .slice(currentSlide, currentSlide + 2)
+              .slice(currentSlide, currentSlide + 1)
               .map((image, index) => (
                 <img
                   key={index}
                   src={image}
-                  className="flex-1 md:w-full  border h-14 md:h-auto  border-black m-1  mb:mb-4 md:mb-3 md:m-4"
+                  className="flex-1 w-full  border h-18 md:h-auto  border-black m-1  mb:mb-4 md:mb-3 md:m-4"
                   alt={`Slide ${currentSlide + index + 1}`}
                 />
               ))}

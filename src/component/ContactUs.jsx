@@ -2,8 +2,26 @@ import React from "react";
 import { BsTelephone } from "react-icons/bs";
 import { GrLocation } from "react-icons/gr";
 import { LuMail } from "react-icons/lu";
+import { NavLink } from "react-router-dom";
 
 const ContactUs = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Email address to send the email to
+    const recipientEmail = "minakshi@vyomchem.com";
+
+    // Subject of the email
+    const subject = "Submission";
+
+    // Compose the mailto URL
+    const mailtoURL = `mailto:${encodeURIComponent(
+      recipientEmail
+    )}?subject=${encodeURIComponent(subject)}`;
+
+    // Open the default email client with the mailto URL
+    window.location.href = mailtoURL;
+  };
   return (
     <div>
       <div className="h-full ">
@@ -26,10 +44,12 @@ const ContactUs = () => {
       </div>
       <div className="md:flex justify-center w-full  bg--100 md:pt-5 pb-5">
         <div className=" md:p-9 flex w-full">
-          <div className="bg-white md:m-8 m-3 w-full border rounded-lg bottom-4" style={{
-            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-
-          }}>
+          <div
+            className="bg-white md:m-8 m-3 w-full border rounded-lg bottom-4"
+            style={{
+              boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+            }}
+          >
             <div className="flex w-full md:flex-row flex-col gap-5 ">
               <div className="flex-1 bg-black pt-10 pb-10 md:rounded-none rounded-lg pl-6 pr-6 ">
                 <div className="text-left ">
@@ -40,31 +60,39 @@ const ContactUs = () => {
                     Any Question ? we would be happy to help you!
                   </div>
                 </div>
-                <div
-                  className="flex flex-col flex-shrink md:w-[60%]"
-                >
+                <div className="flex flex-col flex-shrink md:w-[60%]">
                   <div className="border mt-5 rounded-md p-3 border-gray-500 flex flex-row pl-5 items-center content-center text-white hover:bg-white hover:text-black hover:translate-x-1 hover:scale-110  transition-all">
                     <div className="mr-2">
                       <BsTelephone />
                     </div>
-                    <div>+91 9882020609</div>
+                    <div>
+                      <NavLink to="tel:+919882020609">+91-9882020609</NavLink>
+                    </div>
                   </div>
                   <div className="border mt-5 rounded-md p-3 border-gray-500 flex flex-row pl-5 items-center content-center text-white hover:bg-white hover:text-black hover:translate-x-1 hover:scale-110  transition-all">
                     <div className="mr-2">
                       <LuMail />
                     </div>
-                    <div>minakshi@vyomchem.com</div>
+                    <div>
+                      <NavLink to="mailto:minakshi@vyomchem.com">
+                        minakshi@vyomchem.com
+                      </NavLink>
+                    </div>
                   </div>
                   <div className="border mt-5 rounded-md p-3 border-gray-500 flex flex-row pl-5 items-center content-center text-white hover:bg-white hover:text-black hover:translate-x-1 hover:scale-110  transition-all">
                     <div className="mr-2 mb-[70px]">
                       <GrLocation />
                     </div>
-                    <div>Ground floor, Show room no. G-05, Home Land City Mall Baddi, Chakkan Road, Baddi, Dist. Solan(H.P.) 173205</div>
+                    <div>
+                      Ground floor, Show room no. G-05, Home Land City Mall
+                      Baddi, Chakkan Road, Baddi, Dist. Solan(H.P.) 173205
+                    </div>
                   </div>
                 </div>
               </div>
               <div className="flex-1 p-5">
                 <form
+                    onSubmit={handleSubmit}
                   action="#"
                   method="post"
                   className="grid md:grid-cols-6 gap-4"
@@ -125,7 +153,7 @@ const ContactUs = () => {
                       htmlFor="country"
                       className="block text-sm font-medium leading-6 text-gray-900"
                     >
-                    Product Categories
+                      Product Categories
                     </label>
                     <div className="mt-2">
                       <select
@@ -184,11 +212,16 @@ const ContactUs = () => {
         </div>
       </div>
 
-    <div class=" flex justify-center items-center">
+      <div class=" flex justify-center items-center">
         <div class="w-full  relative">
-            <iframe class="w-full h-72 md:h-96" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3422.2112297509398!2d76.79652877474084!3d30.936664574486475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ff5047c5be861%3A0x2601629e3a84fec6!2sVYOMCHEM%20SPECIALITIES!5e0!3m2!1sen!2suk!4v1710176833379!5m2!1sen!2suk" allowfullscreen="" loading="lazy"></iframe>
+          <iframe
+            class="w-full h-72 md:h-96"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3422.2112297509398!2d76.79652877474084!3d30.936664574486475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ff5047c5be861%3A0x2601629e3a84fec6!2sVYOMCHEM%20SPECIALITIES!5e0!3m2!1sen!2suk!4v1710176833379!5m2!1sen!2suk"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
         </div>
-    </div>     
+      </div>
     </div>
   );
 };

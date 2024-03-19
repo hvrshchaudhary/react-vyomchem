@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import { HiMenu } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
 import { useState } from "react";

@@ -11,7 +11,7 @@ const ContactUsNav = () => {
                 GET IN TOUCH
               </h5>
               <h2 className="text-2xl  font-bold  mb-3"  style={{
-                color: "#428e76",
+                color: "#7CE6B3",
                 }}>
                 WE WOULD LIKE TO HERE <br className="" /> FROM YOU!
               </h2>

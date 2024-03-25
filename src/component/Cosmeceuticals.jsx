@@ -1,4 +1,5 @@
 import React from "react";
+import { IoNavigateCircle } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 
 const Cosmeceuticals = () => {
@@ -7,7 +8,7 @@ const Cosmeceuticals = () => {
       image: "./image/WAX.jpg",
       image2: "./image/pearlising.jpg",
       text: "WAX AND BUTTER",
-      URL: "/cosmeceuticals/#Wax & Butter",
+      URL: "/cosmeceuticals/#wax&butter",
       text2: "Pearlising Agents",
       URL2:"/cosmeceuticals/#Pearlising Agents"
     },
@@ -137,7 +138,7 @@ const Cosmeceuticals = () => {
                 {products.map((ele) => {
                   return (
                     <div className="md:m-4 m-2  relative md:hidden  ">
-                      <a href={ele.URL}>
+                      <NavLink to={ele.URL}>
                         <img
                           className="rounded-2xl w-72 h-60 object-cover"
                           style={{
@@ -146,7 +147,7 @@ const Cosmeceuticals = () => {
                           src={ele.image}
                           alt="image description"
                         />
-                      </a>
+                      </NavLink>
                       <div className="absolute px-4 text-lg text-white font-bold bottom-6">
                         <p>{ele.text}</p>
                       </div>

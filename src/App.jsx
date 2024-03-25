@@ -10,6 +10,7 @@ import CosmeceuticalsProduct from "./component/CosmeceuticalsProduct";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./component/Home";
 import OurPrinciplepage from "./component/OurPrinciplepage";
+import Extract from "./component/products/Extract";
 function App() {
   useLayoutEffect(() => {
     AOS.init();
@@ -21,6 +22,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cosmeceuticals" element ={<CosmeceuticalsProduct/>}/> 
+          <Route path="/extract" element ={<Extract/>}/> 
+
           <Route path="/principle" element ={<OurPrinciplepage/>}/>
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<ContactUs />} />

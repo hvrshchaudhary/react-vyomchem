@@ -15,6 +15,7 @@ import PearlisingAgent from '../PearlisingAgents';
 import Sunscreen from '../../Sunscreen';
 import ConditioningAgent from '../ConditioningAgent';
 import Moisturizers from '../Moisturizers';
+import { NavLink } from 'react-router-dom';
 const productComponents = [
     { name: "Extract (Liquid)", component: <Extract /> },
     { name: "Alcohol Sulphate", component: <Alcohol /> },
@@ -49,13 +50,13 @@ const productComponents = [
           <ul className="py-4">
             {productComponents.map(product => (
               <li key={product.name}>
-                <a
-                  href={`/cosmeceuticals/#${product.name}`}
+                <NavLink
+                  to={`/cosmeceuticals/#${product.name}`}
                   onClick={() => handleProductClick(product.name)}
                   className="block px-4 py-2 hover:bg-gray-700"
                 >
                   {product.name}
-                </a>
+                </NavLink>
               </li>
             ))}
           </ul>

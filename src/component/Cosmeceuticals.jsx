@@ -120,7 +120,7 @@ const Cosmeceuticals = () => {
                Wax and butter
               </span>
               {/* image for display view  */}
-              <a href="/cosmeceuticals/#Wax & Butter">
+              <NavLink to="/cosmeceuticals/#Wax & Butter">
               <img
                 src="./image/WAX.jpg"
                 className="md:block hidden"
@@ -131,7 +131,7 @@ const Cosmeceuticals = () => {
                   filter: "brightness(60%)",
                 }}
               />
-              </a> 
+              </NavLink> 
 
               {/* comsecetical section for mobile view this section is extra added for mobile view  */}
               <div className="  justify-center flex mt-4 mb-2 md:hidden  flex-wrap">
@@ -178,7 +178,7 @@ const Cosmeceuticals = () => {
             {products.map((ele) => {
               return (
                 <div className="md:m-4 m-2 relative w-48 h-52 object-cover hover:scale-125 transition-all">
-                  <a href={ele.URL2}>
+                  <NavLink to={ele.URL2}>
                     <img
                       style={{
                         boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.1)",
@@ -189,7 +189,7 @@ const Cosmeceuticals = () => {
                       src={ele.image2}
                       alt="image description"
                     />
-                  </a>
+                  </NavLink>
                   <div className="absolute px-4 text-lg text-white font-bold bottom-6">
                     <p>{ele.text2}</p>
                     <p>{ele.text3}</p>

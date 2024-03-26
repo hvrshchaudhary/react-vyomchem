@@ -85,13 +85,13 @@ const Navbar = () => {
                     >
                       Cosmecuticals
                     </NavLink>
-                    <a
+                    <NavLink
                       href="https://www.vyomchem.com/pdf/Cosmeceuticals-Brochure.pdf"
                       target="_blank"
                       className="block px-4  py-2 text-lg text-black hover:bg-gray-100"
                     >
                       Cosmeceuticals Brochure
-                    </a>
+                    </NavLink>
                   </div>
                 )}
               </a>

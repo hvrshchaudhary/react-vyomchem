@@ -92,7 +92,7 @@ const ContactUs = () => {
               </div>
               <div className="flex-1 p-5">
                 <form
-                    onSubmit={handleSubmit}
+                  onSubmit={handleSubmit}
                   action="#"
                   method="post"
                   className="grid md:grid-cols-6 gap-4"
@@ -212,12 +212,12 @@ const ContactUs = () => {
         </div>
       </div>
 
-      <div class=" flex justify-center items-center">
-        <div class="w-full  relative">
+      <div className=" flex justify-center items-center">
+        <div className="w-full  relative">
           <iframe
-            class="w-full h-72 md:h-96"
+            className="w-full h-72 md:h-96"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3422.2112297509398!2d76.79652877474084!3d30.936664574486475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ff5047c5be861%3A0x2601629e3a84fec6!2sVYOMCHEM%20SPECIALITIES!5e0!3m2!1sen!2suk!4v1710176833379!5m2!1sen!2suk"
-            allowfullscreen=""
+            allowFullScreen=""
             loading="lazy"
           ></iframe>
         </div>

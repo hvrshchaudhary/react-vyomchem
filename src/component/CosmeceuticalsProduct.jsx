@@ -2,8 +2,6 @@ import React from "react";
 import AllProduct from "./products/allproduct/AllProduct";
 
 const CosmeceuticalsProduct = () => {
-  
-
   return (
     <div>
       <div className=" w-full flex flex-col justify-center">
@@ -12,7 +10,7 @@ const CosmeceuticalsProduct = () => {
           style={{
             filter: "brightness(50%)",
           }}
-          src="./image/contactus.jpg"
+          src="/image/contactus.jpg"
           alt=""
         />
         <div
@@ -24,7 +22,7 @@ const CosmeceuticalsProduct = () => {
           Cosmeceuticals
         </div>
         <div>
-        <AllProduct/>
+          <AllProduct />
         </div>
         {/* <div className="w-full md:flex  justify-center">
           <div className="md:w-4/5 md:flex m-5 bg-blue-300">

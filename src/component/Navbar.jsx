@@ -223,25 +223,15 @@ const Navbar = () => {
                   </div>
                 )}
               </div>
-              <div
-                // to="#"
+              <div>
+                <a
+                href="/Principle"
                 className=" block text-black font-sans font-semibold bg-white   hover:bg-green-100 hover:text-green-900 px-3 py-2"
-                onClick={toggleDropdown3}
+                onMouseEnter={toggleDropdown3}
+                onMouseLeave={toggleDropdown3}
               >
                 Our Principles
-                {dropdown3 && (
-                  <div
-                    className=" top-full left- mt-1 bg-white shadow-md rounded-md"
-                    onClick={toggleMenu}
-                  >
-                    <NavLink
-                      to="/Principle"
-                      className="block px-4 py-2 text-sm bg-green-300 text-black hover:bg-gray-100"
-                    >
-                      Cosmecuticals
-                    </NavLink>
-                  </div>
-                )}
+              </a>
               </div>
               <NavLink
                 to="/contact"

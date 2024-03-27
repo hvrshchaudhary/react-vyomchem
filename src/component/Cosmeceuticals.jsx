@@ -8,7 +8,7 @@ const Cosmeceuticals = () => {
       image: "/image/WAX.jpg",
       image2: "/image/pearlising.jpg",
       text: "WAX AND BUTTER",
-      URL: "/cosmeceuticals/#wax&butter",
+      URL: "/cosmeceuticals/#Wax & Butter",
       text2: "Pearlising Agents",
       URL2:"/cosmeceuticals/#Pearlising Agents"
     },

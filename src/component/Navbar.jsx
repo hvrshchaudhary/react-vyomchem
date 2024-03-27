@@ -118,14 +118,14 @@ const Navbar = () => {
               </a>
             </div>
             <div className="relative hidden md:block">
-              <a
-                href="/Principle"
+              <NavLink
+                to="/Principle"
                 className="z-10 font-sans text-xl text-black font-semibold hover:text-green-500 px-3 py-2"
                 onMouseEnter={toggleDropdown3}
                 onMouseLeave={toggleDropdown3}
               >
                 Our Principles
-              </a>
+              </NavLink>
             </div>
           </div>
           <div
@@ -224,14 +224,14 @@ const Navbar = () => {
                 )}
               </div>
               <div>
-                <a
-                href="/Principle"
+                <NavLink
+                to="/Principle"
                 className=" block text-black font-sans font-semibold bg-white   hover:bg-green-100 hover:text-green-900 px-3 py-2"
-                onMouseEnter={toggleDropdown3}
-                onMouseLeave={toggleDropdown3}
+                onClick={toggleMenu}
+               
               >
                 Our Principles
-              </a>
+              </NavLink>
               </div>
               <NavLink
                 to="/contact"

@@ -30,7 +30,7 @@ const ContactUsNav = () => {
         </div>
         <div className=" flex-1 " data-aos="fade-left">
           <img
-            src="./image/Ayurvedic-image.jpg"
+            src="/image/Ayurvedic-image.jpg"
             alt=""
             className="object-fill "
             style={{ width: "100%", height: "100%" }}

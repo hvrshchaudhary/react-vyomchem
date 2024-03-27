@@ -3,13 +3,13 @@ import { NavLink } from "react-router-dom";
 
 const OurPrinciplepage = () => {
   const images = [
-    "./image/our-clients-03.png",
-    "./image/our-clients-04.png",
-    "./image/our-clients-05.png",
-    "./image/our-clients-06.png",
-    "./image/our-clients-07.png",
-    "./image/our-clients-11.png",
-    "./image/our-clients-12.png",
+    "/image/our-clients-03.png",
+    "/image/our-clients-04.png",
+    "/image/our-clients-05.png",
+    "/image/our-clients-06.png",
+    "/image/our-clients-07.png",
+    "/image/our-clients-11.png",
+    "/image/our-clients-12.png",
   ];
   return (
     <div>
@@ -19,7 +19,7 @@ const OurPrinciplepage = () => {
           style={{
             filter: "brightness(50%)",
           }}
-          src="./image/more.jpg"
+          src="/image/more.jpg"
           alt=""
         />
         <div
@@ -36,7 +36,7 @@ const OurPrinciplepage = () => {
           <div className="flex flex-wrap justify-between">
             <div className="border-black border m-4">
               <img
-                src="./image/our-clients-02.png"
+                src="/image/our-clients-02.png"
                 style={{ width: 280 }}
                 alt=""
               />
@@ -50,7 +50,7 @@ const OurPrinciplepage = () => {
             })}
             <div className="m-4 w-[280px] flex flex-col justify-center text-">
               <div className="flex text-end">
-                <NavLink to="/cosmeceuticals" className=" font-bold text-xl"> <button className="border-black border rounded-lg hover:bg-black hover:text-white pl-5 pr-5 p-2">Our Product</button>
+                <NavLink to="/cosmeceuticals/#Extract (Liquid)" className=" font-bold text-xl"> <button className="border-black border rounded-lg hover:bg-black hover:text-white pl-5 pr-5 p-2">Our Product</button>
                   </NavLink>
               </div>
             </div>

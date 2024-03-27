@@ -3,13 +3,13 @@ import React from "react";
 const Cards = () => {
   const cardsDetails = [
     {
-      avatar_url: "./image/Indra-Nooyi.avif",
+      avatar_url: "/image/Indra-Nooyi.avif",
       name: "Indra Nooyi",
       post: "CEO: PepsiCo",
       comment: `If you want to improve the organization you have to improve yourself and the organization gets pulled up with you. That is a lesson. I cannot just expect the organization to improve if I don’t improve myself and lift the organization.`,
     },
     {
-      avatar_url: "./image/Falguni-Nayar.jpg",
+      avatar_url: "/image/Falguni-Nayar.jpg",
       name: "Falguni Nayar",
       post: "CEO: Nykaa",
       comment: `Entrepreneurship is a journey of ups and downs. The key is to remain
@@ -18,7 +18,7 @@ const Cards = () => {
       bounce back from setbacks and keep moving forward.`,
     },
     {
-      avatar_url: "./image/kiran.webp",
+      avatar_url: "/image/kiran.webp",
       name: "Kiran Mazumdar-Shaw",
       post: "CEO: Biocon",
       comment: `Innovation and entrepreneurship are about seeing the invisible and

@@ -5,32 +5,32 @@ import { NavLink } from "react-router-dom";
 const Cosmeceuticals = () => {
   const products = [
     {
-      image: "./image/WAX.jpg",
-      image2: "./image/pearlising.jpg",
+      image: "/image/WAX.jpg",
+      image2: "/image/pearlising.jpg",
       text: "WAX AND BUTTER",
       URL: "/cosmeceuticals/#wax&butter",
       text2: "Pearlising Agents",
       URL2:"/cosmeceuticals/#Pearlising Agents"
     },
     {
-      image: "./image/extract.jpg",
-      image2: "./image/extract.jpg",
+      image: "/image/extract.jpg",
+      image2: "/image/extract.jpg",
       text: "Extract (Liquid)",
       URL:"/cosmeceuticals/#Extract (Liquid)",
       text2: "Extract (Liquid)",
       URL2:"/cosmeceuticals/#Extract (Liquid)"
     },
     {
-      image: "./image/algae-extract-3.jpg",
-      image2: "./image/algae-extract-3.jpg",
+      image: "/image/algae-extract-3.jpg",
+      image2: "/image/algae-extract-3.jpg",
       text: "Alcohol Sulphate",
       URL:"/cosmeceuticals/#Alcohol Sulphate",
       text2: "Alcohol Sulphate",
       URL2:"/cosmeceuticals/#Alcohol Sulphate",
     },
     {
-      image: "./image/melligolubous.jpg",
-      image2: "./image/melligolubous.jpg",
+      image: "/image/melligolubous.jpg",
+      image2: "/image/melligolubous.jpg",
       text: "Milliglobules /Microbeads",
       URL:"/cosmeceuticals/#Milliglobules",
       text2: "Milliglobules ",
@@ -38,16 +38,16 @@ const Cosmeceuticals = () => {
       URL2:"/cosmeceuticals/#Milliglobules",
     },
     {
-      image: "./image/Bambooextract.jpg",
-      image2: "./image/Bambooextract.jpg",
+      image: "/image/Bambooextract.jpg",
+      image2: "/image/Bambooextract.jpg",
       text: "Active & Miscellaneous",
       URL:"/cosmeceuticals/#Active & Miscellaneous",
       text2: "Active & Miscellaneous",
       URL2:"/cosmeceuticals/#Active & Miscellaneous"
     },
     {
-      image: "./image/more.jpg",
-      image2: "./image/more.jpg",
+      image: "/image/more.jpg",
+      image2: "/image/more.jpg",
       text: "Pearlising Agent ",
       URL: "/cosmeceuticals/#Pearlising Agents",
       text2: "Proteins",
@@ -122,7 +122,7 @@ const Cosmeceuticals = () => {
               {/* image for display view  */}
               <NavLink to="/cosmeceuticals/#Wax & Butter">
               <img
-                src="./image/WAX.jpg"
+                src="/image/WAX.jpg"
                 className="md:block hidden"
                 alt=""
                 style={{

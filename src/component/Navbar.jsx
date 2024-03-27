@@ -76,7 +76,7 @@ const Navbar = () => {
                 onMouseEnter={toggleDropdown}
                 onMouseLeave={toggleDropdown}
               >
-                Product
+                Products
                 {dropdown && (
                   <div className="absolute  mt-1 -left-2 bg-white shadow-md rounded-md">
                     <NavLink
@@ -119,22 +119,12 @@ const Navbar = () => {
             </div>
             <div className="relative hidden md:block">
               <a
-                href="#"
+                href="/Principle"
                 className="z-10 font-sans text-xl text-black font-semibold hover:text-green-500 px-3 py-2"
                 onMouseEnter={toggleDropdown3}
                 onMouseLeave={toggleDropdown3}
               >
-                Our Principle
-                {dropdown3 && (
-                  <div className="absolute top-full left-[8px] mt-1 bg-white shadow-md rounded-md">
-                    <NavLink
-                      to="/Principle"
-                      className="block px-4 py-4 text-lg text-black hover:bg-gray-100"
-                    >
-                      Cosmeceuticals
-                    </NavLink>
-                  </div>
-                )}
+                Our Principles
               </a>
             </div>
           </div>
@@ -153,13 +143,13 @@ const Navbar = () => {
               to="/about"
               className="font-sans text-xl text-black font-semibold hover:text-green-500 px-3 py-2"
             >
-              About
+              About Us
             </NavLink>
             <NavLink
               to="/contact"
               className="font-sans text-xl text-black font-semibold hover:text-green-500 px-3 py-2"
             >
-              Contact
+              Contact Us
             </NavLink>
           </div>
         </div>
@@ -180,7 +170,7 @@ const Navbar = () => {
               to="/about"
               className="block text-black font-sans font-semibold bg-white hover:bg-green-100 hover:text-green-900 px-3 py-2"
             >
-              About
+              About Us
             </NavLink>
           </div>
           <div className={`md:hiddem ${isOpen ? "block" : "hidden"}`}>
@@ -197,7 +187,7 @@ const Navbar = () => {
                     onClick={toggleMenu}
                   >
                     <NavLink
-                      to="/cosmeceuticals"
+                      to="/cosmeceuticals/#Extract (Liquid)"
                       className="block px-4 py-2 text-sm bg-green-300 text-black hover:bg-gray-100"
                     >
                       Cosmecuticals
@@ -238,7 +228,7 @@ const Navbar = () => {
                 className=" block text-black font-sans font-semibold bg-white   hover:bg-green-100 hover:text-green-900 px-3 py-2"
                 onClick={toggleDropdown3}
               >
-                Our Principle
+                Our Principles
                 {dropdown3 && (
                   <div
                     className=" top-full left- mt-1 bg-white shadow-md rounded-md"
@@ -258,7 +248,7 @@ const Navbar = () => {
                 className="block text-black font-sans font-semibold bg-white hover:bg-green-100 hover:text-green-900 px-3 py-2"
                 onClick={toggleMenu}
               >
-                Contact
+                Contact Us
               </NavLink>
             </div>
           </div>

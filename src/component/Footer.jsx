@@ -64,7 +64,6 @@ const Footer = () => {
     </div>
     {/* Footer Last Line */}
     <div className="text-center text-xs mt-4">
-      <p>© 2022 Vyomchem Specialities. All Rights Reserved. Website Designed By : Ink Web Solutions</p>
     </div>
   </div>
   

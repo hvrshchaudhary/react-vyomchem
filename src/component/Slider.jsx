@@ -59,7 +59,7 @@ const YourComponent = () => {
             data-carousel-item
           >
             <img
-              src="./image/more.jpg"
+              src="/image/more.jpg"
               className="w-full h-full "
               style={{ objectFit: "cover" }}
               alt="Image 2"
@@ -73,7 +73,7 @@ const YourComponent = () => {
             data-carousel-item
           >
             <img
-              src="./image/WAX.jpg"
+              src="/image/WAX.jpg"
               className="w-full h-full "
               style={{ objectFit: "cover" }}
               alt="Image 3"
@@ -108,7 +108,7 @@ const YourComponent = () => {
           BEST QUALITY COMMITTED TO SUPER PRODUCT QUALITY !.
         </p>
         <NavLink to = "/contact">
-        <button className="bg-black text-xl hover:bg-transparent hover:text-white font-bold py-2 px-6 border border-black hover:border-white hover:border-transparent rounded sm:py-3 sm:px-8 md:py-2 md:px-10 lg:py-2 lg:px-8 xl:py-2 xl:px-6 text-white "
+        <button className="bg-white text-xl hover:bg-transparent hover:text-white font-bold py-2 px-6 border border-black hover:border-white hover:border-transparent rounded sm:py-3 sm:px-8 md:py-2 md:px-10 lg:py-2 lg:px-8 xl:py-2 xl:px-6 text-black "
         style={{
           boxShadow: "0 4px 6px rgba(5, 5, 0, 0.8) white",
         }}

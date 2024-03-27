@@ -30,7 +30,7 @@ const ContactUs = () => {
           style={{
             filter: "brightness(50%)",
           }}
-          src="./image/contactus.jpg"
+          src="/image/contactus.jpg"
           alt=""
         />
         <div

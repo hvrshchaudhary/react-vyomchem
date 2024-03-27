@@ -6,6 +6,7 @@ import OurPrincliple from './OurPrincliple'
 import Cosmeceuticals from './Cosmeceuticals'
 import ContactUsNav from './ContactUsNav'
 import Cards from './Cards'
+
 const Home = () => {
   return (
     <>

@@ -33,7 +33,7 @@ const Navbar = () => {
           <div className="flex-shrink-0 ">
             <NavLink to="/">
               <img
-                src="./image/logo.png"
+                src="/image/logo.png"
                 className="w-14 md:h-auto md:w-20 "
                 alt=""
               />
@@ -80,7 +80,7 @@ const Navbar = () => {
                 {dropdown && (
                   <div className="absolute  mt-1 -left-2 bg-white shadow-md rounded-md">
                     <NavLink
-                      to="/cosmeceuticals"
+                      to="/cosmeceuticals/#Extract (Liquid)"
                       className="block px-4 py-2  text-lg text-black hover:bg-gray-100"
                     >
                       Cosmecuticals

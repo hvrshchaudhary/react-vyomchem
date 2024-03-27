@@ -64,7 +64,7 @@ const AllProduct = () => {
               <li key={product.name}>
                 <NavLink
                   to={`/cosmeceuticals/#${product.name}`}
-                  className="block px-4 py-2 text-xs md:text-sm m-4 hover:text-white border rounded-sm border-black hover:bg-black "
+                  className="block px-4 py-2 text-sm m-4 font-semibold hover:text-white border rounded-sm border-black hover:bg-black "
                   target=""
                 >
                   {product.name}

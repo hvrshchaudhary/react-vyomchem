@@ -47,7 +47,7 @@ const AllProduct = () => {
   return (
     <div className="flex flex-row  ">
       {/* Sidebar */}
-      <div data-aos="fade-up" className=" text-black w-1/3 md:w-1/5 hidden md:flex flex-none">
+      <div data-aos="fade-up" className=" text-black w-1/3 md:w-1/5 hidden md:block flex-none">
         <div
           className="rounded-lg  border-black border-2 p-1 m-2 mt-6 bg-white"
           style={{

@@ -16,9 +16,9 @@ const Cosmeceuticals = () => {
       image: "./image/extract.jpg",
       image2: "./image/extract.jpg",
       text: "Extract (Liquid)",
-      URL:"/cosmeceuticals/#Extract",
+      URL:"/cosmeceuticals/#Extract (Liquid)",
       text2: "Extract (Liquid)",
-      URL2:"/cosmeceuticals/#Extract"
+      URL2:"/cosmeceuticals/#Extract (Liquid)"
     },
     {
       image: "./image/algae-extract-3.jpg",

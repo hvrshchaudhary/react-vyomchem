@@ -48,7 +48,7 @@ const ConditioningAgent = () => {
 
 
                 }} >
-                  <div className="text-center pt-3 md:pb-4 pb-2 ">
+                  <div className="text-center md:pt-3 md:pb-4 pb-2 ">
                     <span
                       id={Object.keys(category)[0]}
                       className="pl-1  font-semibold font-fira-neue  md:text-4xl"

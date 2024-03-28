@@ -75,6 +75,8 @@ const Navbar = () => {
                 className=" font-sans xl:text-xl text-sm font-semibold text-black hover:text-green-500 px-3 py-2"
                 onMouseEnter={toggleDropdown}
                 onMouseLeave={toggleDropdown}
+
+
               >
                 Products
                 {dropdown && (
@@ -84,51 +86,57 @@ const Navbar = () => {
                       className="block px-4 py-2  xl:text-lg text-xs text-black hover:bg-gray-100"
                       onMouseEnter={toggleDropdown3}
                       onMouseLeave={toggleDropdown3}
+
+
                     >
                       Cosmecuticals
                       {dropdown3 && (
-                        <div className="absolute w-max md:-mt-6 xl:-mt-8 xl:left-[9.5rem] md:left-[98px] bg-white shadow-md rounded-md">
-                          <div className="flex">
+                      <div className="absolute w-max md:-mt-6 xl:-mt-8 xl:left-[9.5rem] md:left-[98px] bg-white shadow-md rounded-md"
+                       >
+                          <div className="flex"
+
+                          >
                             <div>
                               <NavLink
                                 to="/cosmeceuticals/#Extract (Liquid)"
-                                className="block px-4 py-2  text-xs text-black hover:bg-green-100"
+                                className="block px-4 py-2  xl:text-lg text-xs text-black hover:bg-green-100"
+
                               >
                                 Extract (Liquid)
                               </NavLink>
                               <NavLink
                                 to="/cosmeceuticals/#Alcohol Sulphate"
-                                className="block px-4  py-2 text-xs text-black hover:bg-green-100"
+                                className="block px-4  py-2 xl:text-lg text-xs text-black hover:bg-green-100"
                               >
                                 Alcohol Sulphate
                               </NavLink>
                               <NavLink
                                 to="/cosmeceuticals/#Milliglobules"
-                                className="block px-4 py-2  text-xs text-black hover:bg-green-100"
+                                className="block px-4 py-2 xl:text-lg text-xs text-black hover:bg-green-100"
                               >
                                 Milliglobules
                               </NavLink>
                               <NavLink
                                 to="/cosmeceuticals/#Active & Miscellaneous"
-                                className="block px-4  py-2 text-xs text-black hover:bg-green-100"
+                                className="block px-4  py-2 xl:text-lg text-xs text-black hover:bg-green-100"
                               >
                                 Active & Miscellaneous
                               </NavLink>{" "}
                               <NavLink
                                 to="/cosmeceuticals/#Wax & Butter"
-                                className="block px-4 py-2  text-xs text-black hover:bg-green-100"
+                                className="block px-4 py-2  xl:text-lg text-xs text-black hover:bg-green-100"
                               >
                                 Wax & Butter
                               </NavLink>
                               <NavLink
                                 to="/cosmeceuticals/#Protein"
-                                className="block px-4  py-2 text-xs text-black hover:bg-green-100"
+                                className="block px-4  py-2 xl:text-lg text-xs text-black hover:bg-green-100"
                               >
                                 Proteins
                               </NavLink>{" "}
                               <NavLink
                                 to="/cosmeceuticals/#Booster"
-                                className="block px-4 py-2  text-xs text-black hover:bg-green-100"
+                                className="block px-4 py-2  xl:text-lg text-xs text-black hover:bg-green-100"
                               >
                                 Boosters
                               </NavLink>
@@ -136,43 +144,43 @@ const Navbar = () => {
                             <div>
                               <NavLink
                                 to="/cosmeceuticals/#Anti-Oxidants/ Parabens Free Preservatives"
-                                className="block px-4  py-2 text-xs text-black hover:bg-green-100"
+                                className="block px-4  py-2 xl:text-lg text-xs text-black hover:bg-green-100"
                               >
                                 Anti-Oxidants
                               </NavLink>{" "}
                               <NavLink
                                 to="/cosmeceuticals/#Fixatives"
-                                className="block px-4 py-2  text-xs text-black hover:bg-green-100"
+                                className="block px-4 py-2  xl:text-lg text-xs text-black hover:bg-green-100"
                               >
                                 Fixatives
                               </NavLink>
                               <NavLink
                                 to="/cosmeceuticals/#Paraben"
-                                className="block px-4  py-2 text-xs text-black hover:bg-green-100"
+                                className="block px-4  py-2 xl:text-lg text-xs text-black hover:bg-green-100"
                               >
                                 Parabens
                               </NavLink>
                               <NavLink
                                 to="/cosmeceuticals/#Pearlising Agents"
-                                className="block px-4 py-2  text-xs text-black hover:bg-green-100"
+                                className="block px-4 py-2  xl:text-lg text-xs text-black hover:bg-green-100"
                               >
                                 Pearlising Agents
                               </NavLink>
                               <NavLink
                                 to="/cosmeceuticals/#Sunscreens"
-                                className="block px-4  py-2 text-xs text-black hover:bg-green-100"
+                                className="block px-4  py-2 xl:text-lg text-xs text-black hover:bg-green-100"
                               >
                                 Sunscreens
                               </NavLink>
                               <NavLink
                                 to="/cosmeceuticals/#Conditioning Agents"
-                                className="block px-4 py-2  text-xs text-black hover:bg-green-100"
+                                className="block px-4 py-2  xl:text-lg text-xs text-black hover:bg-green-100"
                               >
                                 Conditioning Agents
                               </NavLink>
                               <NavLink
                                 to="/cosmeceuticals/#Moisturizers"
-                                className="block px-4  py-2 text-xs text-black hover:bg-green-100"
+                                className="block px-4  py-2 xl:text-lg text-xs text-black hover:bg-green-100"
                               >
                                 Moisturizers
                               </NavLink>

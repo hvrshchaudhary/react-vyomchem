@@ -3,99 +3,99 @@ import React from "react";
 const WaxButter = () => {
   const b = [
     {
-        "Wax & Butter": [
-          {
-            product: "Aloe Vera butter",
-          },
-          {
-            product: "Apricot butter",
-          },
-          {
-            product: "Argan Oil",
-          },
-          {
-            product: "Arnica butter",
-          },
-          {
-            product: "Avocado butter",
-          },
-          {
-            product: "Beeswax Natural Pure",
-          },
-          {
-            product: "Beeswax White ",
-          },
-          {
-            product: "Beeswax Yellow",
-          },
-          {
-            product: "Candelilla Wax",
-          },
-          {
-            product: "Carnauba Wax",
-          },
-          {
-            product: "Ceresin Wax White",
-          },
-          {
-            product: "Cocoa butter",
-          },
-          {
-            product: "Emulsifying Wax Anionic ",
-          },
-          {
-            product: "Emulsifying Wax Non ionic ",
-          },
-          {
-            product: "Grapeseed butter",
-          },
-          {
-            product: "Jojoba butter",
-          },
-          {
-            product: "Kokum butter",
-          },
-          {
-            product: "Mango butter ",
-          },
-          {
-            product: "Microcrystalline Wax White",
-          },
-          {
-            product: "Moringa butter",
-          },
-          {
-            product: "Murumuru butter",
-          },
-          {
-            product: "Olive butter",
-          },
-          {
-            product: "Paraffin Wax",
-          },
-          {
-            product: "Petroleum Jelly White/Yellow",
-          },
-          {
-            product: "Pumpkin seed butter",
-          },
-          {
-            product: "Rice Bran Wax",
-          },
-          {
-            product: "Shea butter",
-          },
-          {
-            product: "Sunflower Wax",
-          },
-          {
-            product: "Sweet almond butter",
-          },
-          {
-            product: "& many more….....",
-          },
-        ],
-      },
+      "Wax & Butter": [
+        {
+          product: "Aloe Vera butter",
+        },
+        {
+          product: "Apricot butter",
+        },
+        {
+          product: "Argan Oil",
+        },
+        {
+          product: "Arnica butter",
+        },
+        {
+          product: "Avocado butter",
+        },
+        {
+          product: "Beeswax Natural Pure",
+        },
+        {
+          product: "Beeswax White ",
+        },
+        {
+          product: "Beeswax Yellow",
+        },
+        {
+          product: "Candelilla Wax",
+        },
+        {
+          product: "Carnauba Wax",
+        },
+        {
+          product: "Ceresin Wax White",
+        },
+        {
+          product: "Cocoa butter",
+        },
+        {
+          product: "Emulsifying Wax Anionic ",
+        },
+        {
+          product: "Emulsifying Wax Non ionic ",
+        },
+        {
+          product: "Grapeseed butter",
+        },
+        {
+          product: "Jojoba butter",
+        },
+        {
+          product: "Kokum butter",
+        },
+        {
+          product: "Mango butter ",
+        },
+        {
+          product: "Microcrystalline Wax White",
+        },
+        {
+          product: "Moringa butter",
+        },
+        {
+          product: "Murumuru butter",
+        },
+        {
+          product: "Olive butter",
+        },
+        {
+          product: "Paraffin Wax",
+        },
+        {
+          product: "Petroleum Jelly White/Yellow",
+        },
+        {
+          product: "Pumpkin seed butter",
+        },
+        {
+          product: "Rice Bran Wax",
+        },
+        {
+          product: "Shea butter",
+        },
+        {
+          product: "Sunflower Wax",
+        },
+        {
+          product: "Sweet almond butter",
+        },
+        {
+          product: "& many more….....",
+        },
+      ],
+    },
   ];
 
   return (
@@ -105,7 +105,10 @@ const WaxButter = () => {
           <div className=" md:w-full ">
           {b.map((category, index) => {
               return (
-                <div key={index} className="pl-[25px] pr-[25px] md:mt-[24px] mt-10 m-5 pb-5 pt-2 border rounded-md bg-gray-200">
+                <div key={index} className="pl-[25px] pr-[25px] md:mt-[24px] mt-10 m-5 pb-5 pt-2 border rounded-md  bg-gray-50" style={{
+                  boxShadow: "0 4px 6px rgba(0, 0, 0, 0.2)",
+
+                }} >
                   <div className="text-center md:pb-4 pb-2 ">
                     <span
                       id={Object.keys(category)[0]}
@@ -118,7 +121,7 @@ const WaxButter = () => {
                     return (
                       <div
                         key={index}
-                        className="bg-green-400 hover:text-black border rounded-sm border-black hover:bg-green-200 mt-2"
+                        className="bg-cyan-100 hover:text-black border rounded-sm border-black hover:bg-green-200 mt-2"
                       >
                         <li className="flex justify-between products-center pl-1 md:py-2 py-1">
                           <span className="md:text-lg text-sm md:font-semibold hover:font-bold">

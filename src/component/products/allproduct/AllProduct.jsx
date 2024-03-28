@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {  FiX } from "react-icons/fi";
+import { FiMenu, FiX } from "react-icons/fi";
 import { IoIosArrowForward } from "react-icons/io";
 import { NavLink, useLocation } from "react-router-dom";
 import Extract from "../Extract";
@@ -57,13 +57,13 @@ const AllProduct = () => {
       <div className="xl:hidden  absolute   ">
         {!isSidebarOpen && (
           <div className="flex   mt-[-20px] ml-2">
-            <IoIosArrowForward 
-              className="mt-[15px] ml-3 mr-1"
+            <FiMenu
+              className="mt-[16px] ml-3 mr-2"
               onClick={() => setIsSidebarOpen(true)}
-              size={22}
+              size={20}
             />
 
-            <span className="text-lg mt-3 font-serif"> Product categories</span>
+            <div onClick={()=>setIsSidebarOpen(true)} className="text-lg mt-3 font-serif"> Product categories</div>
           </div>
         )}
         <div className={`xl:hidden mt-[-20px]  ${isSidebarOpen ? "block" : "hidden"}`}>

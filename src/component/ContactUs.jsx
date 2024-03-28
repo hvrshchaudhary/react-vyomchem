@@ -34,7 +34,7 @@ const ContactUs = () => {
           alt=""
         />
         <div
-          className="md:top-36 top-28 md:left-16 left-5  text-white font-bold text-4xl absolute"
+          className="md:top-36 top-32 md:left-16 left-5  text-white font-bold text-3xl md:text-4xl absolute"
           style={{
             boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
           }}
@@ -50,10 +50,10 @@ const ContactUs = () => {
               boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
             }}
           >
-            <div className="flex w-full md:flex-row flex-col gap-5 ">
+            <div className="flex w-full flex-col md:flex-col xl:flex-row gap-5 ">
               <div className="flex-1 bg-black pt-10 pb-10 md:rounded-none rounded-lg pl-6 pr-6 ">
                 <div className="text-left ">
-                  <span className="text-5xl text-white">Get in touch</span>
+                  <span className="md:text-5xl text-4xl text-white">Get in touch</span>
                 </div>
                 <div className="md:mt-2 mt-3 text-left">
                   <div className=" md:w-1/2 text-lg text-white">

@@ -39,7 +39,7 @@ const Cards = () => {
             <div
               data-aos-offset="300"
               data-aos="flip-up"
-              className="bg-white p-4   pt-6 w-full flex-1  m-5"
+              className="bg-white p-4   pt-6 w-full xl:flex-1  m-5"
               style={{
                 borderRadius: "10px",
                 // width: "auto",

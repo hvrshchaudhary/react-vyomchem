@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Banner = () => {
   return (
     <div
-      className="md:h-screen flex justify-center items-center md:pb-0 pb-6 "
+      className="xl:h-screen h-screen md:h-auto md:pt-6 md:pb-6 flex justify-center items-center  pb-6 "
       style={{
      
         backgroundColor: "#7CE6B3",
@@ -13,7 +13,7 @@ const Banner = () => {
       <div className=" md:flex justify-center    w-4/5  ">
         <div
           data-aos="fade-right"
-          className="flex bg-white md:mt-0 md:mr-6 mt-5 pl-4 pr-2 md:pt-4 md:pr-10 md:pb-0 pt-2 pb-2 md:w-1/2"
+          className="flex md:rounded-lg md:border bg-white md:mt-0 md:mr-6 mt-5 pl-4 pr-2 md:pt-4 md:pr-10 md:pb-0 pt-2 pb-2 md:w-1/2"
         >
           <div className=" text-left   ">
             <div className="text-black  font-bold text-sm  lg:text-base">
@@ -46,7 +46,7 @@ const Banner = () => {
           <img
             src="/image/Ayurvedic-image.jpg"
             alt="Your Image"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover md:rounded-lg md:border"
           />
         </div>
       </div>

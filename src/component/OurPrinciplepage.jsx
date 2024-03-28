@@ -17,13 +17,13 @@ const OurPrinciplepage = () => {
         <img
           className="h-40  w-full md:h-52 object-cover"
           style={{
-            filter: "brightness(50%)",
+            filter: "brightness(40%)",
           }}
           src="/image/more.jpg"
           alt=""
         />
         <div
-          className="md:top-36 top-28 md:left-16 left-5  text-white font-bold text-4xl absolute"
+          className="md:top-36 top-32 md:left-16 left-5  text-white font-bold text-3xl md:text-4xl absolute"
           style={{
             boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
           }}

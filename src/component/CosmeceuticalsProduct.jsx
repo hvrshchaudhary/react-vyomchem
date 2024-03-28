@@ -14,7 +14,7 @@ const CosmeceuticalsProduct = () => {
           alt=""
         />
         <div
-          className="md:top-36 top-28 md:left-16 left-5  text-white font-bold text-4xl absolute"
+          className="md:top-36 top-32 md:left-16 left-5  text-white font-bold md:text-4xl text-3xl absolute"
           style={{
             boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
           }}

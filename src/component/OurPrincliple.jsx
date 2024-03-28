@@ -27,7 +27,7 @@ const ImageSlider = () => {
       <h1 className="text-center mt-2 md:mt-0 font-bold text-3xl md:text-4xl  md:mb-0 mb-4  ">
         OUR PRINCIPLES
       </h1>
-      <div className="  flex justify-center text-center md:mt-2 ">
+      <div className="  flex justify-center text-center md:mt-6 md:ml-14 md:mr-14 xl:mt-2 ">
         <div className="md:relative  bg-white ">
           <div className="md:flex justify-center  hidden border-slate-950 border-solid ">
             {images

@@ -61,9 +61,9 @@ const Cosmeceuticals = () => {
         display: "flex",
         justifyContent: "center",
       }}
-      className="md:py-10 md:px-10 pl-1 md:pl-0 md:h-screen "
+      className=" sm:h-auto md:h-screen xl:h-screen "
     >
-      <div className="md:flex" style={{ width: "90%", alignSelf: "center" }}>
+      <div className="md:flex md:w-[100%] lg:w-[90%]" style={{ alignSelf: "center" }}>
         <div
           className="flex flex-1 flex-col justify-between  "
           style={{ flex: 2 }}
@@ -177,7 +177,7 @@ const Cosmeceuticals = () => {
           >
             {products.map((ele) => {
               return (
-                <div className="md:m-4 m-2 relative w-48 h-52 object-cover hover:scale-125 transition-all">
+                <div className="md:m-4 m-2 relative md:w-36 md:h-40 lg:w-48 lg:h-52 object-cover hover:scale-125 transition-all">
                   <NavLink to={ele.URL2}>
                     <img
                       style={{

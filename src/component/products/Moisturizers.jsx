@@ -42,13 +42,13 @@ const Moisturizers = () => {
           <div className=" md:w-full ">
           {b.map((category, index) => {
               return (
-                <div key={index} className="pl-[25px] pr-[25px] md:mt-[24px] mt-10 m-5 pb-5 pt-2 border rounded-md border-black   bg-gray-50 " data-aos="fade-up-left" style={{
+                <div key={index} className="pl-[25px] pr-[25px] md:mt-[24px] mt-10 m-5 pb-5 pt-2 border-2 rounded-md border-black   bg-gray-50 " data-aos="fade-up-left" style={{
                   // boxShadow:"10px 10px lightblue"
                   boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
 
 
                 }} >
-                  <div className="text-center md:pb-4 pb-2 ">
+                  <div className="text-center pt-3 md:pb-4 pb-2 ">
                     <span
                       id={Object.keys(category)[0]}
                       className="pl-1  font-semibold font-fira-neue  md:text-4xl"

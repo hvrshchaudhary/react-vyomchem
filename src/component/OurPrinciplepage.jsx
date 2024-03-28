@@ -50,7 +50,7 @@ const OurPrinciplepage = () => {
             })}
             <div className="m-4 w-[280px] flex flex-col justify-center text-">
               <div className="flex text-end">
-                <NavLink to="/cosmeceuticals/#Extract (Liquid)" className=" font-bold text-xl"> <button className="border-black border rounded-lg hover:bg-black hover:text-white pl-5 pr-5 p-2">Our Product</button>
+                <NavLink  onClick={() => { window.location.href = '/cosmeceuticals/#Extract (Liquid)'; }} className=" font-bold text-xl"> <button className="border-black border rounded-lg hover:bg-black hover:text-white pl-5 pr-5 p-2">Our Product</button>
                   </NavLink>
               </div>
             </div>

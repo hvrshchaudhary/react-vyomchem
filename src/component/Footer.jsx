@@ -17,10 +17,10 @@ const Footer = () => {
       <div className="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
         <h2 className="text-xl font-semibold mb-4">Quick Links</h2>
         <div className="space-y-2">
-          <NavLink to="/" className="flex items-center font-semibold hover:text-green-500">
+          <NavLink   onClick={() => { window.location.href = '/'; }} className="flex items-center font-semibold hover:text-green-500">
             Home
           </NavLink>
-          <NavLink to="/About" className="flex items-center font-semibold hover:text-green-500">
+          <NavLink   onClick={() => { window.location.href = '/About'; }} className="flex items-center font-semibold hover:text-green-500">
             About
           </NavLink>
           <NavLink to="https://www.vionabiopharma.com/undenatured-native-chicken-collagen-type-ii.php" className="flex items-center font-semibold hover:text-green-500" target="_blank">
@@ -33,7 +33,7 @@ const Footer = () => {
       <div className="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
         <h2 className="text-xl font-semibold mb-4">Our Product</h2>
         <div className="space-y-2">
-          <NavLink to="/cosmeceuticals/#Extract (Liquid)" className="flex items-center font-semibold hover:text-green-500">
+          <NavLink   onClick={() => { window.location.href = '/cosmeceuticals/#Extract (Liquid)'; }}  className="flex items-center font-semibold hover:text-green-500">
             <FiMail className="mr-2" /> Cosmecuticals
           </NavLink>
           <NavLink to="https://www.vyomchem.com/pdf/Cosmeceuticals-Brochure.pdf" className="flex items-center font-semibold hover:text-green-500" target="_blank">

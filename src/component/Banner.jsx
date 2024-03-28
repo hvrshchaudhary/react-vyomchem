@@ -37,7 +37,7 @@ const Banner = () => {
               honey bees collecting the nectar to cater the need of the clients.
             </div>
 
-            <NavLink to="/About" className="text-red-600 font-bold text-xs lg:text-base">
+            <NavLink  onClick={() => { window.location.href = '/About'; }} className="text-red-600 font-bold text-xs lg:text-base">
               READ MORE....
             </NavLink>
           </div>

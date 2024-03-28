@@ -138,7 +138,7 @@ const Cosmeceuticals = () => {
                 {products.map((ele) => {
                   return (
                     <div className="md:m-4 m-2  relative md:hidden  ">
-                      <NavLink to={ele.URL}>
+                      <NavLink  onClick={() => { window.location.href = ele.URL; }}>
                         <img
                           className="rounded-2xl w-72 h-60 object-cover"
                           style={{
@@ -178,7 +178,7 @@ const Cosmeceuticals = () => {
             {products.map((ele) => {
               return (
                 <div className="md:m-4 m-2 relative md:w-36 md:h-40 lg:w-48 lg:h-52 object-cover hover:scale-125 transition-all">
-                  <NavLink to={ele.URL2}>
+                  <NavLink  onClick={() => { window.location.href = ele.URL2; }}>
                     <img
                       style={{
                         boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.1)",

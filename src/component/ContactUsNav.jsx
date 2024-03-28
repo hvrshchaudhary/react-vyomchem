@@ -20,7 +20,7 @@ const ContactUsNav = () => {
                 products,
                 <br /> please contact us. We will be happy to help!
               </p>
-              <NavLink to="/contact">
+              <NavLink  onClick={() => { window.location.href = '/contact'; }}>
               <button className="border-black border w-32 h-8 hover:text-white bg-white hover:bg-black text-black rounded-lg">
                 Contact Us
               </button>

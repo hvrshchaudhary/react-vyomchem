@@ -5,7 +5,7 @@ const AboutUs = () => {
     <>
     <div className='h-full '>
     <img className='h-40  w-full md:h-52 object-cover' src="/image/contactus.jpg" alt="" />
-    <div className='md:top-36 top-32 md:left-16 left-5  text-white font-bold md:text-4xl text-3xl absolute'>About Us</div>
+    <div className='md:top-56 top-32 md:left-16 left-5  text-white font-bold md:text-4xl text-3xl absolute'>About Us</div>
     <div className='text-container flex items-center justify-center flex-col mt-10 mb-10  md:mt-20 md:mb-20'>
     <div className='flex flex-col w-4/5 md:w-8/12 justify-between text-justify' >
         <span className='font-bold text-xl mb-3'>ABOUT US</span>

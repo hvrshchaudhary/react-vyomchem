@@ -23,7 +23,7 @@ const OurPrinciplepage = () => {
           alt=""
         />
         <div
-          className="md:top-36 top-32 md:left-16 left-5  text-white font-bold text-3xl md:text-4xl absolute"
+          className="md:top-56 top-32 md:left-16 left-5  text-white font-bold text-3xl md:text-4xl absolute"
           style={{
             boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
           }}

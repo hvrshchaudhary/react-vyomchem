@@ -9,16 +9,16 @@ const Cards = () => {
       comment: `Leadership is hard to define and good leadership even harder. But if you can get people to follow you to the ends of the earth, you are great leader`,
     },
     {
-      avatar_url: "/image/Sudha-Murthy-ji.jpg",
-      name: "Sudha Murty",
-      post: "Founder of Infosys",
-      comment: `We should always have some aim in life which we must try to achieve while being of help to other.`,
+      avatar_url: "/image/ratan-tata-sir.jpeg",
+      name: "Ratan Tata",
+      post: "CEO: Tata",
+      comment: `Ups and downs in life are very important to keep us going, because a staight line even in an E.C.G means we are not alive.`,
     },
     {
       avatar_url: "/image/A.p.j.abdul-kalam.jpg",
       name: "A.P.J.Abdul Kalam",
       post: "President of India",
-      comment: `Look at the sky. We are not alone. The whole universe is friendly to us and conspires only to give the best to those who dream and work.`,
+      comment: `Your best teacher is your last mistake.`,
     },
   ];
   return (

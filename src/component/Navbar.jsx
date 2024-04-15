@@ -282,7 +282,7 @@ const Navbar = () => {
               </NavLink>
             </div>
             <div className={`md:hiddem ${isOpen ? "block" : "hidden"}`}>
-              <div className=" relative block md:hidden">
+              <div className=" relative block md:hidden z-10">
                 <div
                   // to="#"
                   className=" block text-black font-sans font-semibold bg-white   hover:bg-green-100 hover:text-green-900 px-3 py-2"

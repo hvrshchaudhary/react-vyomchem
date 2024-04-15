@@ -89,7 +89,7 @@ const Navbar = () => {
       className="  shadow-lg border-b-2 h-max md:h-max p-2 l border-gray-800 sticky  md:w-full"
     >
       <div className="container max-w-7xl mx-auto xl:pl-12 xl:pr-12 pl-1 pr-1 ">
-        <div className="flex justify-between items-center md:h-16">
+        <div className="flex justify-between items-center ">
           {/* Logo */}
           <div className="flex-shrink-0 md:hidden ">
             <NavLink to="/">
@@ -116,7 +116,7 @@ const Navbar = () => {
           >
             <div className="">
               <NavLink to="/">
-                <img src="/image/logo-vyomchem.png" className="h-16" alt="" />
+                <img src="/image/logo-vyomchem.png" className="h-16 xl:h-24" alt="" />
               </NavLink>
             </div>
           </div>

@@ -18,7 +18,7 @@ const Cards = () => {
       avatar_url: "/image/A.p.j.abdul-kalam.jpg",
       name: "A.P.J.Abdul Kalam",
       post: "President of India",
-      comment: `Ups and downs in life are very important to keep us going, because a strainght line even in an E.C.G because we are not alive`,
+      comment: `Look at the sky. We are not alone. The whole universe is friendly to us and conspires only to give the best to those who dream and work.`,
     },
   ];
   return (

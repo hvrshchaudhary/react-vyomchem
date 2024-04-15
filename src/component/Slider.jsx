@@ -18,7 +18,7 @@ const YourComponent = () => {
       strings: ["COSMETICS"],
       autoStart: true,
       loop: true,
-      // pauseFor: 1500,
+      pauseFor: 10000,
     });
 
     return () => {};
@@ -28,7 +28,7 @@ const YourComponent = () => {
       strings: ["INGREDIENTS"],
       autoStart: true,
       loop: true,
-      // pauseFor: 1500,
+      pauseFor: 10000,
     });
 
     return () => {};
@@ -123,13 +123,14 @@ const YourComponent = () => {
         </h2>
         </div>
         </div>
-        <p className="sm:text-lg font-medium mb-8 mt-10  text-white ">
+        <p className="sm:text-lg font-medium mb-10 mt-10  text-white ">
         We're Dedicated to Ensuring Superb Product Excellence!
         </p>
         <NavLink to = "/contact">
-        <button className="bg-white text-xl hover:bg-transparent hover:text-white font-bold py-2 px-6 border border-black hover:border-white hover:border-transparent rounded sm:py-3 sm:px-8 md:py-2 md:px-10 lg:py-2 lg:px-8 xl:py-2 xl:px-6 text-black "
+        <button className=" text-xl  font-bold py-2 px-6   sm:py-3 sm:px-8 md:py-2 md:px-10 lg:py-2 lg:px-8 xl:py-3 xl:px-12 text-black "
         style={{
           boxShadow: "0 4px 6px rgba(5, 5, 0, 0.8) white",
+          backgroundColor: "#7CE6B3"
         }}
         >
          Contact Us

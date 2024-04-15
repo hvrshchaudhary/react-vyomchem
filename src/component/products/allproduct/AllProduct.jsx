@@ -63,20 +63,22 @@ const AllProduct = () => {
               size={20}
             />
 
-            <div onClick={()=>setIsSidebarOpen(true)} className="text-lg mt-3 font-serif"> Product categories</div>
+            <div onClick={()=>setIsSidebarOpen(true)} className="text-lg text-green-900 mt-3 font-serif"> Product categories</div>
           </div>
         )}
         <div className={`xl:hidden mt-[-20px]  ${isSidebarOpen ? "block" : "hidden"}`}>
           <div className="flex justify-between  items-center p-2 bg-gray-200  ">
-            <h1 className="text-xl  ml-6 font-semibold">Categories</h1>
+            <h1 className="text-xl text-green-800  ml-6 font-semibold">Categories</h1>
             <FiX onClick={() => setIsSidebarOpen(false)} size={20} />
           </div>
           <ul className="px-4 py-2 h-[2100px] bg-white">
-            {productComponents.map((product) => (
+            {productComponents.map((product, index) => (
               <li key={product.name}>
                 <NavLink
                   to={`/cosmeceuticals/#${product.name}`}
-                  className="block px-4 py-2 text-sm m-4 font-semibold hover:text-white border rounded-sm border-black hover:bg-black "
+                  className={`block px-4 py-2 text-sm m-4 font-semibold hover:text-white border rounded-sm border-black ${
+                    index % 2 === 0 ? 'bg-green-300 hover:bg-green-200 text-black' : 'bg-yellow-200 hover:bg-yellow-100'
+                  } "`}
                   target=""
                   onClick={() => setIsSidebarOpen(false)}
                 >
@@ -100,16 +102,18 @@ const AllProduct = () => {
           }}
         >
           <div className=" text-center">
-            <h1 className="md:text-4xl text-black font-fira-neue font-semibold">
+            <h1 className="md:text-4xl text-green-800 font-fira-neue font-semibold">
               Categories
             </h1>
           </div>
           <ul className="md:py-4  ">
-            {productComponents.map((product) => (
+            {productComponents.map((product, index) => (
               <li key={product.name}>
                 <NavLink
                   to={`/cosmeceuticals/#${product.name}`}
-                  className="block px-4 py-2 text-sm m-4 font-semibold hover:text-white border rounded-sm border-black hover:bg-black "
+                  className={`block px-4 py-2 text-sm m-4 font-semibold  border rounded-sm border-black ${
+                    index % 2 === 0 ? 'bg-green-300 hover:bg-green-200 text-black' : 'bg-yellow-200 hover:bg-yellow-100'
+                  } `}
                   target=""
                 >
                   {product.name}

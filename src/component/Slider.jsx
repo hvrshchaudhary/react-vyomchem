@@ -15,7 +15,17 @@ const YourComponent = () => {
   }, []);
   useEffect(() => {
     new Typewriter("#hero-title", {
-      strings: ["COSMETIC INGREDIENTS"],
+      strings: ["COSMETICS"],
+      autoStart: true,
+      loop: true,
+      // pauseFor: 1500,
+    });
+
+    return () => {};
+  }, []);
+  useEffect(() => {
+    new Typewriter("#hero-title2", {
+      strings: ["INGREDIENTS"],
       autoStart: true,
       loop: true,
       // pauseFor: 1500,
@@ -35,7 +45,7 @@ const YourComponent = () => {
         {/* Carousel wrapper */}
         <div
           className=" md:overflow-hidden h-screen  "
-          style={{  filter: "brightness(40%) blur(0.5px)" }}
+          style={{  filter: "brightness(70%) blur(0.5px)" }}
         >
           {/* Item 1 */}
           <div
@@ -75,37 +85,46 @@ const YourComponent = () => {
             <img
               src="/image/WAX.jpg"
               className="w-full h-full "
-              style={{ objectFit: "cover" }}
+              style={{ objectFit: "cover" ,filter : 'brightness(90%)' }}
               alt="Image 3"
             />
           </div>
         </div>
       </div>
       <div
-        className="absolute md:top[20%] top-[18%] md:z-0 z-[2]  text-black p-8 justify-evenly md:left-[10%] "
-      >
-        <h3 className="font-bold text-xl sm:text-2xl lg:text-4xl  mt-1 text-white mb-2 sm:mb-5">
-          Vyomchem specialities
-        </h3>
-        <h2
-          id="hero-title"
-          className="text-2xl sm:text-5xl font-bold mt-1  text-white "
-        >
-          COSMETIC INGREDIENTS
-        </h2>
+        className="absolute md:top[20%] top-[18%] md:z-0 z-[2]  text-black p-8 justify-evenly md:left-[10%] " >
+        <div className="flex">
         <div
-          className=" mb-3 sm:mb-0"
+          className=" md:p-2 p-1 mr-5 sm:mb-0"
           style={{
             // '@media only screen and (max-width: 600px)': {padding:"5",marginTop:"2"},
-            padding: 2,
+            // padding: 5,
             // marginLeft:1,
             background: "#7CE6B3",
             marginTop: 3,
-            width: "65%",
+            // width: "65%",
+            // height:"100%"
           }}
-        ></div>
-        <p className="sm:text-lg mb-8 mt-1 text-white ">
-          BEST QUALITY COMMITTED TO SUPER PRODUCT QUALITY !.
+        >
+
+        </div>
+        <div>
+        <h2
+          id="hero-title"
+          className="text-4xl sm:text-6xl font-bold   text-white "
+        >
+          COSMETIC INGREDIENTS
+        </h2>
+        <h2
+          id="hero-title2"
+          className="text-4xl sm:text-6xl font-bold   text-white "
+        >
+        INGREDIENTS
+        </h2>
+        </div>
+        </div>
+        <p className="sm:text-lg font-medium mb-8 mt-10  text-white ">
+        We're Dedicated to Ensuring Superb Product Excellence!
         </p>
         <NavLink to = "/contact">
         <button className="bg-white text-xl hover:bg-transparent hover:text-white font-bold py-2 px-6 border border-black hover:border-white hover:border-transparent rounded sm:py-3 sm:px-8 md:py-2 md:px-10 lg:py-2 lg:px-8 xl:py-2 xl:px-6 text-black "

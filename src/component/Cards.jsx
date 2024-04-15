@@ -6,32 +6,25 @@ const Cards = () => {
       avatar_url: "/image/Indra-Nooyi.avif",
       name: "Indra Nooyi",
       post: "CEO: PepsiCo",
-      comment: `If you want to improve the organization you have to improve yourself and the organization gets pulled up with you. That is a lesson. I cannot just expect the organization to improve if I don’t improve myself and lift the organization.`,
+      comment: `Leadership is hard to define and good leadership even harder. But if you can get people to follow you to the ends of the earth, you are great leader`,
     },
     {
-      avatar_url: "/image/Falguni-Nayar.jpg",
-      name: "Falguni Nayar",
-      post: "CEO: Nykaa",
-      comment: `Entrepreneurship is a journey of ups and downs. The key is to remain
-      resilient and adaptable, to believe in your vision, and to learn
-      from every step. It’s not just about ideas, but also about how you
-      bounce back from setbacks and keep moving forward.`,
+      avatar_url: "/image/Sudha-Murthy-ji.jpg",
+      name: "Sudha Murty",
+      post: "Founder of Infosys",
+      comment: `We should always have some aim in life which we must try to achieve while being of help to other.`,
     },
     {
-      avatar_url: "/image/kiran.webp",
-      name: "Kiran Mazumdar-Shaw",
-      post: "CEO: Biocon",
-      comment: `Innovation and entrepreneurship are about seeing the invisible and
-      doing the impossible. At Biocon, we’ve learned to embrace
-      challenges, persist in the face of setbacks, and stay committed to
-      our goals, transforming obstacles into opportunities for growth and
-      success.`,
+      avatar_url: "/image/A.p.j.abdul-kalam.jpg",
+      name: "A.P.J.Abdul Kalam",
+      post: "President of India",
+      comment: `Ups and downs in life are very important to keep us going, because a strainght line even in an E.C.G because we are not alive`,
     },
   ];
   return (
-    <div className=" md:flex flex-1 bg-gray-100 justify-center relative pt-[4px] pb-[4px]">
+    <div className=" flex flex-1 bg-gray-100 justify-center relative pt-[4px] pb-[4px]">
       <div
-        style={{ width: "90%" }}
+        style={{ width: "80%" }}
         className="md:flex  bg-gray-100 justify-center md:px-10 md:py-4 flex-wrap "
       >
         {cardsDetails.map((ele) => {
@@ -39,7 +32,7 @@ const Cards = () => {
             <div
               data-aos-offset="300"
               data-aos="flip-up"
-              className="bg-white p-4   pt-6 w-full xl:flex-1  m-5"
+              className="bg-white p-4   pt-6 w-full xl:flex-1 mt-2 md:m-5"
               style={{
                 borderRadius: "10px",
                 // width: "auto",
@@ -59,7 +52,7 @@ const Cards = () => {
                   <p>{ele.post}</p>
                 </div>
               </div>
-              <p className="p-4">{ele.comment}</p>
+              <p className="p-4 text-sm">{ele.comment}</p>
             </div>
           );
         })}

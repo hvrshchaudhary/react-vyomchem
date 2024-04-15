@@ -166,7 +166,7 @@ const Milliglobules = () => {
 
   return (
     <>
-      <div className="w-full md:flex  justify-center">
+     <div className="w-full md:flex  justify-center">
         <div className="md:w-full md:flex  ">
           <div className=" md:w-full ">
           {b.map((category, index) => {
@@ -180,7 +180,7 @@ const Milliglobules = () => {
                   <div className="text-center md:pt-3 md:pb-4 pb-2 ">
                     <span
                       id={Object.keys(category)[0]}
-                      className="pl-1  font-semibold font-fira-neue  md:text-4xl"
+                      className="pl-1  font-semibold text-green-800 font-fira-neue  md:text-4xl"
                     >
                       {Object.keys(category)[0]}
                     </span>
@@ -189,7 +189,9 @@ const Milliglobules = () => {
                     return (
                       <div
                         key={index}
-                        className="bg-white hover:text-white border rounded-sm border-black hover:bg-black mt-2"
+                        className={` border rounded-sm border-black mt-2 ${
+                          index % 2 === 0 ? 'bg-green-300 hover:bg-green-200 text-black' : 'bg-yellow-200 hover:bg-yellow-100'
+                        }`}
                       >
                         <li className="flex justify-between products-center pl-3 md:py-2 py-1">
                           <span className="md:text-lg text-sm md:font-semibold hover:font-bold">

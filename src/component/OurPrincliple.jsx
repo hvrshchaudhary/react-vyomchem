@@ -24,19 +24,19 @@ const ImageSlider = () => {
 
   return (
     <div className="flex-1 justify-center flex flex-col bg-gray-100 md:pt-7 md:pb-0 pt-10 pb-10 ">
-      <h1 className="text-center mt-2 md:mt-0 font-bold text-3xl md:text-4xl  md:mb-0 mb-4  ">
+      <h1 className="text-center mt-2 md:mt-0 font-bold text-3xl md:text-5xl  md:mb-6 mb-4  ">
         OUR PRINCIPLES
       </h1>
       <div className="  flex justify-center text-center md:mt-6 md:ml-14 md:mr-14 xl:mt-2 ">
         <div className="md:relative  bg-white ">
           <div className="md:flex justify-center  hidden border-slate-950 border-solid ">
             {images
-              .slice(currentSlide, currentSlide + 3)
+              .slice(currentSlide, currentSlide + 2)
               .map((image, index) => (
                 <img
                   key={index}
                   src={image}
-                  className="flex-1 md:w-full  border h-16 md:h-auto  border-black m-1  mb:mb-4 md:mb-3 md:m-4"
+                  className="flex-1 w-full md:w-[340px] border h-16 md:h-auto  border-black m-1  mb:mb-4 md:mb-3 md:m-4"
                   alt={`Slide ${currentSlide + index + 1}`}
                 />
               ))}
@@ -49,7 +49,7 @@ const ImageSlider = () => {
                 <img
                   key={index}
                   src={image}
-                  className="flex-1 w-full  border h-18 md:h-auto  border-black m-1  mb:mb-4 md:mb-3 md:m-4"
+                  className="flex-1 w-full   border h-28 md:h-auto  border-black m-1  mb:mb-4 md:mb-3 md:m-4"
                   alt={`Slide ${currentSlide + index + 1}`}
                 />
               ))}

@@ -18,10 +18,12 @@ const ContactUsNav = () => {
               <p className="mb-5">
                 If you would like more information about our company and
                 products,
-                <br /> please contact us. We will be happy to help!
+                <br /> please contact us. We will be happy to Serve!
               </p>
-              <NavLink  onClick={() => { window.location.href = '/contact'; }}>
-              <button className="border-black border w-32 h-8 hover:text-white bg-white hover:bg-black text-black rounded-lg">
+              <NavLink  >
+              <button className="border-black border w-32 h-8 hover:text-white bg-white hover:bg-black text-black rounded-lg"
+              onClick={() => { window.location.href = '/contact'; }}
+              >
                 Contact Us
               </button>
               </NavLink>

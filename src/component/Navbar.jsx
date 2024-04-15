@@ -128,7 +128,7 @@ const Navbar = () => {
             <div className=" relative hidden md:block">
               <a
                 href="#"
-                className=" font-sans xl:text-lg text-sm font-semibold text-black px-3 py-2"
+                className=" font-sans xl:text-lg text-sm font-semibold text-black hover:text-green-800 px-3 py-2"
                 onMouseEnter={toggleDropdown}
                 onMouseLeave={toggleDropdown}
               >
@@ -138,7 +138,7 @@ const Navbar = () => {
                     className="absolute w-max mt-1 -left-[2rem] bg-white  shadow-md ">
                     <NavLink
                       to="/cosmeceuticals/#Extract (Liquid)"
-                      className="block px-4 py-2  xl:text-sm text-xs text-black hover:text-green-500"
+                      className="block px-4 py-2  xl:text-sm text-xs text-black hover:text-green-800"
                       onMouseEnter={toggleDropdown3}
                       onMouseLeave={toggleDropdown3}
                     >
@@ -165,7 +165,7 @@ const Navbar = () => {
                     <NavLink
                       href="https://www.vyomchem.com/pdf/Cosmeceuticals-Brochure.pdf"
                       target="_blank"
-                      className="block px-4  py-2 xl:text-sm text-xs text-black hover:text-green-500"
+                      className="block px-4  py-2 xl:text-sm text-xs text-black hover:text-green-800"
                     >
                       Cosmeceuticals Brochure
                     </NavLink>
@@ -176,7 +176,7 @@ const Navbar = () => {
             <div className="relative hidden md:block">
               <a
                 href="#"
-                className="z-10 font-sans xl:text-lg text-sm text-black font-semibold hover:text-green-500 px-3 py-2"
+                className="z-10 font-sans xl:text-lg text-sm text-black font-semibold hover:text-green-800 px-3 py-2"
                 onMouseEnter={toggleDropdown2}
                 onMouseLeave={toggleDropdown2}
               >
@@ -197,7 +197,7 @@ const Navbar = () => {
             <div className="relative hidden md:block">
               <NavLink
                 to="/Principle"
-                className="z-10 font-sans xl:text-lg text-sm text-black font-semibold hover:text-green-500 px-3 py-2"
+                className="z-10 font-sans xl:text-lg text-sm text-black font-semibold hover:text-green-800 px-3 py-2"
                 onMouseEnter={toggleDropdown3}
                 onMouseLeave={toggleDropdown3}
               >
@@ -206,7 +206,7 @@ const Navbar = () => {
             </div>
             <NavLink
               to="/"
-              className="font-sans xl:text-lg text-sm text-black font-semibold hover:text-green-500  px-3 py-2"
+              className="font-sans xl:text-lg text-sm text-black font-semibold hover:text-green-800  px-3 py-2"
             >
               Home
             </NavLink>
@@ -218,7 +218,7 @@ const Navbar = () => {
             </NavLink> */}
             <NavLink
               to="/contact"
-              className="font-sans xl:text-lg text-sm text-black font-semibold hover:text-green-500 px-3 py-2"
+              className="font-sans xl:text-lg text-sm text-black font-semibold hover:text-green-800 px-3 py-2"
             >
               Contact Us
             </NavLink>

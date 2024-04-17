@@ -2,59 +2,89 @@ import React from "react";
 import { useState } from "react";
 import { BsArrowReturnRight } from "react-icons/bs";
 
-const ConditioningAgent = () => {
+const Oils = () => {
   const b = [
     {
-        "Conditioning Agents": [
+        "OILS": [
           {
-            product: "Guar Hydroxypropyltrimonium chloride (HPMC)",
-            comment : "It is widely used cationic polymers in the personal care ,used in shampoo conditioner,liquid shop and hair care products."
+            product: "Anise oil",
+            comment : "Derived from Anise seed, have antioxidant properties, a sweet and herbal fragrance,"
+
           },
           {
-             product : "DL panthenol",
-             comment : "It is used as a moisturizer and humectant in cosmetics and personal care products.It reduces  irritation and redness,provide luster to the hair."
+            product: "Argan Oil",
+            comment : "It protect, soothe and treat a whole host of skin conditions, antibacterial properties"
           },
           {
-            product : "Glyceryl Tricaprylate",
-            comment : "It is a multifunctional ingredient with antimicrobial efficacy and anti-acne activity, good skin conditioning agent."
-          },{
-            product : "hydrolyzed pea protien",
-            comment : "It is derived from Pisum Sativum, a vegan source,helps improve moisture retention in hair strands,balance amino acid profile"
-          },{
-            product : "hydroxy Ethyl urea",
-            comment : "A derivative of Urea used in hair care and hair styling products."
+            product: "Black cumin seed oil (kalonji)",
+            comment : "It is non-comedogenic in nature, it strengthen and treat skin and hair"
           },
           {
-            product: "Hydrolyzed keratin",
-            comment : "It is derived from wool/feather,repair, moisturizes and conditions both skin and hair "
+            product: "Borage Oil",
+            comment : "It decreases inflammation, hydrate, and restore dry skin, reduce eczema, rich in fatty acids and vitamin E"
           },
           {
-            product: "Polyquaternium  37",
-            comment : "A synthetic cationic polymer, smoothens the cuticles, reducing frizz, and improving hair manageability"
+            product: "Carrot Seed oil",
+            comment : "It has high  antioxidants and protect the skin from free radical damage"
           },
           {
-            product: "Polyquaternium  39",
-            comment : "It is Ideally suited for liquid cleansing products,greatly improves the health of skin and hair. Mainly used as antistatic agent and film forming agent in cosmetics"
+            product: "Coconut oil",
+            comment : "It is a vegetable oil rich in nutritious lipids,used in cosmetics for its moisturising and nourishing properties"
           },
           {
-            product: "Polyquaternium 10",
-            comment : "It thickens and adds conditioning properties. It is useful for hair care and skincare products in both rinse-off and leave-on."
+            product: "Dill seed oil",
+            comment : "A naturally occurring insecticides, fight free radicals and smoothening skin wrinkles."
           },
           {
-            product: "Polyquaternium 11",
-            comment : "It acts as a conditioner and styling auxiliary, functions as an antistatic agent, a film former and a hair fixative."
+            product: "Eucalyptus oil",
+            comment :"It can help clean the skin and hair and reduce excess oiliness. Renowned for its natural antiseptic and anti-inflammatory properties"
           },
           {
-            product: "Polyquaternium 22",
-            comment : "It is an excellent pH stability,use as a conditioning polymer in hair and skin care applications"
+            product: "Evening Primrose Oil",
+            comment : "It Helps Maintain Skin Hydration, prevent acne, fight inflammation,"
           },
           {
-            product: "Polyquaternium 6",
-            comment : "It is especially preferred for use in high pH formulations such as bleaches, dyes, relaxers "
+            product: "Garlic oil",
+            comment :"Garlic oil is an essential oil and has antibacterial and antifungal properties, it contains sulfur, vitamin E, and vitamin C "
           },
           {
-            product: "Polyquaternium 7",
-            comment : "It can be used as a thickener in many cosmetic formulations to increase the viscosity of the product"
+            product: "Hempseed oil",
+            comment :"It soothe eczema, acne and skin after shaving,help repair sun damage,rich in omega-6 and omega-3 fatty acids"
+          },
+          {
+            product: "Lavender oil",
+            comment :"It works to kill bacteria, has antiseptic and antifungal properties"
+          },
+          {
+            product : "Lemon oil",
+            comment : "It has antibacterial, antiviral, anti-fungal, and astringent properties,smooth the skin and refine its texture"
+          }, {
+            product : "Linalool",
+            comment : "It is used as a scent,colorless to very pale yellow liquid with a floral smell"
+          }, {
+            product : "Linseed / Flaxseed oil",
+            comment : "It has soothing, softening and calming properties.reduce redness and even out skin tone."
+          }, {
+            product : "Neem oil",
+            comment : "Neem oil is rich in fatty acids and other nutrients,treat acne, fungal infections, warts,nourishing skin and hair moisturiser"
+          }, {
+            product : "Peppermint Oil",
+            comment : "It provides a cooling sensation,reduce any redness or irritation,acts as a mild conditioner for your hair"
+          }, {
+            product : "Spearmint oil",
+            comment : "Spearmint oil minimise the appearance of wrinkles and discolouration.Act as antioxidant, antiseptic, anti-bacterial, anti-inflammator"
+          }, {
+            product : "Sunflower oil",
+            comment : "It improvs skin hydration and provids antioxidant protection, presence of linoleic acid reinforce the skin barrier."
+          }, {
+            product : "Turmeric oil",
+            comment : " It has antioxidants and anti-inflammatory properties, provide glow and luster to the skin"
+          }, {
+            product : "Turpentine oil",
+            comment : "It  has anti-fungal properties,used in soap and cosmetics and also as a paint solvent"
+          }, {
+            product : "Wheatgerm oil",
+            comment : "It keeps the skin soft, supple, and moisturized, contains vitamins A, D and E"
           },
         ],
       },
@@ -142,4 +172,4 @@ const ConditioningAgent = () => {
   );
 };
 
-export default ConditioningAgent;
+export default Oils;

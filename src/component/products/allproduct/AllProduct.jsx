@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
-import { IoIosArrowForward } from "react-icons/io";
 import { NavLink, useLocation } from "react-router-dom";
-import Extract from "../Extract";
 import Alcohol from "../Alcohol";
 import Milliglobules from "../Milliglobules";
 import Miscellaneous from "../Miscellaneous";
@@ -10,16 +8,19 @@ import WaxButter from "../WaxButter";
 import Protein from "../Protein";
 import Booster from "../Booster";
 import AntiOxidant from "../AntiOxidant";
-import Fixatives from "../Fixatives";
 import Parabens from "../Parabens";
 import PearlisingAgent from "../PearlisingAgents";
 import Sunscreen from "../Sunscreen";
 import ConditioningAgent from "../ConditioningAgent";
 import Moisturizers from "../Moisturizers";
+import Skincare from "../Skincare";
+import Bioferments from "../Bioferments";
+import Haircare from "../Haircare";
+import Antibacterial from "../Antibacterial";
+import Oils from "../Oils";
 
 const productComponents = [
-  { slug: "extract-liquid", name: "Extract (Liquid)", component: <Extract /> },
-  { name: "Alcohol Sulphate", component: <Alcohol /> },
+  {name: "Alcohol Sulphate", component: <Alcohol /> },
   { name: "Milliglobules", component: <Milliglobules /> },
   { name: "Active & Miscellaneous", component: <Miscellaneous /> },
   { name: "Wax & Butter", component: <WaxButter /> },
@@ -29,17 +30,21 @@ const productComponents = [
     name: "Anti-Oxidants/ Parabens Free Preservatives",
     component: <AntiOxidant />,
   },
-  { name: "Fixatives", component: <Fixatives /> },
   { name: "Paraben", component: <Parabens /> },
   { name: "Pearlising Agents", component: <PearlisingAgent /> },
   { name: "Sunscreens", component: <Sunscreen /> },
   { name: "Conditioning Agents", component: <ConditioningAgent /> },
   { name: "Moisturizers", component: <Moisturizers /> },
+  {name: "SkinCare", component: <Skincare/>},
+  {name : "BioFerments", component : <Bioferments/>},
+  {name : "HairCare", component: <Haircare/>},
+  {name : "Antibacterial" , component: <Antibacterial/>},
+  {name:"Oils" , component : <Oils/>}
 ];
 
 const AllProduct = () => {
   const location = useLocation();
-  const [selectedProduct, setSelectedProduct] = useState("Extract (Liquid)");
+  const [selectedProduct, setSelectedProduct] = useState("Alcohol Sulphate");
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   useEffect(() => {

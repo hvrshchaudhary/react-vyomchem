@@ -95,7 +95,7 @@ const Footer = () => {
             <div className="space-y-2">
               <NavLink
                 onClick={() => {
-                  window.location.href = "/cosmeceuticals/#Extract (Liquid)";
+                  window.location.href = "/cosmeceuticals/#Alcohol Sulphate";
                 }}
                 className="flex items-center font-semibold hover:text-green-500"
               >

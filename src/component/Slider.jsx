@@ -34,7 +34,7 @@ const YourComponent = () => {
   //   return () => {};
   // }, []);
 
-    <div className="relative">
+    <div className=" relative">
       <div
         id="default-carousel"
         className=" w-full"

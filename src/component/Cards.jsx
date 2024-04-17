@@ -25,7 +25,7 @@ const Cards = () => {
     <div className=" flex flex-1 bg-gray-100 justify-center relative pt-[4px] pb-[4px]">
       <div
         style={{ width: "80%" }}
-        className="md:flex  bg-gray-100 justify-center md:px-10 md:py-4 flex-wrap "
+        className="md:flex container bg-gray-100 justify-center md:px-10 md:py-4 flex-wrap "
       >
         {cardsDetails.map((ele) => {
           return (

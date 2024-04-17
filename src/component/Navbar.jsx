@@ -6,10 +6,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const product = [
-    {
-      name: "Extract (Liquid)",
-      link: "/cosmeceuticals/#Extract (Liquid)",
-    },
+   
     {
       name: " Alcohol Sulphate",
       link: "/cosmeceuticals/#Alcohol Sulphate",
@@ -38,10 +35,7 @@ const Navbar = () => {
       name: "Anti-Oxidants",
       link: "/cosmeceuticals/#Anti-Oxidants/ Parabens Free Preservatives",
     },
-    {
-      name: "Fixatives",
-      link: "/cosmeceuticals/#Fixatives",
-    },
+  
     {
       name: "Paraben",
       link: "/cosmeceuticals/#Paraben",
@@ -61,6 +55,21 @@ const Navbar = () => {
     {
       name: "Moisturizers",
       link: "/cosmeceuticals/#Moisturizers",
+    }, {
+      name: "Skin Care",
+      link: "/cosmeceuticals/#SkinCare",
+    }, {
+      name: "Bio Ferments",
+      link: "/cosmeceuticals/#BioFerments",
+    }, {
+      name: "Hair Care",
+      link: "/cosmeceuticals/#HairCare",
+    }, {
+      name: "Antibacterial",
+      link: "/cosmeceuticals/#Antibacterial",
+    }, {
+      name: "Oils",
+      link: "/cosmeceuticals/#Oils",
     },
   ];
   const [isOpen, setIsOpen] = useState(false);
@@ -160,20 +169,20 @@ const Navbar = () => {
               </div>
             </div>
             <div
-              className={`md:flex hidden justify-center  md:flex-grow md:items-center ${
+              className={`md:flex hidden justify-center mt-2  md:flex-grow md:items-center ${
                 isOpen ? "hidden" : ""
               }`}
             >
                 <NavLink
                 to="/"
-                className="font-sans xl:text-sm text-sm text-black font-bold hover:text-green-800  px-3 py-2"
+                className="font-sans xl:text-lg text-sm text-black font-semibold hover:text-green-800  px-3 py-2"
               >
                 HOME
               </NavLink>
               <div className=" relative hidden md:block">
                 <a
                   href="#"
-                  className=" font-sans xl:text-sm text-sm font-bold text-black hover:text-green-800 px-3 py-2"
+                  className=" font-sans xl:text-lg text-sm font-semibold text-black hover:text-green-800 px-3 py-2"
                   onMouseEnter={toggleDropdown}
                   onMouseLeave={toggleDropdown}
                 >
@@ -181,8 +190,8 @@ const Navbar = () => {
                   {dropdown && (
                     <div className="absolute w-max mt-1 -left-[2rem] bg-white z-10 shadow-md ">
                       <NavLink
-                        to="/cosmeceuticals/#Extract (Liquid)"
-                        className="block px-4 py-2  xl:text-sm text-xs text-black hover:text-green-800"
+                        to="/cosmeceuticals/#Alcohol Sulphate"
+                        className="block px-4 py-2  xl:text-lg text-xs text-black hover:text-green-800"
                         onMouseEnter={toggleDropdown3}
                         onMouseLeave={toggleDropdown3}
                       >
@@ -195,7 +204,7 @@ const Navbar = () => {
                                   <div>
                                     <NavLink
                                       to={ele.link}
-                                      className="block px-4 py-2  xl:text-sm text-xs text-black hover:bg-green-100"
+                                      className="block px-4 py-2  xl:text-lg text-xs text-black hover:bg-green-100"
                                     >
                                       {ele.name}
                                     </NavLink>
@@ -209,7 +218,7 @@ const Navbar = () => {
                       <NavLink
                         href="https://www.vyomchem.com/pdf/Cosmeceuticals-Brochure.pdf"
                         target="_blank"
-                        className="block px-4  py-2 xl:text-sm text-xs text-black hover:text-green-800"
+                        className="block px-4  py-2 xl:text-lg text-xs text-black hover:text-green-800"
                       >
                         Cosmeceuticals Brochure
                       </NavLink>
@@ -220,7 +229,7 @@ const Navbar = () => {
               <div className="relative hidden md:block">
                 <a
                   href="#"
-                  className="z-10 font-sans xl:text-sm text-sm text-black font-bold hover:text-green-800 px-3 py-2"
+                  className="z-10 font-sans xl:text-lg text-sm text-black font-semibold hover:text-green-800 px-3 py-2"
                   onMouseEnter={toggleDropdown2}
                   onMouseLeave={toggleDropdown2}
                 >
@@ -241,7 +250,7 @@ const Navbar = () => {
               <div className="relative hidden md:block">
                 <NavLink
                   to="/Principle"
-                  className="z-10 font-sans xl:text-sm text-sm text-black font-bold hover:text-green-800 px-3 py-2"
+                  className="z-10 font-sans xl:text-lg text-sm text-black font-semibold hover:text-green-800 px-3 py-2"
                   onMouseEnter={toggleDropdown3}
                   onMouseLeave={toggleDropdown3}
                 >
@@ -257,7 +266,7 @@ const Navbar = () => {
             </NavLink> */}
               <NavLink
                 to="/contact"
-                className="font-sans xl:text-sm text-sm text-black font-bold hover:text-green-800 px-3 py-2"
+                className="font-sans xl:text-lg text-sm text-black font-semibold hover:text-green-800 px-3 py-2"
               >
                 CONTACT US
               </NavLink>
@@ -296,7 +305,7 @@ const Navbar = () => {
                       onClick={toggleMenu}
                     >
                       <NavLink
-                        to="/cosmeceuticals/#Extract (Liquid)"
+                        to="/cosmeceuticals/#Alcohol Sulphate"
                         className="block px-4 py-2 text-sm bg-green-300 text-black hover:bg-gray-100"
                       >
                         Cosmecuticals

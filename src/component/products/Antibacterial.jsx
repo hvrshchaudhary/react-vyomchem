@@ -2,59 +2,55 @@ import React from "react";
 import { useState } from "react";
 import { BsArrowReturnRight } from "react-icons/bs";
 
-const Moisturizers = () => {
+
+const Antibacterial = () => {
   const b = [
     {
-        Moisturizers: [
+        "ANTI BACTERIAL": [
           {
-            product: "Allantoin",
-            comment : "It helps in enhancing the smoothness of skin, moisturizing and healing agent, anti-irritant, wound healing properties"
+            product: "Bakuchiol (natural retinol)",
+            comment : "Bakuchiol is a natural alternative to a retinoid,helps prevent fine lines and wrinkles, "
+
           },
           {
-            product: "cctg",
-            comment : "It helps smooth skin and works as an antioxidant.It can be used as acne treatment, antiperspirant/deodorant, color cosmetics, hair care, skin care, sun car and wipes."
+            product: "Benzalkonium Chloride",
+            comment : "It is used as disinfectants, preservatives, and sanitizers."
           },
           {
-            product: "Glycerol Mono Stearate",
-            comment : "It can be used as a thickening, emulsifying & anticaking agent."
+            product: "Benzethonium Chloride",
+            comment :"It is used in the formulation of bath, skin, personal cleanliness, shaving, and suntan products,Safe for use in leave on cosmetic products"
           },
           {
-            product: "Hydroxyethtyl Urea",
-            comment : "It is a low-molecular-weight, highly water-soluble, hygroscopic solid that functions as a moisturizer and humectant "
+            product: "Cetyl pyridinium chloride monohydrate",
+            comment : "It is used as an antibacterial agent in cosmetics, toiletries.It is an antiseptic that kills bacteria and other microorganisms"
           },
           {
-            product: "Iso Propyl Myristate (IPM)",
-            comment : "It is a fatty acid ester of isopropyl alcohol and myristic acid, act as texture enhancer and emollient used in cosmetics"
+            product: "Chloroxylenol",
+            comment : "It is an antiseptic and disinfectant agent, act as a preservative "
           },
           {
-            product: "Iso Propyl palmitate (IPP)",
-            comment : "It is a fatty acid ester of isopropyl alcohol and palmitic acid,primarily used as an emollient that soothe and soften the skin."
+            product: "Triclosan",
+            comment :"Triclosan is an antimicrobial agent found in a wide variety of antibacterial soaps, detergents and deodorants"
           },
           {
-            product: "Lauryl Lactate",
-            comment : "It is an ester of lauryl alcohol and lactic acid,functioning as an emollient, skin conditioning agent, and exfoliant."
-          },  {
-            product: "pullulan",
-            comment : "It is a natural polysaccharide excreted by the Marine Yeast,has binding and thickening properties."
-          },{
-            product: "Sodium Hyaluronate",
-            comment : "A form of hyaluronic acid. Act as a humectant, it pulls in water from the air and helps to retain moisture to keep your skin hydrated"
-          },   {
-            product: "Sodium PCA",
-            comment : "A sodium salt of pyroglutamic acid used in many skin care and hair care products as a moisturizer"
-          },   {
-            product: "Zinc PCA",
-            comment : "It is derived from Zinc and is used for conditioning the skin"
+            product: "Zinc citrate trihydrate",
+            comment :"It is an antibacterial ingredient that inhibits the growth of odor causing bacteria." 
+          },
+          {
+            product: "Zinc lactate dihydrate",
+            comment : "It has skin-soothing and anti-inflammatory properties, functioning as an emollient, skin conditioning agent, and exfoliant"
           },
         ],
       },
   ];
+
   const [isOpen, setIsOpen] = useState(false);
   const [selectedIndex, setselectedIndex] = useState(null);
   const toggleComment = (index) => {
     setIsOpen(!isOpen);
     setselectedIndex(index);
   };
+
   return (
     <>
       <div className="w-full md:flex  justify-center">
@@ -132,4 +128,4 @@ const Moisturizers = () => {
   );
 };
 
-export default Moisturizers;
+export default Antibacterial;

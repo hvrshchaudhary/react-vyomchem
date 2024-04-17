@@ -3,11 +3,11 @@ import { NavLink } from "react-router-dom";
 const ContactUsNav = () => {
   return (
     <div className="flex bg-gray-100 h-screen md:pt-0 md:pb-0  justify-center items-center ">
-      <div className="md:flex  w-4/5">
+      <div className="md:flex container  w-4/5">
         <div className=" flex-1" data-aos="fade-right">
           <div>
             <div className="pb-8 md:pb-0">
-              <h5 className="text-4xl md:text-5xl font-bold text-black font-serif mb-3"  >
+              <h5 className="text-4xl md:text-5xl font-bold text-black font-sans mb-3"  >
                 Get in touch
               </h5>
               <h2 className="text-2xl  font-bold  mb-3"  style={{

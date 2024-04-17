@@ -15,10 +15,10 @@ const Cosmeceuticals = () => {
     {
       image: "/image/extract.jpg",
       image2: "/image/extract.jpg",
-      text: "Extract (Liquid)",
-      URL:"/cosmeceuticals/#Extract (Liquid)",
-      text2: "Extract (Liquid)",
-      URL2:"/cosmeceuticals/#Extract (Liquid)"
+      text: "Bio Ferments",
+      URL:"/cosmeceuticals/#BioFerments",
+      text2: "Bio Ferments",
+      URL2:"/cosmeceuticals/#BioFerments"
     },
     {
       image: "/image/algae-extract-3.jpg",
@@ -63,7 +63,7 @@ const Cosmeceuticals = () => {
       }}
       className=" sm:h-auto md:h-screen xl:h-screen "
     >
-      <div className="md:flex md:w-[100%] lg:w-[90%]" style={{ alignSelf: "center" }}>
+      <div className="container md:flex md:w-[100%] lg:w-[90%]" style={{ alignSelf: "center" }}>
         <div
           className="flex flex-1 flex-col justify-between  "
           style={{ flex: 2 }}

@@ -1,182 +1,52 @@
 import React from "react";
+import { useState } from "react";
+import { BsArrowReturnRight } from "react-icons/bs";
 
 const Milliglobules = () => {
   const b = [
     {
-        Milliglobules: [
+      "BIO DEGRADABLE MICROBEADS AND MILIGLOBULES (ENCAPSULATED)": [
           {
-            product: "Aloe Gold Milliglobules ",
+            product: "Biodegradable micro beads/scrub beads",
+            comment:"It is made of eco-friendly materials, derived from cellulose, starch, and aliphatic polyesters.These microbeads are used in face wash, scrubs,body wash."
           },
           {
-            product: "Apricot Colour Microbeads ",
+            product: "Customized fruit & leaf lookalikes",
+            comment : "It has custom design in terms of shapes and colors , fruit and leaf lookalikes for personal care and Home care ."
           },
           {
-            product: "Black Milliglobules ",
+            product: "Encapsulated Milliglobules",
+            comment : "These milliglobules breaks easily on gentle application of pressure, blending into the skin leaving no debris and they are encapsulated with different oils and natural extracts"
           },
           {
-            product: "Blue  Milliglobules ",
-          },
-          {
-            product: "Bisabolol extract",
-          },
-          {
-            product: "Blue Wheat Germ Milliglobules ",
-          },
-          {
-            product: "Bluish Green Milliglobules ",
-          },
-          {
-            product: "Brown Milliglobules ",
-          },
-          {
-            product: "Charcoal Black Microbeads ",
-          },
-          {
-            product: "Charcoal Black Milliglobules ",
-          },
-          {
-            product: "Dark Blue  Milliglobules ",
-          },
-          {
-            product: "Dark Brown Microbeads ",
-          },
-          {
-            product: "Dark Green Milliglobule ",
-          },
-          {
-            product: "Deep Maroon Milliglobules ",
-          },
-          {
-            product: "Golden Yellow Microbeads ",
-          },
-          {
-            product: "Golden Yellow Milliglobules ",
-          },
-          {
-            product: "Gold Microbeads  ",
-          },
-          {
-            product: "Gold Milliglobules ",
-          },
-          {
-            product: "Gold Square Pieces",
-          },
-          {
-            product: "Gray Milliglobules ",
-          },
-          {
-            product: "Green Microbeads",
-          },
-          {
-            product: "Green Milliglobues ",
-          },
-          {
-            product: "Green Tea Tree Milliglobules ",
-          },
-          {
-            product: "Jojoba Yellow Milliglobules ",
-          },
-          {
-            product: "Kojic Soft Golden Milliglobules ",
-          },
-          {
-            product: "Lemon Yellow  Milliglobules ",
-          },
-          {
-            product: "Light Blue Microbeads ",
-          },
-          {
-            product: "Light Green Milliglobules ",
-          },
-          {
-            product: "Light Red Milliglobules ",
-          },
-          {
-            product: "Orange Milliglobules ",
-          },
-          {
-            product: "Orange Microbeads",
-          },
-          {
-            product: "Orange Milliglobules ",
-          },
-          {
-            product: "Orange Soap Beads ",
-          },
-          {
-            product: "Papaya Milliglobules",
-          },
-          {
-            product: "Pink Microbeads  ",
-          },
-          {
-            product: "Pink Milliglobules ",
-          },
-          {
-            product: "Purple Milliglobues ",
-          },
-          {
-            product: "Red Lotus Milliglobules ",
-          },
-          {
-            product: "Red Microbeads ",
-          },
-          {
-            product: "Red Miliglobules ",
-          },
-          {
-            product: "Shiny Blue/Green/Yellow/ Milliglobules ",
-          },
-          {
-            product: "Shiny Gold/Black/Silver/ Microbeads ",
-          },
-          {
-            product: "Silver Milliglobules ",
-          },
-          {
-            product: "Silver Square Pieces",
-          },
-          {
-            product: "Silver White Milliglobules ",
-          },
-          {
-            product: "Violet Microbeads ",
-          },
-          {
-            product: "Violet Milliglobules ",
-          },
-          {
-            product: "Watermelon Look Alike Pieces",
-          },
-          {
-            product: "White Microbeads ",
-          },
-          {
-            product: "White Miliglobules ",
-          },
-          {
-            product: "Yellow Microbeads ",
-          },
-          {
-            product: "Yellow Milliglobules ",
+            product: "Millicapsules",
+            comment : "Millicapsules are synthesized by interfacial polymerization,Used to make  herbal facial cleanser. It mainly contains natural ingredients"
           },
         ],
       },
   ];
-
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedIndex, setselectedIndex] = useState(null);
+  const toggleComment = (index) => {
+    setIsOpen(!isOpen);
+    setselectedIndex(index);
+  };
   return (
     <>
      <div className="w-full md:flex  justify-center">
         <div className="md:w-full md:flex  ">
           <div className=" md:w-full ">
-          {b.map((category, index) => {
+            {b.map((category, _index) => {
               return (
-                <div key={index} className="pl-[25px] pr-[25px] md:mt-[24px] mt-10 m-5 pb-5 pt-2 border-2 rounded-md border-black   bg-gray-50 " data-aos="fade-up-left" style={{
-                  // boxShadow:"10px 10px lightblue"
-                  boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-
-
-                }} >
+                <div
+                  key={_index}
+                  className="pl-[25px] pr-[25px] md:mt-[24px] mt-10 m-5 pb-5 pt-2 border-2 rounded-md border-black   bg-gray-50 "
+                  data-aos="fade-up-left"
+                  style={{
+                    // boxShadow:"10px 10px lightblue"
+                    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+                  }}
+                >
                   <div className="text-center md:pt-3 md:pb-4 pb-2 ">
                     <span
                       id={Object.keys(category)[0]}
@@ -187,18 +57,45 @@ const Milliglobules = () => {
                   </div>
                   {category[Object.keys(category)[0]].map((ele, index) => {
                     return (
-                      <div
-                        key={index}
-                        className={` border rounded-sm border-black mt-2 ${
-                          index % 2 === 0 ? 'bg-green-300 hover:bg-green-200 text-black' : 'bg-yellow-200 hover:bg-yellow-100'
-                        }`}
-                      >
-                        <li className="flex justify-between products-center pl-3 md:py-2 py-1">
-                          <span className="md:text-lg text-sm md:font-semibold hover:font-bold">
-                            {ele.product}
-                          </span>
-                        </li>
-                      </div>
+                      <>
+                        <div
+                          key={index}
+                          className={` border rounded-sm border-black mt-2 ${
+                            index % 2 === 0
+                              ? "bg-green-300 hover:bg-green-200 text-black"
+                              : "bg-yellow-200 hover:bg-yellow-100"
+                          }`}
+                        >
+                          <li
+                            className="flex justify-between products-center pl-3 md:py-2 py-1"
+                            // onMouseEnter={() => toggleComment(index)}
+                          onClick={() => toggleComment(index)}
+                          
+
+                          >
+                            <span className="md:text-lg text-sm md:font-semibold hover:font-bold">
+                              {ele.product}
+                            </span>
+                          </li>
+                        </div>
+                        {isOpen && index === selectedIndex && (
+                          <div className=" h-max w-full flex mt-3 justify-end text-lg font-normal">
+                            <BsArrowReturnRight className=" mt-1 text-3xl md:text-4xl mr-1 ml-2" />
+                            <span
+                              className="w-11/12 px-3 py-2  bg-orange-300 hover:bg-orange-200 md:text-lg text-sm text-black md:font-semibold rounded-md "
+                              style={{
+                                boxShadow: "0 4px 6px rgba(0, 0, 0, 0.2)",
+                              }}
+                            >
+                              {
+                                category[Object.keys(category)[0]][
+                                  selectedIndex
+                                ].comment
+                              }
+                            </span>
+                          </div>
+                        )}
+                      </>
                     );
                   })}
                 </div>

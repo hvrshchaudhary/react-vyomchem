@@ -2,49 +2,35 @@ import React from "react";
 import { useState } from "react";
 import { BsArrowReturnRight } from "react-icons/bs";
 
-const Moisturizers = () => {
+
+const Haircare = () => {
   const b = [
     {
-        Moisturizers: [
+        "HAIR CARE": [
           {
-            product: "Allantoin",
-            comment : "It helps in enhancing the smoothness of skin, moisturizing and healing agent, anti-irritant, wound healing properties"
+            product: "Ammonium thioglycolate",
+            comment : "It is commonly known as perm salt.It is a reducing agent that helps to break down the hair's disulfide bonds."
+
           },
           {
-            product: "cctg",
-            comment : "It helps smooth skin and works as an antioxidant.It can be used as acne treatment, antiperspirant/deodorant, color cosmetics, hair care, skin care, sun car and wipes."
+            product: "Capryloyl Glycine",
+            comment : "It is used for  hair conditioning, used as humectant,can cleanse, produce foam and act as emulsifiers"
           },
           {
-            product: "Glycerol Mono Stearate",
-            comment : "It can be used as a thickening, emulsifying & anticaking agent."
+            product: "Ciclopirox",
+            comment : "It is used to prevent or treat a certain scalp condition like seborrheic dermatitis of the scalp"
           },
           {
-            product: "Hydroxyethtyl Urea",
-            comment : "It is a low-molecular-weight, highly water-soluble, hygroscopic solid that functions as a moisturizer and humectant "
+            product: "Ciclopirox olamine",
+            comment : "synthetic broad-spectrum antifungal agent,for mild to moderate dandruff"
           },
           {
-            product: "Iso Propyl Myristate (IPM)",
-            comment : "It is a fatty acid ester of isopropyl alcohol and myristic acid, act as texture enhancer and emollient used in cosmetics"
+            product: "Piroctone olamine",
+            comment :"reduces hair fall and increases the hair diameter, treat dandruff and other scalp conditions"
           },
           {
-            product: "Iso Propyl palmitate (IPP)",
-            comment : "It is a fatty acid ester of isopropyl alcohol and palmitic acid,primarily used as an emollient that soothe and soften the skin."
-          },
-          {
-            product: "Lauryl Lactate",
-            comment : "It is an ester of lauryl alcohol and lactic acid,functioning as an emollient, skin conditioning agent, and exfoliant."
-          },  {
-            product: "pullulan",
-            comment : "It is a natural polysaccharide excreted by the Marine Yeast,has binding and thickening properties."
-          },{
-            product: "Sodium Hyaluronate",
-            comment : "A form of hyaluronic acid. Act as a humectant, it pulls in water from the air and helps to retain moisture to keep your skin hydrated"
-          },   {
-            product: "Sodium PCA",
-            comment : "A sodium salt of pyroglutamic acid used in many skin care and hair care products as a moisturizer"
-          },   {
-            product: "Zinc PCA",
-            comment : "It is derived from Zinc and is used for conditioning the skin"
+            product: "Zinc Pyrithione",
+            comment : "It is used in anti-dandruff shampoos, conditioners, and other hair care products. Promote hair growth"
           },
         ],
       },
@@ -132,4 +118,4 @@ const Moisturizers = () => {
   );
 };
 
-export default Moisturizers;
+export default Haircare;

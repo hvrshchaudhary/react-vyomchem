@@ -10,7 +10,7 @@ const Banner = () => {
         backgroundColor: "#7CE6B3",
       }}
     >
-      <div className=" md:flex justify-center    w-4/5  ">
+      <div className=" container md:flex justify-center    w-4/5  ">
         <div
           data-aos="fade-right"
           className="flex md:rounded-lg md:border bg-white md:mt-0 md:mr-6 mt-5 pl-4 pr-2 md:pt-4 md:pr-10 md:pb-0 pt-2 pb-2 md:w-1/2"

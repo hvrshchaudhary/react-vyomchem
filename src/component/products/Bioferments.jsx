@@ -2,49 +2,30 @@ import React from "react";
 import { useState } from "react";
 import { BsArrowReturnRight } from "react-icons/bs";
 
-const Moisturizers = () => {
+const Bioferments = () => {
   const b = [
     {
-        Moisturizers: [
+        "BIOFERMENTS": [
           {
-            product: "Allantoin",
-            comment : "It helps in enhancing the smoothness of skin, moisturizing and healing agent, anti-irritant, wound healing properties"
+            product: "Carrot root ferment filtrate",
+            comment : "It is rich in vitamins, minerals, vital nutrients and antioxidants and has immense benefits for skin & hair."
+
           },
           {
-            product: "cctg",
-            comment : "It helps smooth skin and works as an antioxidant.It can be used as acne treatment, antiperspirant/deodorant, color cosmetics, hair care, skin care, sun car and wipes."
+            product: "Coconut oil + Onion ferment",
+            comment : "A probiotic preservative derived from radish root, act as antioxidant and in skin lightening "
           },
           {
-            product: "Glycerol Mono Stearate",
-            comment : "It can be used as a thickening, emulsifying & anticaking agent."
+            product: "Radish root ferment",
+            comment : "A probiotic preservative derived from radish root, act as antioxidant and in skin lightening "
           },
           {
-            product: "Hydroxyethtyl Urea",
-            comment : "It is a low-molecular-weight, highly water-soluble, hygroscopic solid that functions as a moisturizer and humectant "
+            product: "Rice ferment",
+            comment : "It is an antioxidant rich cosmetic ingredient that offers multiple benefits to skin and hair"
           },
           {
-            product: "Iso Propyl Myristate (IPM)",
-            comment : "It is a fatty acid ester of isopropyl alcohol and myristic acid, act as texture enhancer and emollient used in cosmetics"
-          },
-          {
-            product: "Iso Propyl palmitate (IPP)",
-            comment : "It is a fatty acid ester of isopropyl alcohol and palmitic acid,primarily used as an emollient that soothe and soften the skin."
-          },
-          {
-            product: "Lauryl Lactate",
-            comment : "It is an ester of lauryl alcohol and lactic acid,functioning as an emollient, skin conditioning agent, and exfoliant."
-          },  {
-            product: "pullulan",
-            comment : "It is a natural polysaccharide excreted by the Marine Yeast,has binding and thickening properties."
-          },{
-            product: "Sodium Hyaluronate",
-            comment : "A form of hyaluronic acid. Act as a humectant, it pulls in water from the air and helps to retain moisture to keep your skin hydrated"
-          },   {
-            product: "Sodium PCA",
-            comment : "A sodium salt of pyroglutamic acid used in many skin care and hair care products as a moisturizer"
-          },   {
-            product: "Zinc PCA",
-            comment : "It is derived from Zinc and is used for conditioning the skin"
+            product: "Soya bean ferment",
+            comment : "A  water soluble ingredient can be readily used in both emulsion based and water based formulation of cosmetic and personal care products"
           },
         ],
       },
@@ -132,4 +113,4 @@ const Moisturizers = () => {
   );
 };
 
-export default Moisturizers;
+export default Bioferments;

@@ -120,7 +120,7 @@ const YourComponent = () => {
         </div>
         </div>
         <p className="sm:text-lg font-medium md:font-semibold mb-10 mt-10  md:ml-8 text-white ">
-        We're Dedicated to Ensuring Superb Product Excellence!
+        We assure Quality!
         </p>
         <NavLink to = "/contact">
         <button className=" text-xl  font-bold py-2 px-6   sm:py-3 sm:px-8 md:py-2 md:px-10 lg:py-2 lg:px-8 xl:py-3 xl:px-12 text-black "

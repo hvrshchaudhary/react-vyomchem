@@ -148,6 +148,7 @@ const Navbar = () => {
             <div
               className={`  md:flex z-10 justify-evenly  md:flex-grow md:items-center hidden :block`}
             >
+              
               <div className="">
                 <NavLink to="/">
                   <img
@@ -163,6 +164,12 @@ const Navbar = () => {
                 isOpen ? "hidden" : ""
               }`}
             >
+                <NavLink
+                to="/"
+                className="font-sans xl:text-sm text-sm text-black font-bold hover:text-green-800  px-3 py-2"
+              >
+                HOME
+              </NavLink>
               <div className=" relative hidden md:block">
                 <a
                   href="#"
@@ -241,12 +248,7 @@ const Navbar = () => {
                   OUR PRINCIPLES
                 </NavLink>
               </div>
-              <NavLink
-                to="/"
-                className="font-sans xl:text-sm text-sm text-black font-bold hover:text-green-800  px-3 py-2"
-              >
-                HOME
-              </NavLink>
+            
               {/* <NavLink
               to="/about"
               className="font-sans xl:text-xl text-sm text-black font-semibold hover:text-green-500 px-3 py-2"
@@ -286,8 +288,7 @@ const Navbar = () => {
                 <div
                   // to="#"
                   className=" block text-black font-sans font-semibold bg-white   hover:bg-green-100 hover:text-green-900 px-3 py-2"
-                  onClick={toggleDropdown}
-                >
+                  onClick={toggleDropdown} >
                   Product
                   {dropdown && (
                     <div

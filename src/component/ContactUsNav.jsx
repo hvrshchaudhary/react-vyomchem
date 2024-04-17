@@ -8,12 +8,12 @@ const ContactUsNav = () => {
           <div>
             <div className="pb-8 md:pb-0">
               <h5 className="text-4xl md:text-5xl font-bold text-black font-serif mb-3"  >
-                GET IN TOUCH
+                Get in touch
               </h5>
               <h2 className="text-2xl  font-bold  mb-3"  style={{
                 color: "#7CE6B3",
                 }}>
-                WE WOULD LIKE TO HERE <br className="" /> FROM YOU!
+                We would like to here <br className="" /> from you!
               </h2>
               <p className="mb-5">
                 If you would like more information about our company and

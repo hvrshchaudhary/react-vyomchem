@@ -177,7 +177,7 @@ const Navbar = () => {
                 to="/"
                 className="font-sans xl:text-lg text-sm text-black font-semibold hover:text-green-800  px-3 py-2"
               >
-                HOME
+                Home
               </NavLink>
               <div className=" relative hidden md:block">
                 <a
@@ -186,7 +186,7 @@ const Navbar = () => {
                   onMouseEnter={toggleDropdown}
                   onMouseLeave={toggleDropdown}
                 >
-                  PRODUCTS
+                  Products
                   {dropdown && (
                     <div className="absolute w-max mt-1 -left-[2rem] bg-white z-10 shadow-md ">
                       <NavLink
@@ -197,7 +197,7 @@ const Navbar = () => {
                       >
                         Cosmecuticals
                         {dropdown3 && (
-                          <div className="grid grid-cols-2  absolute w-max  md:-mt-6 xl:-mt-8 xl:left-[11rem] md:left-[98px] bg-gray-100  shadow-md ">
+                          <div data-aos="fade-down-left" className="grid grid-cols-2  absolute w-max  md:-mt-6 xl:-mt-8 xl:left-[11rem] md:left-[98px] bg-white border border-black  shadow-md ">
                             {product.map((ele) => {
                               return (
                                 <div className="flex-1  ">
@@ -233,7 +233,7 @@ const Navbar = () => {
                   onMouseEnter={toggleDropdown2}
                   onMouseLeave={toggleDropdown2}
                 >
-                  EXCLUSIVE PRODUCTS
+                  Exclusive products
                   {dropdown2 && (
                     <div className="absolute z-10 w-max top-full m-[-16px] left-0 mt-[8px] bg-white shadow-md ">
                       <a
@@ -254,7 +254,7 @@ const Navbar = () => {
                   onMouseEnter={toggleDropdown3}
                   onMouseLeave={toggleDropdown3}
                 >
-                  OUR PRINCIPLES
+                  Our principles
                 </NavLink>
               </div>
             
@@ -268,7 +268,7 @@ const Navbar = () => {
                 to="/contact"
                 className="font-sans xl:text-lg text-sm text-black font-semibold hover:text-green-800 px-3 py-2"
               >
-                CONTACT US
+                Contact Us
               </NavLink>
             </div>
           </div>

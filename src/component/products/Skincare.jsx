@@ -75,20 +75,19 @@ const Skincare = () => {
                       <>
                         <div
                           key={index}
-                          className={` border rounded-sm border-black mt-2 ${
+                          onClick={() => toggleComment(index)}
+                          className={` border cursor-pointer rounded-sm border-black mt-2 ${
                             index % 2 === 0
                               ? "bg-green-300 hover:bg-green-200 text-black"
                               : "bg-yellow-200 hover:bg-yellow-100"
                           }`}
                         >
                           <li
-                            className="flex justify-between products-center pl-3 md:py-2 py-1"
-                            // onMouseEnter={() => toggleComment(index)}
-                          onClick={() => toggleComment(index)}
+                            className="flex justify-between products-center pl-3  md:py-2 py-1"
                           
 
                           >
-                            <span className="md:text-lg text-sm md:font-semibold hover:font-bold">
+                            <span className="md:text-lg text-sm md:font-semibold  hover:font-bold">
                               {ele.product}
                             </span>
                           </li>

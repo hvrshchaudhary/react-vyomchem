@@ -35,9 +35,9 @@ const productComponents = [
   { name: "Sunscreens", component: <Sunscreen /> },
   { name: "Conditioning Agents", component: <ConditioningAgent /> },
   { name: "Moisturizers", component: <Moisturizers /> },
-  {name: "SkinCare", component: <Skincare/>},
-  {name : "BioFerments", component : <Bioferments/>},
-  {name : "HairCare", component: <Haircare/>},
+  {name: "Skin-Care", component: <Skincare/>},
+  {name : "Bio-Ferments", component : <Bioferments/>},
+  {name : "Hair-Care", component: <Haircare/>},
   {name : "Antibacterial" , component: <Antibacterial/>},
   {name:"Oils" , component : <Oils/>}
 ];
@@ -130,7 +130,7 @@ const AllProduct = () => {
       </div>
       {/* Main Content */}
       <div className="flex-1">
-        <h1 className=" mb-4">
+        <h1 className=" mb-4 " >
           {
             productComponents.find(
               (product) => product.name === selectedProduct

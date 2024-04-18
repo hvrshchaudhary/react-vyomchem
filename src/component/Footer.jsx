@@ -8,48 +8,48 @@ const Footer = () => {
       {" "}
       {/* Increase or decrease py-16 to adjust height */}
       <div className="container mx-auto flex flex-wrap   w-[80%]">
-        <div className=" md:flex  w-full justify-between pb-6 md:border-b-[1px] border-white">
+        <div className=" md:flex  w-full justify-between md:pb-10 pb-1 md:border-b-[1px] border-white">
           <div className="phone flex md:mb-0 mb-8">
-            <img src="/image/phone-logo.png" className="w-12 mr-2 " alt="" />
+            <img src="/image/phone-logo.png" className="md:w-12 w-8 h-8 md:h-auto mt-1 md:mt-0 mr-2 " alt="" />
             <div className="flex flex-col ">
-              <NavLink className={"font-bold text-lg"} to="tel:+919882020609">
+              <NavLink className={"font-bold text-sm md:text-lg"} to="tel:+919882020609">
                 +91-9882020609
               </NavLink>
 
-              <h5 className="text-sm">Contact us if you have a question</h5>
+              <h5 className="md:text-sm text-xs">Contact us if you have a question</h5>
             </div>
           </div>
           <div className="mail flex md:mb-0 mb-9">
             <img
               src="/image/email-logo.png"
               alt=""
-              className="w-12 md:mt-1 mr-2"
+              className="md:w-12 w-8 h-8 md:h-auto mt-1 md:mt-1 mr-2"
             />
             <div className="flex flex-col ">
               <NavLink
-                className={"font-bold text-lg"}
+                className={"font-bold text-sm md:text-lg"}
                 to="mailto:minakshi@vyomchem.com"
               >
                 minakshi@vyomchem.com
               </NavLink>
-              <h5 className="text-sm">
+              <h5 className="md:text-sm text-xs">
                 Drop us an email and we will get back to you
               </h5>
             </div>
           </div>
           <div className="time flex md:mb-0 mb-8">
-            <img src="/image/clock-logo.png" alt="" className="w-12 mr-2" />
+            <img src="/image/clock-logo.png" alt="" className="md:w-12 w-8 h-8 md:h-auto mt-1 md:mt-0 mr-2" />
             <div className="flex flex-col ">
-              <span className="font-bold text-lg">Monday to Saturday</span>
-              <h5 className="text-sm">We are open from 9:30 AM to 6:00 PM</h5>
+              <span className="font-bold text-sm md:text-lg">Monday to Saturday</span>
+              <h5 className="md:text-sm text-xs">We are open from 9:30 AM to 6:00 PM</h5>
             </div>
           </div>
         </div>
-        <div className="md:flex justify-evenly pt-6">
+        <div className="md:flex justify-evenly md:pt-10 pt-1">
       
 
           {/* Quick Links Section */}
-          <div className="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
+          <div className="w-full md:w-1/2 lg:w-1/4 px-2 md:px-4 mb-8">
             <h2 className="text-xl text-orange-400 font-semibold mb-4">
               Quick Links
             </h2>
@@ -88,7 +88,7 @@ const Footer = () => {
           </div>
 
           {/* Our Product Section */}
-          <div className="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
+          <div className="w-full md:w-1/2 lg:w-1/4 md:px-4 px-2 mb-8">
             <h2 className="text-xl text-orange-400 font-semibold mb-4">
               Our Product
             </h2>
@@ -112,7 +112,7 @@ const Footer = () => {
           </div>
 
           {/* Contact Us Section */}
-          <div className="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
+          <div className="w-full md:w-1/2 lg:w-1/4 px-2 md:px-4 mb-8">
             <h2 className="text-xl text-orange-400 font-semibold mb-4">
               Contact Us
             </h2>

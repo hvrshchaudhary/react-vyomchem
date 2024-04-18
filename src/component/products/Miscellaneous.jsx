@@ -148,7 +148,8 @@ const Miscellaneous = () => {
                           <div className=" h-max w-full flex mt-3 justify-end text-lg font-normal">
                             <BsArrowReturnRight className=" mt-1 text-3xl md:text-4xl mr-1 ml-2" />
                             <span
-                              className="w-11/12 px-3 py-2  bg-orange-300 hover:bg-orange-200 md:text-lg text-sm text-black md:font-semibold rounded-md "
+                            data-aos="fade-left"
+                              className="w-11/12 px-3 py-2  bg-white border hover:bg-gray-100 border-black md:text-lg text-sm text-black md:font-semibold rounded-md "
                               style={{
                                 boxShadow: "0 4px 6px rgba(0, 0, 0, 0.2)",
                               }}

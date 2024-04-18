@@ -161,7 +161,7 @@ const Navbar = () => {
               <div className="">
                 <NavLink to="/">
                   <img
-                    src="/image/logo-vyomchem.png"
+                    src="/image/vyomchem-logo.png"
                     className="h-16 xl:h-24"
                     alt=""
                   />
@@ -188,16 +188,16 @@ const Navbar = () => {
                 >
                   Products
                   {dropdown && (
-                    <div className="absolute w-max mt-1 -left-[2rem] bg-white z-10 shadow-md ">
+                    <div data-aos="fade-up-right" className="absolute w-max border border-black  mt-1 -left-[2rem] bg-white z-10 shadow-md ">
                       <NavLink
                         to="/cosmeceuticals/#Alcohol Sulphate"
-                        className="block px-4 py-2  xl:text-lg text-xs text-black hover:text-green-800"
+                        className="block px-4 py-2 xl:text-lg text-xs text-black hover:text-green-800"
                         onMouseEnter={toggleDropdown3}
                         onMouseLeave={toggleDropdown3}
                       >
                         Cosmecuticals
                         {dropdown3 && (
-                          <div data-aos="fade-down-left" className="grid grid-cols-2  absolute w-max  md:-mt-6 xl:-mt-8 xl:left-[11rem] md:left-[98px] bg-white border border-black  shadow-md ">
+                          <div data-aos="fade-down-left" className="grid grid-cols-2   absolute w-max  md:-mt-6 xl:-mt-8 xl:left-[11rem] md:left-[98px] bg-white border border-black  shadow-md ">
                             {product.map((ele) => {
                               return (
                                 <div className="flex-1  ">
@@ -235,10 +235,10 @@ const Navbar = () => {
                 >
                   Exclusive products
                   {dropdown2 && (
-                    <div className="absolute z-10 w-max top-full m-[-16px] left-0 mt-[8px] bg-white shadow-md ">
+                    <div data-aos="fade-up-left" className="absolute z-10 w-max top-full m-[-15px] left-0 mt-[8px] border  border-black bg-white shadow-md ">
                       <a
                         href="https://www.vionabiopharma.com/undenatured-native-chicken-collagen-type-ii.php"
-                        className="block px-5 py-3  xl:text-sm text-xs text-black "
+                        className="block px-5 py-3  xl:text-sm text-xs text-black hover:text-green-800 "
                         target="_blank"
                       >
                         Undenatured Chicken collagen Type II (Smarticol)

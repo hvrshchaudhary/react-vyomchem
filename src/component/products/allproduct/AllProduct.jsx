@@ -21,25 +21,25 @@ import Oils from "../Oils";
 
 const productComponents = [
   {name: "Alcohol Sulphate", component: <Alcohol /> },
-  { name: "Milliglobules", component: <Milliglobules /> },
   { name: "Active & Miscellaneous", component: <Miscellaneous /> },
-  { name: "Wax & Butter", component: <WaxButter /> },
-  { name: "Protein", component: <Protein /> },
-  { name: "Booster", component: <Booster /> },
   {
     name: "Anti-Oxidants/ Parabens Free Preservatives",
     component: <AntiOxidant />,
   },
+  {name : "Antibacterial" , component: <Antibacterial/>},
+  { name: "Booster", component: <Booster /> },
+  {name : "Bio-Ferments", component : <Bioferments/>},
+  { name: "Conditioning Agents", component: <ConditioningAgent /> },
+  {name : "Hair-Care", component: <Haircare/>},
+  { name: "Milliglobules", component: <Milliglobules /> },
+  { name: "Moisturizers", component: <Moisturizers /> },
+  {name:"Oils" , component : <Oils/>},
+  { name: "Protein", component: <Protein /> },
   { name: "Paraben", component: <Parabens /> },
   { name: "Pearlising Agents", component: <PearlisingAgent /> },
   { name: "Sunscreens", component: <Sunscreen /> },
-  { name: "Conditioning Agents", component: <ConditioningAgent /> },
-  { name: "Moisturizers", component: <Moisturizers /> },
   {name: "Skin-Care", component: <Skincare/>},
-  {name : "Bio-Ferments", component : <Bioferments/>},
-  {name : "Hair-Care", component: <Haircare/>},
-  {name : "Antibacterial" , component: <Antibacterial/>},
-  {name:"Oils" , component : <Oils/>}
+  { name: "Wax & Butter", component: <WaxButter /> },
 ];
 
 const AllProduct = () => {

@@ -43,7 +43,7 @@ const Haircare = () => {
   };
   return (
     <>
-      <div className="w-full md:flex  justify-center">
+     <div className="w-full md:flex  justify-center">
         <div className="md:w-full md:flex  ">
           <div className=" md:w-full ">
             {b.map((category, _index) => {
@@ -93,9 +93,6 @@ const Haircare = () => {
                             <span
                             data-aos="fade-left"
                               className="w-11/12 px-3 py-2  bg-white border hover:bg-gray-100 border-black md:text-lg text-sm text-black md:font-semibold rounded-md "
-                              style={{
-                                boxShadow: "0 4px 6px rgba(0, 0, 0, 0.2)",
-                              }}
                             >
                               {
                                 category[Object.keys(category)[0]][

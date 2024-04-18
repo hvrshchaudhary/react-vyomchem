@@ -6,19 +6,23 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const product = [
-   
     {
       name: " Alcohol Sulphate",
       link: "/cosmeceuticals/#Alcohol Sulphate",
     },
     {
+      name: "Active & Chemical",
+      link: "/cosmeceuticals/#Active & Miscellaneous",
+    },
+    {
+      name: "Anti-Oxidants",
+      link: "/cosmeceuticals/#Anti-Oxidants/ Parabens Free Preservatives",
+    },
+    {
       name: "Milliglobules",
       link: "/cosmeceuticals/#Milliglobules",
     },
-    {
-      name: "Active & Miscellaneous",
-      link: "/cosmeceuticals/#Active & Miscellaneous",
-    },
+
     {
       name: "Wax & Butter",
       link: "/cosmeceuticals/#Wax & Butter",
@@ -31,11 +35,7 @@ const Navbar = () => {
       name: "Booster",
       link: "/cosmeceuticals/#Booster",
     },
-    {
-      name: "Anti-Oxidants",
-      link: "/cosmeceuticals/#Anti-Oxidants/ Parabens Free Preservatives",
-    },
-  
+
     {
       name: "Paraben",
       link: "/cosmeceuticals/#Paraben",
@@ -55,19 +55,24 @@ const Navbar = () => {
     {
       name: "Moisturizers",
       link: "/cosmeceuticals/#Moisturizers",
-    }, {
+    },
+    {
       name: "Skin Care",
       link: "/cosmeceuticals/#SkinCare",
-    }, {
+    },
+    {
       name: "Bio Ferments",
       link: "/cosmeceuticals/#BioFerments",
-    }, {
+    },
+    {
       name: "Hair Care",
       link: "/cosmeceuticals/#HairCare",
-    }, {
+    },
+    {
       name: "Antibacterial",
       link: "/cosmeceuticals/#Antibacterial",
-    }, {
+    },
+    {
       name: "Oils",
       link: "/cosmeceuticals/#Oils",
     },
@@ -96,32 +101,39 @@ const Navbar = () => {
       <div className="hidden md:flex   bg-green-900 shadow-lg h-max md:h-max p-2 l border-gray-800 md:w-full">
         <div className="flex justify-evenly w-1/2">
           <div className="flex">
-          <FiPhone className="mr-2 mt-1 text-white" />
+            <FiPhone className="mr-2 mt-1 text-white" />
 
-          <NavLink
-            className={"font-semibold text-sm text-white"}
-            to="tel:+919882020609"
-          >
-            +91-9882020609
-          </NavLink>
+            <NavLink
+              className={"font-semibold text-sm text-white"}
+              to="tel:+919882020609"
+            >
+              +91-9882020609
+            </NavLink>
           </div>
           <div className="flex">
-          <FiMail className="mr-2 mt-1 text-white" />
+            <FiMail className="mr-2 mt-1 text-white" />
 
-          <NavLink
-            className={"font-semibold text-sm text-white"}
-            to="mailto:minakshi@vyomchem.com"
-          >
-            minakshi@vyomchem.com
-          </NavLink>
+            <NavLink
+              className={"font-semibold text-sm text-white"}
+              to="mailto:minakshi@vyomchem.com"
+            >
+              minakshi@vyomchem.com
+            </NavLink>
           </div>
-        </div> 
+        </div>
         <div className="flex justify-evenly w-1/2">
           <div className=" flex">
-          <FaRegClock className="mr-2 text-white mt-[3px]" />
-          <span className="font-semibold text-sm text-white">Office hours 9:30 AM to 6:00 PM</span>
+            <FaRegClock className="mr-2 text-white mt-[3px]" />
+            <span className="font-semibold text-sm text-white">
+              Office hours 9:30 AM to 6:00 PM
+            </span>
           </div>
-          <NavLink to="/contact" className="font-semibold text-xs p-1 rounded-md px-4 bg-green-500  text-white">GET A QUOTE</NavLink>
+          <NavLink
+            to="/contact"
+            className="font-semibold text-xs p-1 rounded-md px-4 bg-green-500  text-white"
+          >
+            GET A QUOTE
+          </NavLink>
         </div>
       </div>
       <nav
@@ -136,7 +148,7 @@ const Navbar = () => {
             {/* Logo */}
             <div className="flex-shrink-0 md:hidden ">
               <NavLink to="/">
-                <img src="/image/vyomchem-logo.png" className="h-11 " alt="" />
+                <img src="/image/vyomchem-logo.png" className="h-11  " alt="" />
               </NavLink>
             </div>
             {/* Mobile Menu Button (visible on smaller screens) */}
@@ -157,12 +169,11 @@ const Navbar = () => {
             <div
               className={`  md:flex z-10 justify-evenly  md:flex-grow md:items-center hidden :block`}
             >
-              
               <div className="">
                 <NavLink to="/">
                   <img
                     src="/image/vyomchem-logo.png"
-                    className="h-16 xl:h-24"
+                    className="h-16 xl:h-24 xl:w-auto"
                     alt=""
                   />
                 </NavLink>
@@ -173,7 +184,7 @@ const Navbar = () => {
                 isOpen ? "hidden" : ""
               }`}
             >
-                <NavLink
+              <NavLink
                 to="/"
                 className="font-sans xl:text-lg text-sm text-black font-semibold hover:text-green-800  px-3 py-2"
               >
@@ -188,7 +199,10 @@ const Navbar = () => {
                 >
                   Products
                   {dropdown && (
-                    <div data-aos="fade-up-right" className="absolute w-max border border-black  mt-1 -left-[2rem] bg-white z-10 shadow-md ">
+                    <div
+                      data-aos="fade-up"
+                      className="absolute w-max border border-black  mt-1 -left-[2rem] bg-white z-10 shadow-md "
+                    >
                       <NavLink
                         to="/cosmeceuticals/#Alcohol Sulphate"
                         className="block px-4 py-2 xl:text-lg text-xs text-black hover:text-green-800"
@@ -197,21 +211,25 @@ const Navbar = () => {
                       >
                         Cosmecuticals
                         {dropdown3 && (
-                          <div data-aos="fade-down-left" className="grid grid-cols-2   absolute w-max  md:-mt-6 xl:-mt-8 xl:left-[11rem] md:left-[98px] bg-white border border-black  shadow-md ">
-                            {product.map((ele) => {
-                              return (
-                                <div className="flex-1  ">
+                          <div
+                            data-aos="fade-left"
+                            className="grid grid-cols-2   absolute w-max  md:-mt-6 xl:-mt-[37px] xl:left-[14rem] md:left-[98px] bg-white border border-black  shadow-md "
+                          >
+                            {product
+                              .sort((a, b) => a.name.localeCompare(b.name)) // Sort the product array alphabetically by name
+                              .map((ele, index) => (
+                                <div key={index} className="flex-1">
                                   <div>
                                     <NavLink
                                       to={ele.link}
-                                      className="block px-4 py-2  xl:text-lg text-xs text-black hover:bg-green-100"
+                                      data-aos="fade-up"
+                                      className="block px-4 py-2 xl:text-lg text-xs text-black hover:bg-green-100"
                                     >
                                       {ele.name}
                                     </NavLink>
                                   </div>
                                 </div>
-                              );
-                            })}
+                              ))}
                           </div>
                         )}
                       </NavLink>
@@ -235,7 +253,10 @@ const Navbar = () => {
                 >
                   Exclusive products
                   {dropdown2 && (
-                    <div data-aos="fade-up-left" className="absolute z-10 w-max top-full m-[-15px] left-0 mt-[8px] border  border-black bg-white shadow-md ">
+                    <div
+                      data-aos="fade-up"
+                      className="absolute z-10 w-max top-full m-[-15px] left-0 mt-[8px] border  border-black bg-white shadow-md "
+                    >
                       <a
                         href="https://www.vionabiopharma.com/undenatured-native-chicken-collagen-type-ii.php"
                         className="block px-5 py-3  xl:text-sm text-xs text-black hover:text-green-800 "
@@ -257,13 +278,6 @@ const Navbar = () => {
                   Our principles
                 </NavLink>
               </div>
-            
-              {/* <NavLink
-              to="/about"
-              className="font-sans xl:text-xl text-sm text-black font-semibold hover:text-green-500 px-3 py-2"
-            >
-              About Us
-            </NavLink> */}
               <NavLink
                 to="/contact"
                 className="font-sans xl:text-lg text-sm text-black font-semibold hover:text-green-800 px-3 py-2"
@@ -297,7 +311,8 @@ const Navbar = () => {
                 <div
                   // to="#"
                   className=" block text-black font-sans font-semibold bg-white   hover:bg-green-100 hover:text-green-900 px-3 py-2"
-                  onClick={toggleDropdown} >
+                  onClick={toggleDropdown}
+                >
                   Product
                   {dropdown && (
                     <div

@@ -136,7 +136,7 @@ const Navbar = () => {
             {/* Logo */}
             <div className="flex-shrink-0 md:hidden ">
               <NavLink to="/">
-                <img src="/image/logo-vyomchem.png" className="h-11 " alt="" />
+                <img src="/image/vyomchem-logo.png" className="h-11 " alt="" />
               </NavLink>
             </div>
             {/* Mobile Menu Button (visible on smaller screens) */}

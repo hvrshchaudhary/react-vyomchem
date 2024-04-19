@@ -19,9 +19,9 @@ const Banner = () => {
             <div className="text-black  font-bold text-sm  lg:text-base">
               ABOUT US
             </div>
-            <div className="flex text-xs  lg:text-base">
+            <div className="flex text-lg font-semibold  lg:text-2xl">
               Welcome to
-              <h1 className="ml-1 text-purple-900 font-bold ">Vyomchem</h1>
+              <h1 className="ml-1 text-purple-900 lg:text-2xl text-lg font-bold ">Vyomchem</h1>
             </div>
             <div className="md:mb-5  md:font-mono  text-xs lg:text-base">
               This group is the brainchild of professionals who during their

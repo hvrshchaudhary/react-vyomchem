@@ -59,7 +59,7 @@ const AllProduct = () => {
   return (
     <div className="flex md:justify-center flex-row pt-5  ">
       {/* Sidebar for mobile view */}
-      <div className="xl:hidden  absolute   ">
+      <div className="xl:hidden z-10  absolute   ">
         {!isSidebarOpen && (
           <div className="flex   mt-[-20px] ml-2">
             <FiMenu
@@ -110,7 +110,7 @@ const AllProduct = () => {
       </div>
       {/* Sidebar for desktop view */}
       <div className="flex md:mx-12 container">
-        <div
+        {/* <div
           data-aos="fade-up"
           className=" text-black w-1/4  xl:block md:hidden hidden flex-none"
         >
@@ -145,7 +145,7 @@ const AllProduct = () => {
               ))}
             </ul>
           </div>
-        </div>
+        </div> */}
         {/* Main Content */}
         <div className="flex-1">
           <h1 className=" mb-4 ">

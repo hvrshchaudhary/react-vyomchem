@@ -4,23 +4,7 @@ import AllProduct from "./products/allproduct/AllProduct";
 const CosmeceuticalsProduct = () => {
   return (
     <div>
-      <div className=" w-full flex flex-col justify-center">
-        <img
-          className="h-40  w-full md:h-52 object-cover"
-          style={{
-            filter: "brightness(50%)",
-          }}
-          src="/image/contactus.jpg"
-          alt=""
-        />
-        <div
-          className="md:top-56  top-32 md:left-20 left-5  text-white font-bold md:text-4xl text-3xl absolute"
-          style={{
-            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-          }}
-        >
-          Cosmeceuticals
-        </div>
+      <div className=" w-full flex flex-col justify-center">    
         <div>
           <AllProduct />
         </div>

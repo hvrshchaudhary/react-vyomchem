@@ -107,13 +107,13 @@ const YourComponent = () => {
         <div>
         <h2
           id="hero-title"
-          className="text-4xl sm:text-6xl font-bold   text-white "
+          className="text-4xl sm:text-6xl font-bold font-mono   text-white "
         >
           COSMETICS
         </h2>
         <h2
           id="hero-title2"
-          className="text-4xl sm:text-6xl font-bold   text-white "
+          className="text-4xl sm:text-6xl font-bold font-mono  text-white "
         >
         INGREDIENTS
         </h2>

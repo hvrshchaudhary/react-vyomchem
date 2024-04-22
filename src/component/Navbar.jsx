@@ -7,8 +7,8 @@
 // const Navbar = () => {
 //   const product = [
 //     {
-//       name: " Alcohol Sulphate",
-//       link: "/cosmeceuticals/#Alcohol Sulphate",
+//       name: " Alcohol-Sulphate",
+//       link: "/cosmeceuticals/#Alcohol-Sulphate",
 //     },
 //     {
 //       name: "Active & Chemical",
@@ -204,7 +204,7 @@
 //                       className="absolute w-max border border-black  mt-1 -left-[2rem] bg-white z-10 shadow-md "
 //                     >
 //                       <NavLink
-//                         to="/cosmeceuticals/#Alcohol Sulphate"
+//                         to="/cosmeceuticals/#Alcohol-Sulphate"
 //                         className="block px-4 py-2 xl:text-lg text-xs text-black hover:text-green-800"
 //                         onMouseEnter={toggleDropdown3}
 //                         onMouseLeave={toggleDropdown3}
@@ -320,7 +320,7 @@
 //                       onClick={toggleMenu}
 //                     >
 //                       <NavLink
-//                         to="/cosmeceuticals/#Alcohol Sulphate"
+//                         to="/cosmeceuticals/#Alcohol-Sulphate"
 //                         className="block px-4 py-2 text-sm bg-green-300 text-black hover:bg-gray-100"
 //                       >
 //                         Cosmecuticals
@@ -393,8 +393,8 @@ import { useEffect } from "react";
 const Navbar = () => {
   const product = [
     {
-      name: " Alcohol Sulphate",
-      link: "/cosmeceuticals/#Alcohol Sulphate",
+      name: " Alcohol-Sulphate",
+      link: "/cosmeceuticals/#Alcohol-Sulphate",
     },
     {
       name: "Active & Chemical",
@@ -617,7 +617,7 @@ const Navbar = () => {
                         className="absolute w-max border border-black  mt-4 -left-[2rem] bg-white z-10 shadow-md "
                       >
                         <NavLink
-                          to="/cosmeceuticals/#Alcohol Sulphate"
+                          to="/cosmeceuticals/#Alcohol-Sulphate"
                           className="block px-2 py-1 xl:text-lg border-b-2 border-double border-black text-xs text-black hover:text-green-800"
                           onMouseEnter={toggleDropdown3}
                           onMouseLeave={toggleDropdown3}
@@ -733,7 +733,7 @@ const Navbar = () => {
                         onClick={toggleMenu}
                       >
                         <NavLink
-                          to="/cosmeceuticals/#Alcohol Sulphate"
+                          to="/cosmeceuticals/#Alcohol-Sulphate"
                           className="block px-4 py-2 text-sm bg-green-300 text-black hover:bg-gray-100"
                         >
                           Cosmecuticals

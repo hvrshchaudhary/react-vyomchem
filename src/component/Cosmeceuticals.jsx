@@ -10,7 +10,7 @@ const Cosmeceuticals = () => {
       text: "WAX AND BUTTER",
       URL: "/cosmeceuticals/#Wax & Butter",
       text2: "Pearlising Agents",
-      URL2:"/cosmeceuticals/#Pearlising Agents"
+      URL2:"/cosmeceuticals/#Pearlising-Agents"
     },
     {
       image: "/image/extract.jpg",
@@ -24,9 +24,9 @@ const Cosmeceuticals = () => {
       image: "/image/algae-extract-3.jpg",
       image2: "/image/algae-extract-3.jpg",
       text: "Alcohol Sulphate",
-      URL:"/cosmeceuticals/#Alcohol Sulphate",
+      URL:"/cosmeceuticals/#Alcohol-Sulphate",
       text2: "Alcohol Sulphate",
-      URL2:"/cosmeceuticals/#Alcohol Sulphate",
+      URL2:"/cosmeceuticals/#Alcohol-Sulphate",
     },
     {
       image: "/image/melligolubous.jpg",
@@ -41,17 +41,17 @@ const Cosmeceuticals = () => {
       image: "/image/Bambooextract.jpg",
       image2: "/image/Bambooextract.jpg",
       text: "Active & Miscellaneous",
-      URL:"/cosmeceuticals/#Active & Miscellaneous",
+      URL:"/cosmeceuticals/#Active-&-Miscellaneous",
       text2: "Active & Miscellaneous",
-      URL2:"/cosmeceuticals/#Active & Miscellaneous"
+      URL2:"/cosmeceuticals/#Active-&-Miscellaneous"
     },
     {
       image: "/image/more.jpg",
       image2: "/image/more.jpg",
-      text: "Pearlising Agent ",
-      URL: "/cosmeceuticals/#Pearlising Agents",
-      text2: "Proteins",
-      URL2: "/cosmeceuticals/#Proteins",
+      text: "Pearlising Agents",
+      URL: "/cosmeceuticals/#Pearlising-Agents",
+      text2: "Protein",
+      URL2: "/cosmeceuticals/#Protein",
     },
   ];
 
@@ -61,7 +61,7 @@ const Cosmeceuticals = () => {
         display: "flex",
         justifyContent: "center",
       }}
-      className=" sm:h-auto md:h-screen xl:h-screen "
+      className=" h-auto  xl:h-screen "
     >
       <div className="container md:flex md:w-[100%] lg:w-[90%]" style={{ alignSelf: "center" }}>
         <div
@@ -120,7 +120,7 @@ const Cosmeceuticals = () => {
                Wax and butter
               </span>
               {/* image for display view  */}
-              <NavLink to="/cosmeceuticals/#Wax & Butter">
+              <NavLink to="/cosmeceuticals/#Wax-&-Butter">
               <img
                 src="/image/WAX.jpg"
                 className="md:block hidden"

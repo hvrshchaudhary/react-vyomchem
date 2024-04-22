@@ -20,10 +20,10 @@ import Antibacterial from "../Antibacterial";
 import Oils from "../Oils";
 
 const productComponents = [
-  { name: "Alcohol Sulphate", component: <Alcohol /> },
-  { name: "Active & Miscellaneous", component: <Miscellaneous /> },
+  { name: "Alcohol-Sulphate", component: <Alcohol /> },
+  { name: "Active-&-Miscellaneous", component: <Miscellaneous /> },
   {
-    name: "Anti-Oxidants/ Parabens Free Preservatives",
+    name: "Anti-Oxidants",
     component: <AntiOxidant />,
   },
   { name: "Antibacterial", component: <Antibacterial /> },
@@ -36,15 +36,47 @@ const productComponents = [
   { name: "Oils", component: <Oils /> },
   { name: "Protein", component: <Protein /> },
   { name: "Paraben", component: <Parabens /> },
-  { name: "Pearlising Agents", component: <PearlisingAgent /> },
+  { name: "Pearlising-Agents", component: <PearlisingAgent /> },
   { name: "Sunscreens", component: <Sunscreen /> },
   { name: "Skin-Care", component: <Skincare /> },
-  { name: "Wax & Butter", component: <WaxButter /> },
+  { name: "Wax-&-Butter", component: <WaxButter /> },
 ];
 
 const AllProduct = () => {
+  const [checkedItem, setCheckedItem] = useState("");
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      const currentHash = window.location.hash.replace("#", "");
+      const matchingComponent = productComponents.find(
+        (product) => product.name === currentHash
+      );
+      if (matchingComponent) {
+        setCheckedItem(matchingComponent.name);
+      } else {
+        // If no matching component found, default to the first item
+        setCheckedItem(productComponents[0].name);
+      }
+    };
+
+    handleHashChange(); // Call once when component mounts to set initial state
+
+    window.addEventListener("hashchange", handleHashChange);
+
+    // Cleanup function to remove event listener
+    return () => {
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, []);
+
+  const handleCheckboxChange = (name) => {
+    setCheckedItem(name);
+    window.location.hash = name; // Update URL hash
+  };
+// const defaultLink = "/cosmeceuticals/#Alcohol-Sulphate"
+
   const location = useLocation();
-  const [selectedProduct, setSelectedProduct] = useState("Alcohol Sulphate");
+  const [selectedProduct, setSelectedProduct] = useState("Alcohol-Sulphate");
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   useEffect(() => {
@@ -59,7 +91,7 @@ const AllProduct = () => {
   return (
     <div className="flex md:justify-center flex-row pt-5  ">
       {/* Sidebar for mobile view */}
-      <div className="xl:hidden z-10  absolute   ">
+      <div className="md:hidden  absolute   ">
         {!isSidebarOpen && (
           <div className="flex   mt-[-20px] ml-2">
             <FiMenu
@@ -92,12 +124,8 @@ const AllProduct = () => {
             {productComponents.map((product, index) => (
               <li key={product.name}>
                 <NavLink
-                  to={`/cosmeceuticals/#${product.name}`}
-                  className={`block px-4 py-2 text-sm m-4 font-semibold hover:text-white border rounded-sm border-black ${
-                    index % 2 === 0
-                      ? "bg-green-300 hover:bg-green-200 text-black"
-                      : "bg-yellow-200 hover:bg-yellow-100"
-                  } "`}
+                    // to={'/cosmeceuticals/#${product.name}'}
+                  className={`block px-4 py-2 text-sm m-4 font-semibold hover:text-white border rounded-sm border-black  "`}
                   target=""
                   onClick={() => setIsSidebarOpen(false)}
                 >
@@ -110,42 +138,32 @@ const AllProduct = () => {
       </div>
       {/* Sidebar for desktop view */}
       <div className="flex md:mx-12 container">
-        {/* <div
-          data-aos="fade-up"
-          className=" text-black w-1/4  xl:block md:hidden hidden flex-none"
-        >
-          <div
-            className="rounded-lg  border-black border-2 p-4 m-4 mt-6 bg-white"
-            style={
-              {
-                // boxShadow: "8px 8px lightblue",
-              }
-            }
-          >
-            <div className=" text-center">
-              <h1 className="md:text-4xl text-green-800 font-fira-neue font-semibold">
-                Categories
-              </h1>
-            </div>
-            <ul className="md:py-4  ">
-              {productComponents.map((product, index) => (
-                <li key={product.name}>
-                  <NavLink
-                    to={`/cosmeceuticals/#${product.name}`}
-                    className={`block px-4 py-2 text-sm m-4 font-semibold  border rounded-sm border-black ${
-                      index % 2 === 0
-                        ? "bg-green-300 hover:bg-green-200 text-black"
-                        : "bg-yellow-200 hover:bg-yellow-100"
-                    } `}
-                    target=""
-                  >
-                    {product.name}
-                  </NavLink>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div> */}
+      <div className="text-black w-full xl:w-1/4 xl:block md:hidden hidden flex-none">
+      <div className="rounded-lg p-4 m-4 mt-6 bg-white shadow-md">
+        <div className="text-center">
+          <h1 className="text-2xl text-black font-bold mb-4">
+            Categories
+          </h1>
+        </div>
+        <ul className="space-y-2">
+          {productComponents.map((product, index) => (
+            <li key={product.name}>
+               <label className="inline-flex items-center">
+              <input
+                type="checkbox"
+                className="form-checkbox h-5 w-5 text-green-600"
+                checked={checkedItem === product.name}
+                onChange={() => handleCheckboxChange(product.name)}
+              />
+              <span className="ml-2 text-sm font-semibold">
+                {product.name}
+              </span>
+            </label>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
         {/* Main Content */}
         <div className="flex-1">
           <h1 className=" mb-4 ">

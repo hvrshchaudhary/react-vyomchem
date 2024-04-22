@@ -1,60 +1,50 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 
 const Banner = () => {
   return (
-    <div
-      className="xl:h-screen md:h-auto md:pt-6 md:pb-6 flex justify-center items-center pb-10  p-5 "
-      style={{
-     
-        backgroundColor: "#7CE6B3",
-      }}
-    >
-      <div className=" container md:flex justify-center    md:w-4/5  ">
-        <div
-          data-aos="fade-right"
-          className="flex md:rounded-lg md:border bg-white md:mt-0 md:mr-6 mt-5 pl-4 pr-2 md:pt-4 md:pr-10 md:pb-0 pt-2 pb-2 md:w-1/2"
-        >
-          <div className=" text-left   ">
-            <div className="text-black  font-semibold text-sm  lg:text-base">
+    <div className="h-screen auto md:pt-6 md:pb-6 flex justify-center items-center pb-10 p-5 bg-green-300">
+      <div className="container md:flex justify-center lg:w-4/5">
+        <div className="flex rounded-md border  bg-white  md:h-auto mt-0 md:mr-6 md:w-1/2">
+          <div className="text-left flex flex-col justify-center  p-4 md:p-7">
+            <div className="text-black font-semibold  text-sm md:text-xl md:pb-1">
               ABOUT US
             </div>
-            <div className="flex text-xl font-semibold  lg:text-2xl">
+            <div className="flex items-center text-xl font-semibold pb-[2px] md:pb-0 md:text-2xl">
               Welcome to
-              <h1 className="ml-1 text-purple-900 lg:text-2xl text-xl font-bold ">Vyomchem</h1>
+              <h1 className="ml-1 text-green-800 font-bold md:text-2xl text-xl">Vyomchem</h1>
             </div>
-            <div className="md:mb-5 md:pb-0 pb-4 md:font-mono  text-xs lg:text-base">
-              This group is the brainchild of professionals who during their
-              years of interactions/ exposure in various capacities in the API,
-              Nutrition and allied industry realized that a discerning buyer in
-              industry requires, apart from cost effectiveness and reliable
-              service, perpetual information about the latest innovations and
-              all other developments/happenings in the line. Founder's of this
-              group are widely travelled, highly dedicated and focused people.
-            </div>
-            <div className="hidden sm:block  font-mono">
+            <p className="font-mono text-sm 2xl:text-xl pb-2 leading-normal md:my-4">
+              This group is the brainchild of professionals who, during their
+              years of interactions/exposure in various capacities in the API,
+              Nutrition, and allied industry, realized that a discerning buyer in
+              the industry requires, apart from cost-effectiveness and reliable
+              service, perpetual information about the latest innovations and all
+              other developments/happenings in the line. Founders of this group
+              are widely traveled, highly dedicated, and focused people.
+            </p>
+            <div className="hidden sm:block md:pb-3 2xl:text-xl text-sm font-mono">
               They carefully collect all possible information and data like
               honey bees collecting the nectar to cater the need of the clients.
             </div>
-
-            <NavLink  onClick={() => { window.location.href = '/About'; }} className="md:text-red-500 text-white md:pl-0 pl-2 md:p-0 p-1 md:pr-0 pr-5 rounded-sm md:bg-white bg-green-800 font-bold  text-xs lg:text-base">
+            <NavLink
+              to="/About"
+              className="text-white rounded-sm py-1 px-2 md:px-4 bg-green-800 font-bold text-xs md:text-base self-start w-max"
+            >
               READ MORE....
             </NavLink>
           </div>
         </div>
-        <div data-aos="fade-left" className="md:w-1/2 md:mt-0 mt-2">
+        <div className="md:w-1/2 md:mt-0  mt-2">
           <img
             src="/image/Ayurvedic-image.jpg"
             alt="Your Image"
-            className="w-full h-full object-cover md:rounded-lg md:border"
+            className="w-full h-full object-cover md:rounded-md md:border"
           />
         </div>
       </div>
     </div>
-
-    //
   );
 };
 
 export default Banner;
-

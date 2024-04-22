@@ -29,16 +29,14 @@ const Alcohol = () => {
           product: "Sodium Lauryl Sulphate",
           comment: "It is found in both beauty and cleaning products",
         },
-    
       ],
     },
   ];
-  const [isOpen ,setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(null);
-  const toggleComment = (index) =>{
-    setIsOpen(!isOpen),
-    setSelectedIndex(index)
-  }
+  const toggleComment = (index) => {
+    setIsOpen(!isOpen), setSelectedIndex(index);
+  };
   const handleMouseEnter = (index) => {
     setSelectedIndex(index);
   };
@@ -53,8 +51,10 @@ const Alcohol = () => {
         return (
           <div key={_index} className="w-full  md:flex ">
             <div className=" flex-col container md:w-full md:flex ">
-              <div className="flex justify-center" >
-                <span className="md:text-6xl text-xl mt-6 md:mt-0 font-bold text-green-800">{Object.keys(categories)[0]}</span>
+              <div className="flex justify-center">
+                <span className="md:text-6xl text-xl mt-6 md:mt-0 font-bold text-green-800">
+                  {Object.keys(categories)[0]}
+                </span>
               </div>
               <div className="md:w-full">
                 <main className=" mx-auto px-4 md:pt-6 pb-6 flex justify-center">
@@ -71,17 +71,17 @@ const Alcohol = () => {
                             <img
                               src="/image/more.jpg"
                               alt="Product"
-                              className="w-64 h-40 object-cover rounded-t-lg"
+                              className="w-64 h-48 object-cover rounded-t-lg"
                             />
                             <div className="">
-                              <h2 className="text-xl h-[66px] p-2 font-semibold  text-green-800 ">
+                              <h2 className="text-xl h-[66px] p-2 font-semibold text-center  text-green-800 ">
                                 {ele.product}
                               </h2>
                               {selectedIndex === index && (
                                 // style={{ backgroundImage: `url(${ele.img})`, filter: "brightness(50%) " , backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
 
                                 <>
-                                {/* {isOpen && index === selectedIndex && (
+                                  {/* {isOpen && index === selectedIndex && (
                                    <div key={index} onClick={()=> toggleComment(index)} className=" md:hidden flex">
                                    <span className="text-black bg-white  absolute   top-0  bottom-0 left-0   overflow-scroll hover:scale-110 transition-all ">{
                                  categories[Object.keys(categories)[0]][
@@ -90,14 +90,35 @@ const Alcohol = () => {
                                }</span>
                                  </div>
                                 )} */}
-                                 
-                                <div   className=" absolute   top-0  bottom-0 left-0   overflow-scroll hover:scale-110 transition-all ">
-                                  <img style={{
-                                    filter: "brightness(55%) ",
-                                  }} className="w-full h-full object-cover " src="/image/more.jpg" alt="" />
-                                  <span  className= "p-1 font-bold absolute top-5 text-sm text-center  text-white ">
-                                    {ele.comment}
-                                  </span>
+
+                                  {/* <div className=""> */}
+                                  {/* <div className="absolute bg-green-200 top-0 bottom-16 left-0 right-0 hover:scale-110 transition-all ">
+                                    <div className="w-full h-full ">
+                                      <span className="p-1 absolute top-5 text-xs font-mono flex items-center text-center text-black">
+                                        {ele.comment}
+                                      </span>
+                                    </div>
+                                  </div> */}
+
+                                  {/* </div> */}
+                                  
+                                <div
+                                  className="absolute z-10 bg-white  top-0 bottom-0 left-0 right-0 hover:scale-110  transition-all "
+                                  style={{
+                                    boxShadow:
+                                      "5px 5px 10px rgba(0.5, 0, 0, 0.1)",
+                                  }}
+                                >
+                                  <div className="flex w-full h-2/6 justify-center text-center items-center">
+                                    <span className="text-lg p-1 font-semibold text-wrap">
+                                      {ele.product}
+                                    </span>
+                                  </div>
+                                  <div className="w-full h-1/2 flex  i  ">
+                                    <span className="p-1  absolute item-center text-center  text-sm font-mono flex  m-2 text-black">
+                                      {ele.comment}
+                                    </span>
+                                  </div>
                                 </div>
                               
                                 </>
@@ -119,7 +140,6 @@ const Alcohol = () => {
 };
 
 export default Alcohol;
-
 
 // {b.map((category, _index) => {
 //   return (

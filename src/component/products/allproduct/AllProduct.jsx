@@ -29,7 +29,7 @@ const productComponents = [
   { name: "Antibacterial", component: <Antibacterial /> },
   { name: "Booster", component: <Booster /> },
   { name: "Bio-Ferments", component: <Bioferments /> },
-  { name: "Conditioning Agents", component: <ConditioningAgent /> },
+  { name: "Conditioning-Agents", component: <ConditioningAgent /> },
   { name: "Hair-Care", component: <Haircare /> },
   { name: "Milliglobules", component: <Milliglobules /> },
   { name: "Moisturizers", component: <Moisturizers /> },

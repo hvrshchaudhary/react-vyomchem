@@ -623,7 +623,7 @@ const Navbar = () => {
                           onMouseLeave={toggleDropdown3}
                         >
                           Cosmecuticals
-                          {dropdown3 && (
+                          {/* {dropdown3 && (
                             <div
                               data-aos="fade-left"
                               className="grid grid-cols-2   absolute w-max  md:mt-[-21px] xl:-mt-[32.5px] xl:left-[-358px] md:left-[-250px] bg-white border border-black  shadow-md "
@@ -644,7 +644,7 @@ const Navbar = () => {
                                   </div>
                                 ))}
                             </div>
-                          )}
+                          )} */}
                         </NavLink>
                         <NavLink
                           href="https://www.vyomchem.com/pdf/Cosmeceuticals-Brochure.pdf"

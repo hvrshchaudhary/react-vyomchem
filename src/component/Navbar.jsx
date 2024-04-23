@@ -701,7 +701,7 @@ const Navbar = () => {
             </div>
 
             {/* Mobile Menu (visible on smaller screens) */}
-            <div className="md:flex z-10">
+            <div className="md:flex z-10 ">
               <div
                 className={`md:hidden ${isOpen ? "block" : "hidden"}`}
                 onClick={toggleMenu}

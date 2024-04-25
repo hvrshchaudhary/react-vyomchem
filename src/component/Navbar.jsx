@@ -617,7 +617,7 @@ const Navbar = () => {
                       >
                         <NavLink
                           to="/cosmeceuticals/#Alcohol-Sulphate"
-                          className="block px-2 py-1 xl:text-lg border-b-2 border-double border-black text-xs text-black  hover:bg-green-200"
+                          className="block px-2 py-1 xl:text-lg border-b border border-black text-xs text-black  hover:bg-green-200"
                           onMouseEnter={toggleDropdown3}
                           onMouseLeave={toggleDropdown3}
                         >
@@ -627,13 +627,13 @@ const Navbar = () => {
                               
                               <div
                                 data-aos="fade-left"
-                                className="grid grid-cols-2  rounded-md absolute w-max  md:mt-[-20px] xl:-mt-[32.5px] xl:left-[220px] md:left-[150px] bg-green-200  shadow-md "
+                                className="grid grid-cols-1  rounded-md absolute w-max h-96 overflow-scroll  md:mt-[-20px] xl:-mt-[32.5px] xl:left-[220px] md:left-[150px] bg-green-200  shadow-md "
                               >
                                
                                 {product
                                   .sort((a, b) => a.name.localeCompare(b.name)) // Sort the product array alphabetically by name
                                   .map((ele, index) => (
-                                    <div key={index} className="flex-1 p-1">
+                                    <div key={index} className="flex-1 p-1 ">
                                       <div>
                                         <NavLink
                                           to={ele.link}
@@ -651,7 +651,7 @@ const Navbar = () => {
                         <NavLink
                           href="https://www.vyomchem.com/pdf/Cosmeceuticals-Brochure.pdf"
                           target="_blank"
-                          className="block px-2  py-1 xl:text-lg text-xs text-black hover:bg-green-300"
+                          className="block px-2  py-1 xl:text-lg text-xs text-black hover:bg-green-200"
                         >
                           Cosmeceuticals Brochure
                         </NavLink>

@@ -12,7 +12,7 @@ const AboutUs = () => {
             <span className='font-bold text-xl mb-3 '>ABOUT US</span>
             <p className='mb-2 text-justify'>This group is the brainchild of professionals who during their years of interactions/ exposure in various capacities in the API, Nutrition and allied industry realized that a discerning buyer in industry requires, apart from cost effectiveness and reliable service, perpetual information about the latest innovations and all other developments/ happenings in the line. Founder's of this group are widely travelled, highly dedicated and focused persons.</p>
           </div>
-          <div data-aos="fade-left" className='hidden xl:flex w-1/2 items-start ml-3'>
+          <div data-aos="fade-left" className='hidden ml-7 xl:flex w-1/2 items-start mt-5'>
             <img src="/image/more.jpg" alt="" />
           </div>
         </div>

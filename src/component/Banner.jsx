@@ -10,16 +10,16 @@ const Banner = () => {
   </div>
   <div className="h-screen auto md:pt-6 md:pb-6 static flex  justify-center items-center pb-10 p-5 ">
     <div className="container md:flex justify-center lg:w-4/5">
-      <div className="flex rounded-md  z-10  md:h-auto mt-0 md:mr-6 md:w-1/2">
+      <div className="flex rounded-md  z-10 xl:bg-transparent bg-white  md:h-auto mt-0 md:mr-6 md:w-1/2">
         <div className="text-left flex flex-col justify-center p-4 md:p-7">
           <div className="text-black font-semibold text-sm md:text-xl md:pb-1">
             ABOUT US
           </div>
-          <div className="flex items-center text-xl font-semibold pb-[2px] md:pb-0 md:text-2xl">
+          <div className="flex items-center text-xl font-semibold pb-[2px] md:pb-0 md:text-3xl">
             Welcome to
-            <h1 className="ml-1 text-green-800 font-bold md:text-2xl text-xl">Vyomchem</h1>
+            <h1 className="ml-1 text-green-800 font-bold md:text-3xl text-xl">Vyomchem</h1>
           </div>
-          <p className="font-mono text-sm 2xl:text-xl pb-2 leading-normal md:my-4">
+          <p className="font-mono xl:text-base text-sm 2xl:text-xl pb-2 leading-normal md:my-4">
             This group is the brainchild of professionals who, during their
             years of interactions/exposure in various capacities in the API,
             Nutrition, and allied industry, realized that a discerning buyer in
@@ -28,7 +28,7 @@ const Banner = () => {
             other developments/happenings in the line. Founders of this group
             are widely traveled, highly dedicated, and focused people.
           </p>
-          <div className="hidden sm:block md:pb-3 2xl:text-xl text-sm font-mono">
+          <div className="hidden xl:text-base sm:block md:pb-3 2xl:text-xl text-sm font-mono">
             They carefully collect all possible information and data like
             honey bees collecting the nectar to cater the need of the clients.
           </div>

@@ -7,13 +7,16 @@ const AboutUs = () => {
     <img className='h-40  w-full md:h-52 object-cover' src="/image/contactus.jpg" alt="" />
     <div className='md:top-56 top-32 md:left-20 left-5  text-white font-bold md:text-4xl text-3xl absolute'>About Us</div>
     <div className='text-container flex items-center justify-center flex-col mt-10 mb-10  md:mt-20 md:mb-20'>
-    <div className='flex flex-row w-4/5  md:w-8/12 justify-center'>
-    <div className='flex flex-col w-1/2   text-justify' >
-        <span className='font-bold text-xl mb-3'>ABOUT US</span>
-        <p className='mb-2'>This group is the brainchild of professionals who during their years of interactions/ exposure in various capacities in the API, Nutrition and allied industry realized that a discerning buyer in industry requires, apart from cost effectiveness and reliable service, perpetual information about the latest innovations and all other developments/ happenings in the line. Founder's of this group are widely travelled, highly dedicated and focused persons.</p>
+    <div className='md:flex flex-row w-4/5  md:w-8/12 justify-center'>
+    <div className='flex flex-col  xl:w-8/12  text-justify' >
+        <span className='font-bold text-xl mb-3 '>ABOUT US</span>
+        <p className='mb-2 text-justify  '>This group is the brainchild of professionals who during their years of interactions/ exposure in various capacities in the API, Nutrition and allied industry realized that a discerning buyer in industry requires, apart from cost effectiveness and reliable service, perpetual information about the latest innovations and all other developments/ happenings in the line. Founder's of this group are widely travelled, highly dedicated and focused persons.</p>
       
     </div>
-    <div className='w-1/2 flex items-start ml-3'>
+    <div
+    data-aos="fade-left"
+
+      className='hidden  xl:flex w-1/2 items-start ml-3'>
         <img src="/image/more.jpg" alt="" />
     </div>
     </div>

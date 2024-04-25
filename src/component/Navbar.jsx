@@ -398,11 +398,11 @@ const Navbar = () => {
     },
     {
       name: "Active & Chemical",
-      link: "/cosmeceuticals/#Active & Miscellaneous",
+      link: "/cosmeceuticals/#Active-&-Miscellaneous",
     },
     {
       name: "Anti-Oxidants",
-      link: "/cosmeceuticals/#Anti-Oxidants/ Parabens Free Preservatives",
+      link: "/cosmeceuticals/#Anti-Oxidants",
     },
     {
       name: "Milliglobules",
@@ -411,7 +411,7 @@ const Navbar = () => {
 
     {
       name: "Wax & Butter",
-      link: "/cosmeceuticals/#Wax & Butter",
+      link: "/cosmeceuticals/#Wax-&-Butter",
     },
     {
       name: "Proteins",
@@ -428,7 +428,7 @@ const Navbar = () => {
     },
     {
       name: "Pearlising Agents",
-      link: "/cosmeceuticals/#Pearlising Agents",
+      link: "/cosmeceuticals/#Pearlising-Agents",
     },
     {
       name: "Sunscreens",
@@ -436,7 +436,7 @@ const Navbar = () => {
     },
     {
       name: "Conditioning Agents",
-      link: "/cosmeceuticals/#Conditioning Agents",
+      link: "/cosmeceuticals/#Conditioning-Agents",
     },
     {
       name: "Moisturizers",
@@ -444,15 +444,15 @@ const Navbar = () => {
     },
     {
       name: "Skin Care",
-      link: "/cosmeceuticals/#SkinCare",
+      link: "/cosmeceuticals/#Skin-Care",
     },
     {
       name: "Bio Ferments",
-      link: "/cosmeceuticals/#BioFerments",
+      link: "/cosmeceuticals/#Bio-Ferments",
     },
     {
       name: "Hair Care",
-      link: "/cosmeceuticals/#HairCare",
+      link: "/cosmeceuticals/#Hair-Care",
     },
     {
       name: "Antibacterial",
@@ -501,50 +501,49 @@ const Navbar = () => {
   }, []);
   return (
     <>
-    <div className="hidden md:flex   bg-green-900 shadow-lg h-max md:h-max p-2 l border-gray-800 md:w-full">
-          <div className="flex justify-evenly w-1/2">
-            <div className="flex">
-              <FiPhone className="mr-2 mt-1 text-white" />
+      <div className="hidden md:flex   bg-green-900 shadow-lg h-max md:h-max p-2 l border-gray-800 md:w-full">
+        <div className="flex justify-evenly w-1/2">
+          <div className="flex">
+            <FiPhone className="mr-2 mt-1 text-white" />
 
-              <NavLink
-                className={"font-semibold text-sm text-white"}
-                to="tel:+919882020609"
-              >
-                +91-9882020609
-              </NavLink>
-            </div>
-            <div className="flex">
-              <FiMail className="mr-2 mt-1 text-white" />
-
-              <NavLink
-                className={"font-semibold text-sm text-white"}
-                to="mailto:minakshi@vyomchem.com"
-              >
-                minakshi@vyomchem.com
-              </NavLink>
-            </div>
-          </div>
-          <div className="flex justify-evenly w-1/2">
-            <div className=" flex">
-              <FaRegClock className="mr-2 text-white mt-[3px]" />
-              <span className="font-semibold text-sm text-white">
-                Office hours 9:30 AM to 6:00 PM
-              </span>
-            </div>
             <NavLink
-              to="/contact"
-              className="font-semibold text-xs p-1 rounded-md px-4 bg-green-500  text-white"
+              className={"font-semibold text-sm text-white"}
+              to="tel:+919882020609"
             >
-              GET A QUOTE
+              +91-9882020609
+            </NavLink>
+          </div>
+          <div className="flex">
+            <FiMail className="mr-2 mt-1 text-white" />
+
+            <NavLink
+              className={"font-semibold text-sm text-white"}
+              to="mailto:minakshi@vyomchem.com"
+            >
+              minakshi@vyomchem.com
             </NavLink>
           </div>
         </div>
-       <div
+        <div className="flex justify-evenly w-1/2">
+          <div className=" flex">
+            <FaRegClock className="mr-2 text-white mt-[3px]" />
+            <span className="font-semibold text-sm text-white">
+              Office hours 9:30 AM to 6:00 PM
+            </span>
+          </div>
+          <NavLink
+            to="/contact"
+            className="font-semibold text-xs p-1 rounded-md px-4 bg-green-500  text-white"
+          >
+            GET A QUOTE
+          </NavLink>
+        </div>
+      </div>
+      <div
         className={`${
           isScrolled ? "sticky top-0 z-50" : ""
         } w-full transition-all duration-300 ease-in-out`}
       >
-        
         <nav
           style={{
             zIndex: 3,
@@ -618,38 +617,41 @@ const Navbar = () => {
                       >
                         <NavLink
                           to="/cosmeceuticals/#Alcohol-Sulphate"
-                          className="block px-2 py-1 xl:text-lg border-b-2 border-double border-black text-xs text-black hover:text-green-800"
+                          className="block px-2 py-1 xl:text-lg border-b-2 border-double border-black text-xs text-black  hover:bg-green-200"
                           onMouseEnter={toggleDropdown3}
                           onMouseLeave={toggleDropdown3}
                         >
                           Cosmecuticals
-                          {/* {dropdown3 && (
-                            <div
-                              data-aos="fade-left"
-                              className="grid grid-cols-2   absolute w-max  md:mt-[-21px] xl:-mt-[32.5px] xl:left-[-358px] md:left-[-250px] bg-white border border-black  shadow-md "
-                            >
-                              {product
-                                .sort((a, b) => a.name.localeCompare(b.name)) // Sort the product array alphabetically by name
-                                .map((ele, index) => (
-                                  <div key={index} className="flex-1">
-                                    <div>
-                                      <NavLink
-                                        to={ele.link}
-                                        data-aos="fade-up"
-                                        className="block px-2 border-r border-b border-black font-normal py-1 xl:text-lg text-xs text-black hover:bg-green-100"
-                                      >
-                                        {ele.name}
-                                      </NavLink>
+                          {dropdown3 && (
+                            <>
+                              
+                              <div
+                                data-aos="fade-left"
+                                className="grid grid-cols-2  rounded-md absolute w-max  md:mt-[-20px] xl:-mt-[32.5px] xl:left-[220px] md:left-[150px] bg-green-200  shadow-md "
+                              >
+                               
+                                {product
+                                  .sort((a, b) => a.name.localeCompare(b.name)) // Sort the product array alphabetically by name
+                                  .map((ele, index) => (
+                                    <div key={index} className="flex-1 p-1">
+                                      <div>
+                                        <NavLink
+                                          to={ele.link}
+                                          className="block px-2 w-48   text-left font-sans py-1  text-lg  pl-3 text-black hover:bg-white"
+                                        >
+                                          {ele.name}
+                                        </NavLink>
+                                      </div>
                                     </div>
-                                  </div>
-                                ))}
-                            </div>
-                          )} */}
+                                  ))}
+                              </div>
+                            </>
+                          )}
                         </NavLink>
                         <NavLink
                           href="https://www.vyomchem.com/pdf/Cosmeceuticals-Brochure.pdf"
                           target="_blank"
-                          className="block px-2  py-1 xl:text-lg text-xs text-black hover:text-green-800"
+                          className="block px-2  py-1 xl:text-lg text-xs text-black hover:bg-green-300"
                         >
                           Cosmeceuticals Brochure
                         </NavLink>

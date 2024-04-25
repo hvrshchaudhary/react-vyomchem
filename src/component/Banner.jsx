@@ -29,7 +29,7 @@ const Banner = () => {
             </div>
             <NavLink
               to="/About"
-              className="text-white rounded-sm py-1 px-2 md:px-4 bg-green-800 font-bold text-xs md:text-base self-start w-max"
+              className="text-white rounded-sm py-1 px-2 md:px-4 bg-green-800 font-bold text-xs hover:bg-green-600 md:text-base self-start w-max"
             >
               READ MORE....
             </NavLink>

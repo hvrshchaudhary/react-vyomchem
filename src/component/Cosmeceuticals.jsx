@@ -8,7 +8,7 @@ const Cosmeceuticals = () => {
       image: "/image/WAX.jpg",
       image2: "/image/pearlising.jpg",
       text: "WAX AND BUTTER",
-      URL: "/cosmeceuticals/#Wax & Butter",
+      URL: "/cosmeceuticals/#Wax-&-Butter",
       text2: "Pearlising Agents",
       URL2:"/cosmeceuticals/#Pearlising-Agents"
     },
@@ -16,9 +16,9 @@ const Cosmeceuticals = () => {
       image: "/image/extract.jpg",
       image2: "/image/extract.jpg",
       text: "Bio Ferments",
-      URL:"/cosmeceuticals/#BioFerments",
+      URL:"/cosmeceuticals/#Bio-Ferments",
       text2: "Bio Ferments",
-      URL2:"/cosmeceuticals/#BioFerments"
+      URL2:"/cosmeceuticals/#Bio-Ferments"
     },
     {
       image: "/image/algae-extract-3.jpg",

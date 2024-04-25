@@ -108,7 +108,7 @@ const AllProduct = () => {
       )}
       <h1 className="text-sm font-semibold text-black">Product Categories</h1>
       <NavLink to="/contact">
-        <img src="/image/call-img.png" className="w-6 h-6 " size={20} alt="" />
+        <img src="/image/call-msg.png" className="w-6 h-6 " size={20} alt="" />
         </NavLink>
       {/* <NavLink to="/contact" className="text-sm font-semibold text-white rounded-md pt-[2px] pb-[3px] px-1 bg-green-800">contact us</NavLink> */}
     </div>
@@ -130,7 +130,7 @@ const AllProduct = () => {
   </div>
   {/* Sidebar for desktop view */}
   <div className="flex md:mx-12 container">
-    <div className="text-black w-full xl:w-1/4 xl:block md:hidden hidden flex-none">
+    {/* <div className="text-black w-full xl:w-1/4 xl:block md:hidden hidden flex-none">
       <div className="rounded-lg p-4 m-4 mt-6 bg-white shadow-md">
         <div className="text-center">
           <h1 className="text-2xl text-black font-bold mb-4">
@@ -155,7 +155,7 @@ const AllProduct = () => {
           ))}
         </ul>
       </div>
-    </div>
+    </div> */}
     {/* Main Content */}
     <div className="flex-1">
       <h1 className="mb-4">

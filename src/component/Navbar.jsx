@@ -615,9 +615,11 @@ const Navbar = () => {
                         data-aos="fade-up"
                         className="absolute w-max border border-black  mt-4 -left-[2rem] bg-white z-10 shadow-md "
                       >
-                        <NavLink
-                          to="/cosmeceuticals/#Alcohol-Sulphate"
-                          className="block px-2 py-1 xl:text-lg border-b-2 border-double border-black text-xs text-black  hover:bg-green-200"
+                        <div
+                        onClick={(e)=>{
+                          e.preventDefault()
+                        }}
+                          className="block px-2 py-1 xl:text-lg  border-b-2 border-double border-black text-xs text-black  hover:bg-green-200"
                           onMouseEnter={toggleDropdown3}
                           onMouseLeave={toggleDropdown3}
                         >
@@ -651,7 +653,7 @@ const Navbar = () => {
                               </div>
                             </>
                           )}
-                        </NavLink>
+                        </div>
                         <NavLink
                           href="https://www.vyomchem.com/pdf/Cosmeceuticals-Brochure.pdf"
                           target="_blank"

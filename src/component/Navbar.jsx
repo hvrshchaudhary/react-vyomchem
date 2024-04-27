@@ -604,7 +604,7 @@ const Navbar = () => {
                 </NavLink>
                 <div className=" relative hidden md:block">
                   <a
-                    href="#"
+                    // href="#"
                     className=" font-sans xl:text-lg text-sm font-semibold pb-5 text-black hover:text-green-800 px-3 py-2"
                     onMouseEnter={toggleDropdown}
                     onMouseLeave={toggleDropdown}
@@ -667,16 +667,19 @@ const Navbar = () => {
                 </div>
                 <div className="relative hidden md:block">
                   <a
-                    href="#"
-                    className="z-10 font-sans xl:text-lg text-sm text-black font-semibold hover:text-green-800 px-3 py-2"
+                    // href="#"
+                    className="z-10 font-sans xl:text-lg text-sm pb-3  text-black font-semibold hover:text-green-800 px-3 py-2"
                     onMouseEnter={toggleDropdown2}
                     onMouseLeave={toggleDropdown2}
+                    // onClick={(e)=>{
+                    //   e.preventDefault()
+                    // }}
                   >
                     Exclusive products
                     {dropdown2 && (
                       <div
                         data-aos="fade-up"
-                        className="absolute z-10 w-max top-full m-[-15px] left-0 mt-[8px] border  border-black bg-white shadow-md "
+                        className="absolute z-10 w-max  top-full m-[-15px] left-0 mt-[8px] border  border-black bg-white shadow-md "
                       >
                         <a
                           href="https://www.vionabiopharma.com/undenatured-native-chicken-collagen-type-ii.php"

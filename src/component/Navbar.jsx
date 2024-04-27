@@ -638,7 +638,7 @@ const Navbar = () => {
                                         <NavLink
                                         to={ele.link}
                                         onClick={()=>{
-                                          toggleDropdown2(false);
+                                          // toggleDropdown2(false);
                                           // toggleDropdown3(false)
                                           toggleDropdown(false)
                                         }}

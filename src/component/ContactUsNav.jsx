@@ -13,7 +13,7 @@ const ContactUsNav = () => {
               <h2 className="text-2xl  font-bold  mb-3"  style={{
                 color: "#7CE6B3",
                 }}>
-                We would like to here <br className="" /> from you!
+                We would like to hear <br className="" /> from you!
               </h2>
               <p className="mb-5">
                 If you would like more information about our company and

@@ -108,7 +108,7 @@ const AllProduct = () => {
       )}
       <h1 className="text-sm font-semibold text-black">Product Categories</h1>
       <NavLink to="/contact">
-        <img src="/image/call-msg.png" className="w-6 h-6 " size={20} alt="" />
+        <img src="/image/call-msg8.png" className="w-6 h-6 " size={20} alt="" />
         </NavLink>
       {/* <NavLink to="/contact" className="text-sm font-semibold text-white rounded-md pt-[2px] pb-[3px] px-1 bg-green-800">contact us</NavLink> */}
     </div>
@@ -118,6 +118,7 @@ const AllProduct = () => {
           <li key={product.name}>
             <NavLink
               to={`#${product.name}`}
+              
               className="block px-4 py-2 text-sm font-semibold border-black border-[1px]  text-green-900 hover:text-white hover:bg-green-600 rounded-sm"
               onClick={() => setIsSidebarOpen(false)}
             >

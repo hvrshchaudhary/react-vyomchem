@@ -43,7 +43,7 @@ const ContactUs = () => {
         </div>
       </div>
       <div className="md:flex justify-center w-full  bg--100 md:pt-5 pb-5">
-        <div className=" md:p-9 flex w-full">
+        <div className=" md:p-9 flex container">
           <div
             className="bg-white md:m-8 m-3 w-full border rounded-lg bottom-4"
             style={{

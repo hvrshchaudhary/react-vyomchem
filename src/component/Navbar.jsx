@@ -619,7 +619,7 @@ const Navbar = () => {
                         onClick={(e)=>{
                           e.preventDefault()
                         }}
-                          className="block px-2 py-1 xl:text-lg  border-b-2 border-double border-black text-xs text-black  hover:bg-green-200"
+                          className="block px-2 py-1 xl:text-lg  border-b border-black text-xs text-black  hover:bg-green-200"
                           onMouseEnter={toggleDropdown3}
                           onMouseLeave={toggleDropdown3}
                         >

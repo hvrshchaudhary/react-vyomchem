@@ -159,7 +159,7 @@ const AllProduct = () => {
     </div> */}
     {/* Main Content */}
     <div className="flex-1">
-      <h1 className="mb-4">
+      <h1 className="mb-4 ">
         {
           productComponents.find(
             (product) => product.name === selectedProduct

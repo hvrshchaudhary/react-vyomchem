@@ -67,7 +67,7 @@ const Alcohol = () => {
                       key={index}
                       onMouseEnter={() => handleMouseEnter(index)}
                       onMouseLeave={handleMouseLeave}
-                      className="relative text-center rounded-lg m-4 opacity-90 bg-white shadow-md w-64"
+                      className="relative text-center rounded-lg m-4 opacity-75 hover:opacity-90 bg-white shadow-md w-64"
                       // style={{ filter: selectedIndex === index ? "none" : "brightness(90%)" }}
                     >
                       <div className="w-64 h-56 bg-white justify-center flex object-cover rounded-lg">

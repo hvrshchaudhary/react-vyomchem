@@ -637,10 +637,9 @@ const Navbar = () => {
                                       <div>
                                         <NavLink
                                         to={ele.link}
-                                        onClick={()=>{
-                                          // toggleDropdown2(false);
-                                          // toggleDropdown3(false)
-                                          toggleDropdown(false)
+                                        onClick={() => {
+                                          toggleDropdown();
+                                          toggleDropdown3(); // Assuming you want to toggle both dropdowns
                                         }}
                                           className="block px-2 w-48   text-left font-sans py-1  text-lg  pl-3 text-black hover:bg-white"
                                         >

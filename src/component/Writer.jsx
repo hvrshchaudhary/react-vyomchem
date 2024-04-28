@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Writer = () => {
   return (
@@ -35,7 +36,9 @@ const Writer = () => {
               alt=""
               className="w-28 h-28 rounded-full mb-3"
             />
-            <span className="font-mono">+91-9882020609</span>
+            <NavLink to="/form" >
+            <span className="font-mono">Apply form for job</span>
+            </NavLink>
           </div>
         </div>
       </div>

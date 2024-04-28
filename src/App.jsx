@@ -10,6 +10,7 @@ import CosmeceuticalsProduct from "./component/CosmeceuticalsProduct";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./component/Home";
 import OurPrinciplepage from "./component/OurPrinciplepage";
+import Form from "./component/resumeform/Form";
 function App() {
   useLayoutEffect(() => {
     AOS.init();
@@ -25,6 +26,7 @@ function App() {
           <Route path="/principle" element ={<OurPrinciplepage/>}/>
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/form" element={<Form/>} />
         </Routes>
         <Footer />
       </BrowserRouter>

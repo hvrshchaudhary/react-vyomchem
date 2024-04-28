@@ -16,7 +16,7 @@ const Home = () => {
     <OurPrincliple/>
     <Cards/>
     <ContactUsNav/>
-    {/* <Writer/> */}
+    <Writer/>
    </div>
 
   )

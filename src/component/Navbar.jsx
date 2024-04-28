@@ -271,7 +271,7 @@ const Navbar = () => {
                         <NavLink
                           href="https://www.vyomchem.com/pdf/Cosmeceuticals-Brochure.pdf"
                           target="_blank"
-                          className="block px-2  py-1 xl:text-lg text-xs text-black hover:bg-green-300"
+                          className="block px-2  py-1 xl:text-lg text-xs text-black hover:bg-green-200"
                         >
                           Cosmeceuticals Brochure
                         </NavLink>
@@ -294,7 +294,7 @@ const Navbar = () => {
                       >
                         <a
                           href="https://www.vionabiopharma.com/undenatured-native-chicken-collagen-type-ii.php"
-                          className="block px-5 py-3  xl:text-sm text-xs text-black hover:text-green-800 "
+                          className="block px-5 py-3 hover:bg-green-200  xl:text-sm text-xs text-black hover:text-black "
                           target="_blank"
                         >
                           Undenatured Chicken collagen Type II (Smarticol)

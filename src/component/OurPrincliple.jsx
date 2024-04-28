@@ -36,20 +36,20 @@ const ImageSlider = () => {
                 <img
                   key={index}
                   src={image}
-                  className="flex-1 w-full md:w-[340px] border h-16 md:h-auto  border-black m-1  mb:mb-4 md:mb-3 md:m-4"
+                  className="flex-1 w-full md:w-[340px]  h-16 md:h-auto  border-gray-200 border-4 m-1  mb:mb-4 md:mb-3 md:m-4"
                   alt={`Slide ${currentSlide + index + 1}`}
                 />
               ))}
           </div>
           {/* this image is for mobile view */}
-          <div className="flex justify-center md:hidden    border-slate-950 border-solid ">
+          <div className="flex justify-center md:hidden    border-gray-200 border-solid ">
             {images
               .slice(currentSlide, currentSlide + 1)
               .map((image, index) => (
                 <img
                   key={index}
                   src={image}
-                  className="flex-1 w-full   border h-28 md:h-auto  border-black m-1  mb:mb-4 md:mb-3 md:m-4"
+                  className="flex-1 w-full   border h-28 md:h-auto  border-gray-200 m-1  mb:mb-4 md:mb-3 md:m-4"
                   alt={`Slide ${currentSlide + index + 1}`}
                 />
               ))}

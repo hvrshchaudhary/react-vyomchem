@@ -35,7 +35,6 @@ const Cards = () => {
               className="bg-white p-4   pt-6 w-full xl:flex-1 mt-2 md:m-5"
               style={{
                 borderRadius: "10px",
-                // width: "auto",
                 boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
               }}
             >

@@ -2,8 +2,9 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 const ContactUsNav = () => {
   return (
-    <div className="flex bg-gray-100 h-screen md:pt-0 md:pb-0  justify-center items-center ">
-      <div className="md:flex container  w-4/5">
+  <div className="flex bg-gray-100 justify-center">   
+     <div className="  h-screen flex w-4/5 justify-center items-center  ">
+      <div className="md:flex container  ">
         <div className=" flex-1" data-aos="fade-right">
           <div>
             <div className="pb-8 md:pb-0">
@@ -39,6 +40,7 @@ const ContactUsNav = () => {
           />
         </div>
       </div>
+    </div>
     </div>
   );
 };

@@ -34,7 +34,7 @@ const OurPrinciplepage = () => {
       <div className="w-full  bg-gray-200 flex justify-center">
         <div className="w-4/5 h-full flex flex-wrap mt-6 mb-6 bg-white justify-evenly">
           <div className="flex container flex-wrap justify-between">
-            <div className="border-black border m-4">
+            <div className="border-gray-200  border-2 m-4">
               <img
                 src="/image/our-clients-02.png"
                 style={{ width: 280 }}
@@ -43,7 +43,7 @@ const OurPrinciplepage = () => {
             </div>
             {images.map((ele)=>{
               return(
-                <div className="border-black border m-4">
+                <div className="border-gray-200 border-2  m-4">
                 <img src={ele} alt="" />
               </div>
               )

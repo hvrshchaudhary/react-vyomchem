@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="phone flex xl:mb-0 mb-8">
             <img src="/image/phone-logo.png" className="xl:w-12 w-8 h-8 xl:h-auto mt-1 xl:mt-0 mr-2 " alt="" />
             <div className="flex flex-col ">
-              <NavLink className={"font-bold text-sm xl:text-xl:"} to="tel:+919882020609">
+              <NavLink className={"font-bold text-sm xl:text-xl"} to="tel:+919882020609">
                 +91-9882020609
               </NavLink>
 
@@ -27,7 +27,7 @@ const Footer = () => {
             />
             <div className="flex flex-col ">
               <NavLink
-                className={"font-bold text-sm xl:text-xl:"}
+                className={"font-bold text-sm xl:text-xl"}
                 to="mailto:minakshi@vyomchem.com"
               >
                 minakshi@vyomchem.com
@@ -40,7 +40,7 @@ const Footer = () => {
           <div className="time flex xl:mb-0 mb-8">
             <img src="/image/clock-logo.png" alt="" className="xl:w-12 w-8 h-8 xl:h-auto mt-1 xl:mt-0 mr-2" />
             <div className="flex flex-col ">
-              <span className="font-bold text-sm xl:text-xl:">Monday to Saturday</span>
+              <span className="font-bold text-sm xl:text-xl">Monday to Saturday</span>
               <h5 className="xl:text-sm text-xs">We are open from 9:30 AM to 6:00 PM</h5>
             </div>
           </div>
@@ -84,6 +84,14 @@ const Footer = () => {
                 <FaGreaterThan className="mr-2 w-2"/>
                 Exclusive Product
               </NavLink>
+              <NavLink
+                to="/form"
+                className="flex items-center font-semibold hover:text-green-500"
+              >
+                 <FaGreaterThan className="w-2"/>
+                <FaGreaterThan className="mr-2 w-2"/>
+                Apply for job
+              </NavLink>
             </div>
           </div>
 
@@ -99,14 +107,18 @@ const Footer = () => {
                 }}
                 className="flex items-center font-semibold hover:text-green-500"
               >
-                <FiMail className="mr-2" /> Cosmecuticals
+               <FaGreaterThan className="w-2"/>
+                <FaGreaterThan className="mr-2 w-2"/>
+               Cosmecuticals
               </NavLink>
               <NavLink
                 to="https://www.vyomchem.com/pdf/Cosmeceuticals-Brochure.pdf"
                 className="flex items-center font-semibold hover:text-green-500"
                 target="_blank"
               >
-                <FiMail className="mr-2" /> Cosmeceuticals Brochure
+                 <FaGreaterThan className="w-2"/>
+                <FaGreaterThan className="mr-2 w-2"/>
+                Cosmeceuticals Brochure
               </NavLink>
             </div>
           </div>

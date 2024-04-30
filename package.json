@@ -6,7 +6,7 @@
   "scripts": {
     "dev:server":"nodemon app.js",
     "dev:client":"cd client && npm run dev",
-    "build":"cd client && npm run build",
+    "prebuild":"cd client && npm run build",
     "start":"node app.js"
   },
   "keywords": [],
@@ -16,8 +16,6 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "nodemailer": "^6.9.13",
-    "vite": "^5.1.4"
-
+    "nodemailer": "^6.9.13"
   }
 }

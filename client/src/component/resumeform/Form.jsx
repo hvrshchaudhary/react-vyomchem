@@ -28,7 +28,7 @@ const Form = () => {
 
     const recipientEmail = "ataahmad72600@gmail.com";
     const subject = "New Job Application";
-    sendEmail(recipientEmail)
+    sendEmail(recipientEmail);
     // const mailtoURL = `mailto:${encodeURIComponent(
     //   recipientEmail
     // )}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
@@ -40,23 +40,30 @@ const Form = () => {
   const [files, setFiles] = useState([]);
   useEffect(() => {
     document.getElementById("file-upload").addEventListener("change", (e) => {
-      console.log(e.target.files[0]);
       if (e.target.files.length) {
         setFiles([...files, e.target.files[0]]);
       }
     });
-  });
+  }, []);
 
-  const sendEmail = async (email) => {
-    const url  = process.env.NODE_ENV === "development"?"http://localhost:8006":""
-    const res = await fetch(url+"/apply-jobs", {
+  const sendEmail = async () => {
+    console.log(formData);
+    const url =
+      process.env.NODE_ENV === "development" ? "http://localhost:8006" : "";
+    const _formData = new FormData();
+    // Assuming formData is an object with key-value pairs
+    Object.keys(formData).forEach((key) => {
+      _formData.append(key, formData[key]);
+    });
+
+    if (files.length) {
+      // Append files
+      _formData.append(`resume-files`, files[0]);
+    }
+
+    const res = await fetch(url + "/apply-jobs", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        email,
-      }),
+      body: _formData,
     });
     const data = await res.json();
     if (data.status === 401 || !data) {

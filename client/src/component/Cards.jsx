@@ -1,5 +1,35 @@
 import React from "react";
 
+export const CardDetailsComponent = (details) => {
+  const ele = details;
+  return (
+    <div
+      data-aos-offset="300"
+      data-aos="flip-up"
+      className="bg-white p-4   pt-6 w-full xl:flex-1 mt-2 md:m-5"
+      style={{
+        borderRadius: "10px",
+        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+      }}
+    >
+      <div className="flex pl-4 mb-1">
+        <div>
+          <img
+            src={ele.avatar_url}
+            alt=""
+            className="w-16 h-16 mr-4 object-cover rounded-full"
+          />
+        </div>
+        <div className="flex flex-col mt-1">
+          <h1 className="font-bold">{ele.name}</h1>
+          <p>{ele.post}</p>
+        </div>
+      </div>
+      <p className="p-4 text-sm">{ele.comment}</p>
+    </div>
+  );
+};
+
 const Cards = () => {
   const cardsDetails = [
     {
@@ -27,34 +57,9 @@ const Cards = () => {
         style={{ width: "80%" }}
         className="md:flex container bg-gray-100 justify-center md:px-10 md:py-4 flex-wrap "
       >
-        {cardsDetails.map((ele) => {
-          return (
-            <div
-              data-aos-offset="300"
-              data-aos="flip-up"
-              className="bg-white p-4   pt-6 w-full xl:flex-1 mt-2 md:m-5"
-              style={{
-                borderRadius: "10px",
-                boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-              }}
-            >
-              <div className="flex pl-4 mb-1">
-                <div>
-                  <img
-                    src={ele.avatar_url}
-                    alt=""
-                    className="w-16 h-16 mr-4 object-cover rounded-full"
-                  />
-                </div>
-                <div className="flex flex-col mt-1">
-                  <h1 className="font-bold">{ele.name}</h1>
-                  <p>{ele.post}</p>
-                </div>
-              </div>
-              <p className="p-4 text-sm">{ele.comment}</p>
-            </div>
-          );
-        })}
+        {cardsDetails.map((ele) => (
+          <CardDetailsComponent details={ele} />
+        ))}
       </div>
     </div>
   );

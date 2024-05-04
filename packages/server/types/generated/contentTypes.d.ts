@@ -393,6 +393,49 @@ export interface ApiGalleryGallery extends Schema.CollectionType {
   };
 }
 
+export interface ApiJobApplicationJobApplication extends Schema.CollectionType {
+  collectionName: 'job_applications';
+  info: {
+    singularName: 'job-application';
+    pluralName: 'job-applications';
+    displayName: 'Job Application';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    name: Attribute.String;
+    email: Attribute.Email;
+    phone: Attribute.BigInteger;
+    resume: Attribute.Media;
+    location: Attribute.Text;
+    address: Attribute.Text;
+    city: Attribute.String;
+    pin_code: Attribute.Integer;
+    job_post: Attribute.Relation<
+      'api::job-application.job-application',
+      'manyToOne',
+      'api::job-post.job-post'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::job-application.job-application',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::job-application.job-application',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiJobPostJobPost extends Schema.CollectionType {
   collectionName: 'job_posts';
   info: {
@@ -408,6 +451,11 @@ export interface ApiJobPostJobPost extends Schema.CollectionType {
     description: Attribute.Blocks;
     image: Attribute.Media;
     posted_on: Attribute.DateTime;
+    job_applications: Attribute.Relation<
+      'api::job-post.job-post',
+      'oneToMany',
+      'api::job-application.job-application'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -863,6 +911,7 @@ declare module '@strapi/types' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'api::gallery.gallery': ApiGalleryGallery;
+      'api::job-application.job-application': ApiJobApplicationJobApplication;
       'api::job-post.job-post': ApiJobPostJobPost;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;

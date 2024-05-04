@@ -29,6 +29,12 @@
     },
     "posted_on": {
       "type": "datetime"
+    },
+    "job_applications": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::job-application.job-application",
+      "mappedBy": "job_post"
     }
   }
 }

@@ -87,7 +87,7 @@ const AntiOxidant = () => {
                 <div
                   className="md:w-full  rounded-md  w-full   mt-5"
                   style={{
-                    backgroundImage: "url('/image/more.jpg')",
+                    backgroundImage: "url('/category-images/antioxidants.jpg')",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}

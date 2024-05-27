@@ -5,6 +5,9 @@ import { IoClose } from "react-icons/io5";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useEffect } from "react";
+import { Cascader } from 'rsuite';
+import 'rsuite/dist/rsuite-rtl.css';
+import { ProductList } from "./products/ProductList";
 const Navbar = () => {
   const product = [
     {
@@ -77,7 +80,12 @@ const Navbar = () => {
       name: "Oils",
       link: "/cosmeceuticals/#Oils",
     },
+    {
+      name: "Liquid Extracts",
+      link: "/cosmeceuticals/#Liquid-Extracts",
+    },
   ];
+  
   const [isOpen, setIsOpen] = useState(false);
   const [dropdown, setDropdown] = useState(false);
   const [dropdown2, setDropdown2] = useState(false);
@@ -98,6 +106,9 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleCascaderSelect = (data) => {
+    window.location.href = data.value;
+  }
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -146,6 +157,7 @@ const Navbar = () => {
               Office hours 9:30 AM to 6:00 PM
             </span>
           </div>
+          <Cascader data={ProductList} onSelect={handleCascaderSelect}/>
           <NavLink
             to="/contact"
             className="font-semibold text-xs p-1 rounded-md px-4 bg-green-500  text-white"
@@ -303,6 +315,7 @@ const Navbar = () => {
                     )}
                   </a>
                 </div>
+                
                 <div className="relative hidden md:block">
                   <NavLink
                     to="/Principle"
@@ -313,6 +326,14 @@ const Navbar = () => {
                     Our principles
                   </NavLink>
                 </div>
+                <div className="relative hidden md:block">
+  <NavLink
+    to="/gallery"
+    className="z-10 font-sans xl:text-lg text-sm pb-3 text-black font-semibold hover:text-green-800 px-3 py-2"
+  >
+    Gallery
+  </NavLink>
+</div>
                 <NavLink
                   to="/contact"
                   className="font-sans xl:text-lg text-sm text-black font-semibold hover:text-green-800 px-3 py-2"
@@ -411,8 +432,12 @@ const Navbar = () => {
               </div>
             </div>
           </div>
+<marquee className="bg-white border-t-2 pt-3 mt-2" >
+  <img src="marqueeimage.jpg" alt="Marquee" className="h-6 mr-2 inline" />
+  Proud exhibitor of Cosmohome Tech Expo to be held at Pragati Maidan Delhi on 26th & 27th June24.
+</marquee> 
         </nav>
-      </div>
+     </div>
     </>
   );
 };

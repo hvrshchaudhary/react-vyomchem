@@ -1,4 +1,9 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import { library } from "@fortawesome/fontawesome-svg-core";
+
+library.add(faTimes);
 
 const Blog = () => {
   const celebrationImages = [
@@ -22,40 +27,45 @@ const Blog = () => {
     "/galleryimage/SocialCause/SOCIAL-CLAUSE-06.JPG",
   ];
 
-  const [hoveredImage, setHoveredImage] = useState(null);
-  const [hoveredImagePosition, setHoveredImagePosition] = useState({
-    top: 0,
-    left: 0,
-  });
+  const [selectedImage, setSelectedImage] = useState(null);
 
-  const handleMouseEnter = (image, event) => {
-    const { clientX: left, clientY: top } = event;
-    setHoveredImage(image);
-    setHoveredImagePosition({ top, left });
+  const handleImageClick = (image) => {
+    setSelectedImage(image);
   };
 
-  const handleMouseLeave = () => {
-    setHoveredImage(null);
+  const handleCloseClick = () => {
+    setSelectedImage(null);
+  };
+
+  const handleOverlayClick = (e) => {
+    if (e.target.classList.contains("overlay")) {
+      setSelectedImage(null);
+    }
   };
 
   return (
     <div className="relative p-8">
-      {hoveredImage && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
-          <div className="relative" onMouseLeave={handleMouseLeave}>
+      {selectedImage && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 overlay"
+          onClick={handleOverlayClick}
+        >
+          <div className="relative max-w-full max-h-full">
+            <button
+              onClick={handleCloseClick}
+              className="absolute top-0 right-0 mt-2 mr-2 text-black text-3xl font-bold border-2 border-black rounded-full px-2 py-1 z-50"
+            >
+              <FontAwesomeIcon icon={faTimes} />
+            </button>
             <img
-              src={hoveredImage}
-              alt="Hovered"
-              className="max-w-full max-h-full rounded-lg shadow-lg"
+              src={selectedImage}
+              alt="Selected"
+              className="max-w-full max-h-screen rounded-lg shadow-lg"
             />
           </div>
         </div>
       )}
-      <div
-        className={`transition-all duration-300 ${
-          hoveredImage ? "blur-lg" : ""
-        }`}
-      >
+      <div>
         <div className="mb-12">
           <h1 className="text-3xl font-bold mb-6 text-center text-gray-800">
             Social Cause
@@ -65,8 +75,7 @@ const Blog = () => {
               <div
                 key={index}
                 className="border rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105 cursor-pointer"
-                onMouseEnter={(e) => handleMouseEnter(image, e)}
-                onMouseLeave={handleMouseLeave}
+                onClick={() => handleImageClick(image)}
               >
                 <div className="w-full h-48">
                   <img
@@ -88,8 +97,7 @@ const Blog = () => {
               <div
                 key={index}
                 className="border rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105 cursor-pointer"
-                onMouseEnter={(e) => handleMouseEnter(image, e)}
-                onMouseLeave={handleMouseLeave}
+                onClick={() => handleImageClick(image)}
               >
                 <div className="w-full h-48">
                   <img

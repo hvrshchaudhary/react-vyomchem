@@ -2,44 +2,60 @@ import React from "react";
 import { useState } from "react";
 import { BsArrowReturnRight } from "react-icons/bs";
 
-const Parabens = () => {
+const LiquidExtracts = () => {
   const b = [
     {
-        Parabens: [
-          {
-            product: "Butyl Paraben",
-            comment : "It is used as a antimicrobial preservative,found in shaving creams, moisturizers, shampoos, lubricants"
-          },
-          {
-            product: "Ethyl Paraben",
-            comment : "It is mainly used as antiseptics in cosmetics and personal care products."
-          },
-          {
-            product: "Methyl Paraben",
-            comment : "It is a synthetic preservative commonly used in cosmetics and personal care products"
-          },
-          {
-            product: "Propyl Paraben",
-            comment : "A preservative typically used in many water-based cosmetic products."
-          },
-          {
-            product: "Sodium Butyl Paraben",
-            comment : "An antimicrobial preservative used in cosmetics"
-          },
-          {
-            product: "Sodium Ethyl Paraben",
-            comment : "It is suitable to preserve both rinse- off and leave- on formulations"
-          },
-          {
-            product: "Sodium Methyl Paraben",
-            comment : "MPS is a versatile preservative with a wide range of industrial & manufacturing applications."
-          },
-          {
-            product: "Sodium Propyl Paraben",
-            comment : "PPS is a water-soluble antiseptic mainly used as a safe, high efficiency, broad-spectrum antibiotic for cosmetics"
-          },
-        ],
-      },
+      "Liquid Extracts (water/oil soluble)": [
+        {
+          product: "Aloe vera extract(water soluble)",
+          comment : "Moisturizer, sunscreen Emollient, Fights skin aging.  Reduces infection and acne Lightens blemishes on the face"
+        },
+        {
+          product: "Citrus extract(water soluble)",
+          comment : "Skin creams,anti acne,antibacterial"
+        },
+        {
+          product: "Liquorice extract(water soluble)",
+          comment : "De-pigmenting,lightening,emollient,anti-acne,photoprotection,antiaging,antimicrobial and antioxidant properties"
+        },
+        {
+          product: "Bamboo extract(water soluble)",
+          comment : "Visibly reduces the sign of fatigue and leaves the skin feeling hydrated and balanced"
+        },
+        {
+          product: "Turmeric extract(oil soluble)",
+          comment : "Antibacterial,antimicrobial skin creams"
+        },
+        {
+          product: "Neem Extract(water soluble)",
+          comment : "Antiseptic,reduce dark spots,antibacterial"
+        },
+        {
+          product: "Cantella extract( water soluble)",
+          comment : "Bound healing, reduce stretch marks creams"
+        },
+        {
+          product: "Green tea extract(water soluble)",
+          comment : "Decrease any under-eye puffiness while helping reduce the appearance of dark circles"
+        },
+        {
+          product: "Resveratrol(non soluble)",
+          comment : "Moisturizing and tightening effects on skin, proliferation of fibroblasts and contributing to the increase in the concentration of collagen III"
+        },
+        {
+          product: "Green coffee bean extract(water soluble)",
+          comment : "Its anti-inflammatory properties aid in soothing irritated skin and reducing redness Chlorogenic acid Its antioxidant action helps neutralize free radicals, protecting the skin from premature aging and environmental damage"
+        },
+        {
+          product: "Lutein(oil soluble)",
+          comment : "Brighten skin: Lutein can improve skin moisture, and destroy harmful factors from the external environment to help brighten and smooth skin."
+        },
+        {
+          product: "Flavonoids",
+          comment : "Increase skin moisture-retention and smoothness, as well as reduce roughness"
+        },
+      ],
+    },
   ];
   const [isOpen, setIsOpen] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(null);
@@ -70,7 +86,7 @@ const Parabens = () => {
                 <div
                   className="md:w-full  rounded-md  w-full   mt-5"
                   style={{
-                    backgroundImage: "url('/category-images/parabens.jpg')",
+                    backgroundImage: "url('/image/more.jpg')",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}
@@ -129,4 +145,4 @@ const Parabens = () => {
   );
 };
 
-export default Parabens;
+export default LiquidExtracts;

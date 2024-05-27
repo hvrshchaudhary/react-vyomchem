@@ -3,13 +3,16 @@ import React, { useState, useEffect } from "react";
 const ImageSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const images = [
-    "/image/our-clients-03.png",
+    // "/image/our-clients-03.png",
     "/image/our-clients-04.png",
     "/image/our-clients-05.png",
-    "/image/our-clients-06.png",
+    // "/image/our-clients-06.png",
     "/image/our-clients-07.png",
     "/image/our-clients-11.png",
     "/image/our-clients-12.png",
+    "/image/our-clients-13.png",
+    "/image/our-clients-14.png",
+    "/image/our-clients-15.png",
   ];
 
   useEffect(() => {

@@ -70,7 +70,7 @@ const Antibacterial = () => {
                 <div
                   className="md:w-full  rounded-md  w-full   mt-5"
                   style={{
-                    backgroundImage: "url('/image/more.jpg')",
+                    backgroundImage: "url('/category-images/antibacterial.jpg')",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}

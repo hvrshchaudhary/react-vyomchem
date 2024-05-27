@@ -18,7 +18,7 @@ import Bioferments from "../Bioferments";
 import Haircare from "../Haircare";
 import Antibacterial from "../Antibacterial";
 import Oils from "../Oils";
-
+import LiquidExtracts from "../LiquidExtracts";
 const productComponents = [
   { name: "Alcohol-Sulphate", component: <Alcohol /> },
   { name: "Active-&-Miscellaneous", component: <Miscellaneous /> },
@@ -40,6 +40,7 @@ const productComponents = [
   { name: "Sunscreens", component: <Sunscreen /> },
   { name: "Skin-Care", component: <Skincare /> },
   { name: "Wax-&-Butter", component: <WaxButter /> },
+  { name: "Liquid-Extracts", component: <LiquidExtracts /> },
 ];
 
 const AllProduct = () => {
@@ -81,12 +82,14 @@ const AllProduct = () => {
 
   useEffect(() => {
     setSelectedProduct(decodeURIComponent(location.hash).replace("#", ""));
+    console.log(productComponents)
     return () => {};
   }, [location.hash]);
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
+  
 
   return (
     <div className="xl:flex  md:justify-center flex-row relative">
@@ -171,5 +174,8 @@ const AllProduct = () => {
 </div>
   );
 };
-
+export const productData = productComponents.map(product => ({
+  label: product.name,
+  value: product.name,
+}));
 export default AllProduct;

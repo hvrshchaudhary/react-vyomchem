@@ -2,36 +2,36 @@ import { BsArrowReturnRight } from "react-icons/bs";
 import React from "react";
 import { useState } from "react";
 
+const b = [
+  {
+    "Alcohol Sulphate": [
+      {
+        img: "/image/more.jpg",
+        product: "Ammonium Lauryl Sulphate",
+        comment:
+          "A sulfate ester, made from coconut or palm kernel oil. Widely used surfactant in shampoos or bath products",
+      },
+      {
+        img: "", // Add image URL here if available
+        product: "Disodium Laureth Sulfosuccinate",
+        comment:
+          "It is a mild, anionic, and non-irritating surfactant with great foaming properties. Primarily used in cleansing products, including bubble baths, bath soaps, and detergents",
+      },
+      {
+        img: "", // Add image URL here if available
+        product: "Sodium Lauryl Ether Sulphate",
+        comment:
+          "It is an anionic surfactant, primarily used as an active detergent in shampoo ",
+      },
+      {
+        img: "", // Add image URL here if available
+        product: "Sodium Lauryl Sulphate",
+        comment: "It is found in both beauty and cleaning products",
+      },
+    ],
+  },
+];
 const Alcohol = () => {
-  const b = [
-    {
-      "Alcohol Sulphate": [
-        {
-          img: "/image/more.jpg",
-          product: "Ammonium Lauryl Sulphate",
-          comment:
-            "A sulfate ester, made from coconut or palm kernel oil. Widely used surfactant in shampoos or bath products",
-        },
-        {
-          img: "", // Add image URL here if available
-          product: "Disodium Laureth Sulfosuccinate",
-          comment:
-            "It is a mild, anionic, and non-irritating surfactant with great foaming properties. Primarily used in cleansing products, including bubble baths, bath soaps, and detergents",
-        },
-        {
-          img: "", // Add image URL here if available
-          product: "Sodium Lauryl Ether Sulphate",
-          comment:
-            "It is an anionic surfactant, primarily used as an active detergent in shampoo ",
-        },
-        {
-          img: "", // Add image URL here if available
-          product: "Sodium Lauryl Sulphate",
-          comment: "It is found in both beauty and cleaning products",
-        },
-      ],
-    },
-  ];
   const [isOpen, setIsOpen] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(null);
   const toggleComment = (index) => {

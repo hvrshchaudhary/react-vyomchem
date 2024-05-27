@@ -46,7 +46,7 @@ const PearlisingAgent = () => {
                 <div
                   className="md:w-full  rounded-md  w-full   mt-5"
                   style={{
-                    backgroundImage: "url('/image/more.jpg')",
+                    backgroundImage: "url('/category-images/pearlizing_agents.jpg')",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}

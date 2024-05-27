@@ -5,7 +5,7 @@ import { IoClose } from "react-icons/io5";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useEffect } from "react";
-import { Cascader } from 'rsuite';
+import {  SelectPicker } from 'rsuite';
 import 'rsuite/dist/rsuite-rtl.css';
 import { ProductList } from "./products/ProductList";
 const Navbar = () => {
@@ -106,8 +106,9 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
-  const handleCascaderSelect = (data) => {
-    window.location.href = data.value;
+  const handleSelect = (value,item) => {
+    // console.log(item);
+    window.location.href = item.val;
   }
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -127,45 +128,42 @@ const Navbar = () => {
   }, []);
   return (
     <>
-      <div className="hidden md:flex   bg-green-900 shadow-lg h-max md:h-max p-2 l border-gray-800 md:w-full">
-        <div className="flex justify-evenly w-1/2">
-          <div className="flex">
-            <FiPhone className="mr-2 mt-1 text-white" />
-
-            <NavLink
-              className={"font-semibold text-sm text-white"}
-              to="tel:+919882020609"
-            >
-              +91-9882020609
-            </NavLink>
-          </div>
-          <div className="flex">
-            <FiMail className="mr-2 mt-1 text-white" />
-
-            <NavLink
-              className={"font-semibold text-sm text-white"}
-              to="mailto:minakshi@vyomchem.com"
-            >
-              minakshi@vyomchem.com
-            </NavLink>
-          </div>
-        </div>
-        <div className="flex justify-evenly w-1/2">
-          <div className=" flex">
-            <FaRegClock className="mr-2 text-white mt-[3px]" />
-            <span className="font-semibold text-sm text-white">
-              Office hours 9:30 AM to 6:00 PM
-            </span>
-          </div>
-          <Cascader data={ProductList} onSelect={handleCascaderSelect}/>
-          <NavLink
-            to="/contact"
-            className="font-semibold text-xs p-1 rounded-md px-4 bg-green-500  text-white"
-          >
-            GET A QUOTE
-          </NavLink>
-        </div>
+      <div className="hidden md:flex bg-green-900 shadow-lg h-max md:h-max p-2 l border-gray-800 md:w-full items-center">
+    {/* Contact Info Section */}
+    <div className="flex justify-evenly w-1/2 items-center">
+      {/* Phone Info */}
+      <div className="flex items-center">
+        <FiPhone className="mr-2 mt-1 text-white" />
+        <NavLink className="font-semibold text-sm text-white" to="tel:+919882020609">
+          +91-9882020609
+        </NavLink>
       </div>
+      {/* Email Info */}
+      <div className="flex items-center">
+        <FiMail className="mr-2 mt-1 text-white" />
+        <NavLink className="font-semibold text-sm text-white" to="mailto:minakshi@vyomchem.com">
+          minakshi@vyomchem.com
+        </NavLink>
+      </div>
+    </div>
+
+    {/* Office Info Section */}
+    <div className="flex justify-evenly w-1/2 items-center">
+      {/* Office Hours Info */}
+      <div className="flex items-center">
+        <FaRegClock className="mr-2 text-white mt-[3px]" />
+        <span className="font-semibold text-sm text-white">
+          Office hours 9:30 AM to 6:00 PM
+        </span>
+      </div>
+      {/* Quote Button */}
+      <NavLink to="/contact" className="font-semibold text-xs p-1 rounded-md px-4 bg-green-500 text-white">
+        GET A QUOTE
+      </NavLink>
+      {/* Product Selector */}
+      <SelectPicker style={{ width: '300px' }} data={ProductList} onSelect={handleSelect}/>
+    </div>
+  </div>
       <div
         className={`${
           isScrolled ? "sticky top-0 z-50" : ""
@@ -327,13 +325,13 @@ const Navbar = () => {
                   </NavLink>
                 </div>
                 <div className="relative hidden md:block">
-  <NavLink
-    to="/gallery"
-    className="z-10 font-sans xl:text-lg text-sm pb-3 text-black font-semibold hover:text-green-800 px-3 py-2"
-  >
-    Gallery
-  </NavLink>
-</div>
+                  <NavLink
+                    to="/gallery"
+                    className="z-10 font-sans xl:text-lg text-sm pb-3 text-black font-semibold hover:text-green-800 px-3 py-2"
+                  >
+                    Gallery
+                  </NavLink>
+                </div>
                 <NavLink
                   to="/contact"
                   className="font-sans xl:text-lg text-sm text-black font-semibold hover:text-green-800 px-3 py-2"
@@ -421,6 +419,15 @@ const Navbar = () => {
                       Our Principles
                     </NavLink>
                   </div>
+                  <div>
+                  <NavLink
+                    to="/gallery"
+                    className="block text-black font-sans font-semibold bg-white hover:bg-green-100 hover:text-green-900 px-3 py-2"
+                    onClick={toggleMenu}     
+                                 >
+                    Gallery
+                  </NavLink>
+                </div>
                   <NavLink
                     to="/contact"
                     className="block text-black font-sans font-semibold bg-white hover:bg-green-100 hover:text-green-900 px-3 py-2"
@@ -432,10 +439,10 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-<marquee className="bg-white border-t-2 pt-3 mt-2" >
-  <img src="marqueeimage.jpg" alt="Marquee" className="h-6 mr-2 inline" />
-  Proud exhibitor of Cosmohome Tech Expo to be held at Pragati Maidan Delhi on 26th & 27th June24.
-</marquee> 
+          <marquee className="bg-white border-t-2 pt-3 mt-2" >
+            <img src="/marqueeimage.jpg" alt="Marquee" className="h-6 mr-2 inline" />
+            Proud exhibitor of Cosmohome Tech Expo to be held at Pragati Maidan Delhi on 26th & 27th June24.
+          </marquee> 
         </nav>
      </div>
     </>

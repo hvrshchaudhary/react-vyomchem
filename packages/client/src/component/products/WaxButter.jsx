@@ -102,7 +102,7 @@ const WaxButter = () => {
                 <div
                   className="md:w-full  rounded-md  w-full   mt-5"
                   style={{
-                    backgroundImage: "url('/image/more.jpg')",
+                    backgroundImage: "url('/image/WAX.jpg')",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}

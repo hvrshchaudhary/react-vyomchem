@@ -111,7 +111,7 @@ const AllProduct = () => {
       )}
       <h1 className="text-sm font-semibold text-black">Product Categories</h1>
       <NavLink to="/contact">
-        <img src="/image/call-msg8.png" className="w-6 h-6 " size={20} alt="" />
+        <img src="/image/call-msg.png" className="w-6 h-6 " size={20} alt="" />
         </NavLink>
       {/* <NavLink to="/contact" className="text-sm font-semibold text-white rounded-md pt-[2px] pb-[3px] px-1 bg-green-800">contact us</NavLink> */}
     </div>

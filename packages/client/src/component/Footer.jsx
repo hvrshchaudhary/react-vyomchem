@@ -84,14 +84,14 @@ const Footer = () => {
                 <FaGreaterThan className="mr-2 w-2"/>
                 Exclusive Product
               </NavLink>
-              <NavLink
+              {/* <NavLink
                 to="/form"
                 className="flex items-center font-semibold hover:text-green-500"
               >
                  <FaGreaterThan className="w-2"/>
                 <FaGreaterThan className="mr-2 w-2"/>
                 Apply for job
-              </NavLink>
+              </NavLink> */}
             </div>
           </div>
 

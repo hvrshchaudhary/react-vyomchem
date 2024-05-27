@@ -61,7 +61,7 @@ const Alcohol = () => {
                   <div
                     className="md:w-full  rounded-md  w-full   mt-5"
                     style={{
-                      backgroundImage: "url('/image/more.jpg')",
+                      backgroundImage: "url('/image/algae-extract-3.jpg')",
                       backgroundSize: "cover",
                       backgroundPosition: "center",
                     }}

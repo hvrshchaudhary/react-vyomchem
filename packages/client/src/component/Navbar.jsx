@@ -168,7 +168,7 @@ const Navbar = () => {
 
       {/* <SelectPicker style={{ width: '300px' }} data={ProductList} onSelect={handleSelect}/> */}
       {/* <InputGroup style={styles} > */}
-        <AutoComplete data={ProductList} onSelect={handleSelect} />
+        <AutoComplete data={ProductList} onSelect={handleSelect} placeholder="Search"/>
         {/* <InputGroup.Button> */}
           {/* <SearchIcon /> */}
         {/* </InputGroup.Button> */}

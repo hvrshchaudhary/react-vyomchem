@@ -1,6 +1,6 @@
 export const ProductList = [
-  { id:1,label: "Ammonium Lauryl Sulphate", val: "/cosmeceuticals/#Alcohol-Sulphate" },
-  { id:2,label: "Disodium Laureth Sulfosuccinate", val: "/cosmeceuticals/#Alcohol-Sulphate" },
+  { label: "Ammonium Lauryl Sulphate", val: "/cosmeceuticals/#Alcohol-Sulphate" },
+  { label: "Disodium Laureth Sulfosuccinate", val: "/cosmeceuticals/#Alcohol-Sulphate" },
   { label: "Sodium Lauryl Ether Sulphate", val: "/cosmeceuticals/#Alcohol-Sulphate" },
   { label: "Sodium Lauryl Sulphate", val: "/cosmeceuticals/#Alcohol-Sulphate" },
   { label: "Benzoic acid", val: "/cosmeceuticals/#Anti-Oxidants" },

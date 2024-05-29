@@ -6,6 +6,8 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useEffect } from "react";
 import {  SelectPicker } from 'rsuite';
+import { AutoComplete, InputGroup } from 'rsuite';
+import  SearchIcon  from '@rsuite/icons/Search';
 import 'rsuite/dist/rsuite-rtl.css';
 import { ProductList } from "./products/ProductList";
 const Navbar = () => {
@@ -90,7 +92,10 @@ const Navbar = () => {
   const [dropdown, setDropdown] = useState(false);
   const [dropdown2, setDropdown2] = useState(false);
   const [dropdown3, setDropdown3] = useState(false);
-
+  const styles = {
+    width: 300,
+    // marginBottom: 10,
+  };
   const toggleDropdown = () => {
     setDropdown(!dropdown);
   };
@@ -107,7 +112,6 @@ const Navbar = () => {
   };
 
   const handleSelect = (value,item) => {
-    // console.log(item);
     window.location.href = item.val;
   }
   const [isScrolled, setIsScrolled] = useState(false);
@@ -161,7 +165,14 @@ const Navbar = () => {
         GET A QUOTE
       </NavLink>
       {/* Product Selector */}
-      <SelectPicker style={{ width: '300px' }} data={ProductList} onSelect={handleSelect}/>
+
+      {/* <SelectPicker style={{ width: '300px' }} data={ProductList} onSelect={handleSelect}/> */}
+      {/* <InputGroup style={styles} > */}
+        <AutoComplete data={ProductList} onSelect={handleSelect} />
+        {/* <InputGroup.Button> */}
+          {/* <SearchIcon /> */}
+        {/* </InputGroup.Button> */}
+    {/* </InputGroup> */}
     </div>
   </div>
       <div
@@ -278,13 +289,13 @@ const Navbar = () => {
                             </>
                           )}
                         </div>
-                        <NavLink
-                          href="https://www.vyomchem.com/pdf/Cosmeceuticals-Brochure.pdf"
-                          target="_blank"
-                          className="block px-2  py-1 xl:text-lg text-xs text-black hover:bg-green-200"
-                        >
-                          Cosmeceuticals Brochure
-                        </NavLink>
+                        <a
+  href="/Cosmeceuticals_Brochure.pdf"
+  target="_blank"
+  className="block px-2  py-1 xl:text-lg text-xs text-black hover:bg-green-200"
+>
+  Cosmeceuticals Brochure
+</a>
                       </div>
                     )}
                   </a>
@@ -440,8 +451,10 @@ const Navbar = () => {
             </div>
           </div>
           <marquee className="bg-white border-t-2 pt-3 mt-2" >
-            <img src="/marqueeimage.jpg" alt="Marquee" className="h-6 mr-2 inline" />
-            Proud exhibitor of Cosmohome Tech Expo to be held at Pragati Maidan Delhi on 26th & 27th June24.
+            <img src="/marqueeimage.jpg" alt="Marquee" className="h-10 mr-2 inline" />
+            <span className=" text-xl text-black">
+              Proud exhibitor of Cosmohome Tech Expo to be held at Pragati Maidan Delhi on 26th & 27th June24.
+            </span>
           </marquee> 
         </nav>
      </div>

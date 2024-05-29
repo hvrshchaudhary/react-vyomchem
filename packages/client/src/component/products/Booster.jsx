@@ -120,7 +120,7 @@ const Booster = () => {
                 <div
                   className="md:w-full  rounded-md  w-full   mt-5"
                   style={{
-                    backgroundImage: "url('/category-images/boosters.jpg'')",
+                    backgroundImage: "url('/category-images/boosters.jpg')",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}

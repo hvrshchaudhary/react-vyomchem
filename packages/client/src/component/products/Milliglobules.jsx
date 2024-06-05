@@ -22,6 +22,10 @@ const Milliglobules = () => {
             product: "Millicapsules",
             comment : "Millicapsules are synthesized by interfacial polymerization,Used to make  herbal facial cleanser. It mainly contains natural ingredients"
           },
+          {
+            product: "For More Products Contact Us",
+            // comment : "Millicapsules are synthesized by interfacial polymerization,Used to make  herbal facial cleanser. It mainly contains natural ingredients"
+          },
         ],
       },
   ];
@@ -45,9 +49,9 @@ const Milliglobules = () => {
         <div key={_index} className="w-full md:flex">
           <div className="flex-col container md:w-full md:flex mt-5 mb-5">
             <div className="flex justify-center">
-              <span className="md:text-4xl text-sm  md:mt-0 font-bold text-black">
+              {/* <span className="md:text-4xl text-sm  md:mt-0 font-bold text-black">
                 {Object.keys(categories)[0]}
-              </span>
+              </span> */}
             </div>
             <div className="flex w-full justify-center">
               <div className="flex justify-center xl:w-full w-4/5 ">

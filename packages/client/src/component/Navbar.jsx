@@ -5,10 +5,10 @@ import { IoClose } from "react-icons/io5";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useEffect } from "react";
-import {  SelectPicker } from 'rsuite';
-import { AutoComplete, InputGroup } from 'rsuite';
-import  SearchIcon  from '@rsuite/icons/Search';
-import 'rsuite/dist/rsuite-rtl.css';
+import { SelectPicker } from "rsuite";
+import { AutoComplete, InputGroup } from "rsuite";
+import SearchIcon from "@rsuite/icons/Search";
+import "rsuite/dist/rsuite-rtl.css";
 import { ProductList } from "./products/ProductList";
 const Navbar = () => {
   const product = [
@@ -87,7 +87,7 @@ const Navbar = () => {
       link: "/cosmeceuticals/#Liquid-Extracts",
     },
   ];
-  
+
   const [isOpen, setIsOpen] = useState(false);
   const [dropdown, setDropdown] = useState(false);
   const [dropdown2, setDropdown2] = useState(false);
@@ -111,9 +111,9 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
-  const handleSelect = (value,item) => {
+  const handleSelect = (value, item) => {
     window.location.href = item.val;
-  }
+  };
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -133,48 +133,61 @@ const Navbar = () => {
   return (
     <>
       <div className="hidden md:flex bg-green-900 shadow-lg h-max md:h-max p-2 l border-gray-800 md:w-full items-center">
-    {/* Contact Info Section */}
-    <div className="flex justify-evenly w-1/2 items-center">
-      {/* Phone Info */}
-      <div className="flex items-center">
-        <FiPhone className="mr-2 mt-1 text-white" />
-        <NavLink className="font-semibold text-sm text-white" to="tel:+919882020609">
-          +91-9882020609
-        </NavLink>
-      </div>
-      {/* Email Info */}
-      <div className="flex items-center">
-        <FiMail className="mr-2 mt-1 text-white" />
-        <NavLink className="font-semibold text-sm text-white" to="mailto:minakshi@vyomchem.com">
-          minakshi@vyomchem.com
-        </NavLink>
-      </div>
-    </div>
+        {/* Contact Info Section */}
+        <div className="flex justify-evenly w-1/2 items-center">
+          {/* Phone Info */}
+          <div className="flex items-center">
+            <FiPhone className="mr-2 mt-1 text-white" />
+            <NavLink
+              className="font-semibold text-sm text-white"
+              to="tel:+919882020609"
+            >
+              +91-9882020609
+            </NavLink>
+          </div>
+          {/* Email Info */}
+          <div className="flex items-center">
+            <FiMail className="mr-2 mt-1 text-white" />
+            <NavLink
+              className="font-semibold text-sm text-white"
+              to="mailto:minakshi@vyomchem.com"
+            >
+              minakshi@vyomchem.com
+            </NavLink>
+          </div>
+        </div>
 
-    {/* Office Info Section */}
-    <div className="flex justify-evenly w-1/2 items-center">
-      {/* Office Hours Info */}
-      <div className="flex items-center">
-        <FaRegClock className="mr-2 text-white mt-[3px]" />
-        <span className="font-semibold text-sm text-white">
-          Office hours 9:30 AM to 6:00 PM
-        </span>
-      </div>
-      {/* Quote Button */}
-      <NavLink to="/contact" className="font-semibold text-xs p-1 rounded-md px-4 bg-green-500 text-white">
-        GET A QUOTE
-      </NavLink>
-      {/* Product Selector */}
+        {/* Office Info Section */}
+        <div className="flex justify-evenly w-1/2 items-center">
+          {/* Office Hours Info */}
+          <div className="flex items-center">
+            <FaRegClock className="mr-2 text-white mt-[3px]" />
+            <span className="font-semibold text-sm text-white">
+              Office hours 9:30 AM to 6:00 PM
+            </span>
+          </div>
+          {/* Quote Button */}
+          <NavLink
+            to="/contact"
+            className="font-semibold text-xs p-1 rounded-md px-4 bg-green-500 text-white"
+          >
+            GET A QUOTE
+          </NavLink>
+          {/* Product Selector */}
 
-      {/* <SelectPicker style={{ width: '300px' }} data={ProductList} onSelect={handleSelect}/> */}
-      {/* <InputGroup style={styles} > */}
-        <AutoComplete data={ProductList} onSelect={handleSelect} placeholder="Search"/>
-        {/* <InputGroup.Button> */}
+          {/* <SelectPicker style={{ width: '300px' }} data={ProductList} onSelect={handleSelect}/> */}
+          {/* <InputGroup style={styles} > */}
+          <AutoComplete
+            data={ProductList}
+            onSelect={handleSelect}
+            placeholder="Search"
+          />
+          {/* <InputGroup.Button> */}
           {/* <SearchIcon /> */}
-        {/* </InputGroup.Button> */}
-    {/* </InputGroup> */}
-    </div>
-  </div>
+          {/* </InputGroup.Button> */}
+          {/* </InputGroup> */}
+        </div>
+      </div>
       <div
         className={`${
           isScrolled ? "sticky top-0 z-50" : ""
@@ -190,7 +203,7 @@ const Navbar = () => {
             <div className="flex justify-between items-center ">
               {/* Logo */}
               <div className="flex-shrink-0 md:hidden ">
-                <NavLink to="/">
+                <NavLink to={{ pathname: "/", hash: "" }}>
                   <img
                     src="/image/vyomchem-logo.png"
                     className="h-14  "
@@ -251,9 +264,9 @@ const Navbar = () => {
                         className="absolute w-max border border-black  mt-4 -left-[2rem] bg-white z-10 shadow-md "
                       >
                         <div
-                        onClick={(e)=>{
-                          e.preventDefault()
-                        }}
+                          onClick={(e) => {
+                            e.preventDefault();
+                          }}
                           className="block px-2 py-1 xl:text-lg  border-b border-black text-xs text-black  hover:bg-green-200"
                           onMouseEnter={toggleDropdown3}
                           onMouseLeave={toggleDropdown3}
@@ -261,23 +274,21 @@ const Navbar = () => {
                           Cosmecuticals
                           {dropdown3 && (
                             <>
-                              
                               <div
                                 data-aos="fade-left"
                                 className="grid grid-cols-1  rounded-md absolute w-max h-96 overflow-scroll  md:mt-[-20px] xl:-mt-[32.5px] xl:left-[220px] md:left-[150px] bg-green-200  shadow-md "
                               >
-                               
                                 {product
                                   .sort((a, b) => a.name.localeCompare(b.name)) // Sort the product array alphabetically by name
                                   .map((ele, index) => (
                                     <div key={index} className="flex-1 p-1 ">
                                       <div>
                                         <NavLink
-                                        to={ele.link}
-                                        onClick={() => {
-                                          toggleDropdown();
-                                          toggleDropdown3(); // Assuming you want to toggle both dropdowns
-                                        }}
+                                          to={ele.link}
+                                          onClick={() => {
+                                            toggleDropdown();
+                                            toggleDropdown3(); // Assuming you want to toggle both dropdowns
+                                          }}
                                           className="block px-2 w-48   text-left font-sans py-1  text-lg  pl-3 text-black hover:bg-white"
                                         >
                                           {ele.name}
@@ -290,12 +301,12 @@ const Navbar = () => {
                           )}
                         </div>
                         <a
-  href="/Cosmeceuticals_Brochure.pdf"
-  target="_blank"
-  className="block px-2  py-1 xl:text-lg text-xs text-black hover:bg-green-200"
->
-  Cosmeceuticals Brochure
-</a>
+                          href="/Cosmeceuticals_Brochure.pdf"
+                          target="_blank"
+                          className="block px-2  py-1 xl:text-lg text-xs text-black hover:bg-green-200"
+                        >
+                          Cosmeceuticals Brochure
+                        </a>
                       </div>
                     )}
                   </a>
@@ -305,7 +316,6 @@ const Navbar = () => {
                     className="z-10 font-sans xl:text-lg text-sm pb-3  text-black font-semibold hover:text-green-800 px-3 py-2"
                     onMouseEnter={toggleDropdown2}
                     onMouseLeave={toggleDropdown2}
-               
                   >
                     Exclusive products
                     {dropdown2 && (
@@ -324,15 +334,15 @@ const Navbar = () => {
                     )}
                   </a>
                 </div>
-                
+
                 <div className="relative hidden md:block">
                   <NavLink
-                    to="/Principle"
+                    to="/Principal"
                     className="z-10 font-sans xl:text-lg text-sm text-black font-semibold hover:text-green-800 px-3 py-2"
                     onMouseEnter={toggleDropdown3}
                     onMouseLeave={toggleDropdown3}
                   >
-                    Our principles
+                    Major Principals
                   </NavLink>
                 </div>
                 <div className="relative hidden md:block">
@@ -423,22 +433,22 @@ const Navbar = () => {
                   </div>
                   <div>
                     <NavLink
-                      to="/Principle"
+                      to="/Principal"
                       className=" block text-black font-sans font-semibold bg-white   hover:bg-green-100 hover:text-green-900 px-3 py-2"
                       onClick={toggleMenu}
                     >
-                      Our Principles
+                      Major Principals
                     </NavLink>
                   </div>
                   <div>
-                  <NavLink
-                    to="/gallery"
-                    className="block text-black font-sans font-semibold bg-white hover:bg-green-100 hover:text-green-900 px-3 py-2"
-                    onClick={toggleMenu}     
-                                 >
-                    Gallery
-                  </NavLink>
-                </div>
+                    <NavLink
+                      to="/gallery"
+                      className="block text-black font-sans font-semibold bg-white hover:bg-green-100 hover:text-green-900 px-3 py-2"
+                      onClick={toggleMenu}
+                    >
+                      Gallery
+                    </NavLink>
+                  </div>
                   <NavLink
                     to="/contact"
                     className="block text-black font-sans font-semibold bg-white hover:bg-green-100 hover:text-green-900 px-3 py-2"
@@ -450,14 +460,26 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          <marquee className="bg-white border-t-2 pt-3 mt-2" >
-            <img src="/marqueeimage.jpg" alt="Marquee" className="h-10 mr-2 inline" />
-            <span className=" text-xl text-black">
-              Proud exhibitor of Cosmohome Tech Expo to be held at Pragati Maidan Delhi on 26th & 27th June24.
-            </span>
-          </marquee> 
         </nav>
-     </div>
+      <div>
+        <marquee className="bg-white border-t-2">
+          <img
+            src="/marqueeimage.jpg"
+            alt="Marquee"
+            className="h-10 mr-2 inline"
+          />
+          <span className=" text-xl text-black">
+            Proud exhibitor of Cosmohome Tech Expo, to be held at Pragati Maidan
+            Delhi on 26th & 27th June24.
+          </span>
+          <img
+            src="/marqueeimage.jpg"
+            alt="Marquee"
+            className="h-10 mr-2 inline"
+          />
+        </marquee>
+      </div>
+      </div>
     </>
   );
 };
@@ -696,12 +718,12 @@ export default Navbar;
 
 //                     {dropdown3 && (
 //                             <>
-                              
+
 //                               <div
 //                                 data-aos="fade-left"
 //                                 className="flex flex-col z-10 rounded-md absolute w-max h-96 overflow-scroll  md:mt-[-20px] xl:mt-[5px] xl:left-[-50px]  bg-green-200  shadow-md "
 //                               >
-                               
+
 //                                 {product
 //                                   .sort((a, b) => a.name.localeCompare(b.name)) // Sort the product array alphabetically by name
 //                                   .map((ele, index) => (
@@ -727,10 +749,9 @@ export default Navbar;
 //                         <NavLink
 //                           to="/cosmeceuticals/#Alcohol-Sulphate"
 //                           className="block px-2 py-1 xl:text-lg border-b border border-black text-xs text-black  hover:bg-green-200"
-                        
+
 //                         >
-                          
-                        
+
 //                         </NavLink>
 //                         <NavLink
 //                           href="https://www.vyomchem.com/pdf/Cosmeceuticals-Brochure.pdf"
@@ -769,12 +790,12 @@ export default Navbar;
 //                 </div>
 //                 <div className="relative hidden md:block">
 //                   <NavLink
-//                     to="/Principle"
+//                     to="/Principal"
 //                     className="z-10 font-sans xl:text-lg text-sm text-black font-semibold hover:text-green-800 px-3 py-2"
 //                     onMouseEnter={toggleDropdown3}
 //                     onMouseLeave={toggleDropdown3}
 //                   >
-//                     Our principles
+//                     Major Principals
 //                   </NavLink>
 //                 </div>
 //                 <NavLink
@@ -857,11 +878,11 @@ export default Navbar;
 //                   </div>
 //                   <div>
 //                     <NavLink
-//                       to="/Principle"
+//                       to="/Principal"
 //                       className=" block text-black font-sans font-semibold bg-white   hover:bg-green-100 hover:text-green-900 px-3 py-2"
 //                       onClick={toggleMenu}
 //                     >
-//                       Our Principles
+//                       Major Principals
 //                     </NavLink>
 //                   </div>
 //                   <NavLink

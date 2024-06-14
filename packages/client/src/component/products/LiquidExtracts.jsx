@@ -54,6 +54,10 @@ const LiquidExtracts = () => {
           product: "Flavonoids",
           comment : "Increase skin moisture-retention and smoothness, as well as reduce roughness"
         },
+        {
+          product: "For More Products Contact Us",
+          // comment : "Millicapsules are synthesized by interfacial polymerization,Used to make  herbal facial cleanser. It mainly contains natural ingredients"
+        },
       ],
     },
   ];

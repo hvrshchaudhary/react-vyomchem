@@ -38,6 +38,10 @@ const Parabens = () => {
             product: "Sodium Propyl Paraben",
             comment : "PPS is a water-soluble antiseptic mainly used as a safe, high efficiency, broad-spectrum antibiotic for cosmetics"
           },
+          {
+            product: "For More Products Contact Us",
+            // comment : "Millicapsules are synthesized by interfacial polymerization,Used to make  herbal facial cleanser. It mainly contains natural ingredients"
+          },
         ],
       },
   ];

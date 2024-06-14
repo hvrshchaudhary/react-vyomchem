@@ -28,6 +28,10 @@ const b = [
         product: "Sodium Lauryl Sulphate",
         comment: "It is found in both beauty and cleaning products",
       },
+      {
+        product: "For More Products Contact Us",
+        // comment : "Millicapsules are synthesized by interfacial polymerization,Used to make  herbal facial cleanser. It mainly contains natural ingredients"
+      },
     ],
   },
 ];

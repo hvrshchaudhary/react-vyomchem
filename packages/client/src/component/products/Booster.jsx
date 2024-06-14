@@ -88,6 +88,10 @@ const Booster = () => {
           comment:
             "It is a nonionic surfactant  and has great moisturizing properties, also used as a thickening agent",
         },
+        {
+          product: "For More Products Contact Us",
+          // comment : "Millicapsules are synthesized by interfacial polymerization,Used to make  herbal facial cleanser. It mainly contains natural ingredients"
+        },
       ],
     },
   ];

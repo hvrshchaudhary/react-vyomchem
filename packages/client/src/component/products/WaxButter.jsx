@@ -70,6 +70,10 @@ const WaxButter = () => {
           product: "Shea butter",
           comment : "It is a fat extracted from the nut of the African shea tree. It has high concentration of vitamins and fatty acids "
         },
+        {
+          product: "For More Products Contact Us",
+          // comment : "Millicapsules are synthesized by interfacial polymerization,Used to make  herbal facial cleanser. It mainly contains natural ingredients"
+        },
       ],
     },
   ];

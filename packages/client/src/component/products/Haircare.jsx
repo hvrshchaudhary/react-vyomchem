@@ -32,6 +32,10 @@ const Haircare = () => {
             product: "Zinc Pyrithione",
             comment : "It is used in anti-dandruff shampoos, conditioners, and other hair care products. Promote hair growth"
           },
+          {
+            product: "For More Products Contact Us",
+            // comment : "Millicapsules are synthesized by interfacial polymerization,Used to make  herbal facial cleanser. It mainly contains natural ingredients"
+          },
         ],
       },
   ];

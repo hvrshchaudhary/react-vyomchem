@@ -56,6 +56,10 @@ const ConditioningAgent = () => {
             product: "Polyquaternium 7",
             comment : "It can be used as a thickener in many cosmetic formulations to increase the viscosity of the product"
           },
+          {
+            product: "For More Products Contact Us",
+            // comment : "Millicapsules are synthesized by interfacial polymerization,Used to make  herbal facial cleanser. It mainly contains natural ingredients"
+          },
         ],
       },
   ];

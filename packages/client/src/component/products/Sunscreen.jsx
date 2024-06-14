@@ -58,6 +58,10 @@ const Sunscreen = () => {
           product: "zinc oxide",
           comment : "It provides broad-spectrum protection against UVA and UVB"
         },
+        {
+          product: "For More Products Contact Us",
+          // comment : "Millicapsules are synthesized by interfacial polymerization,Used to make  herbal facial cleanser. It mainly contains natural ingredients"
+        },
       ],
     },
   ];

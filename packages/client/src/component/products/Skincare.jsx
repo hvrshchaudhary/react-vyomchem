@@ -37,6 +37,10 @@ const Skincare = () => {
             product : "Sodium lauryl lactylate",
             comment : "It enhance product formulation, act as an emulsifier, thickener, and surfactant"
           },
+          {
+            product: "For More Products Contact Us",
+            // comment : "Millicapsules are synthesized by interfacial polymerization,Used to make  herbal facial cleanser. It mainly contains natural ingredients"
+          },
         ],
       },
   ];

@@ -92,21 +92,24 @@ const Navbar = () => {
   const [dropdown, setDropdown] = useState(false);
   const [dropdown2, setDropdown2] = useState(false);
   const [dropdown3, setDropdown3] = useState(false);
+  const [dropdown4, setDropdown4] = useState(false);
   const styles = {
     width: 300,
     // marginBottom: 10,
   };
+    const toggleDropdown2 = () => {
+      setDropdown2(!dropdown2);
+    };
   const toggleDropdown = () => {
     setDropdown(!dropdown);
   };
 
-  const toggleDropdown2 = () => {
-    setDropdown2(!dropdown2);
-  };
   const toggleDropdown3 = () => {
     setDropdown3(!dropdown3);
   };
-
+  const toggleDropdown4 = () => {
+    setDropdown4(!dropdown4);
+  };
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -227,7 +230,7 @@ const Navbar = () => {
 
               {/* Navigation Links (visible on larger screens) */}
               <div
-                className={`  md:flex z-10 justify-evenly  md:flex-grow md:items-center hidden :block`}
+                className={`md:flex z-10 justify-evenly  md:flex-grow md:items-center hidden :block`}
               >
                 <div className="">
                   <NavLink to="/">
@@ -250,10 +253,10 @@ const Navbar = () => {
                 >
                   Home
                 </NavLink>
-                <div className=" relative hidden md:block">
-                  <a
-                    // href="#"
-                    className=" font-sans xl:text-lg text-sm font-semibold pb-5 text-black hover:text-green-800 px-3 py-2"
+                <div className="relative hidden md:block">
+                  <div
+
+                    className="font-sans xl:text-lg inline text-sm font-semibold pb-5 text-black hover:text-green-800 px-3 py-2"
                     onMouseEnter={toggleDropdown}
                     onMouseLeave={toggleDropdown}
                   >
@@ -261,55 +264,73 @@ const Navbar = () => {
                     {dropdown && (
                       <div
                         data-aos="fade-up"
-                        className="absolute w-max border border-black  mt-4 -left-[2rem] bg-white z-10 shadow-md "
+                        className="absolute w-max border border-black mt-4 -left-[2rem] bg-white z-10 shadow-md"
                       >
                         <div
-                          onClick={(e) => {
-                            e.preventDefault();
-                          }}
-                          className="block px-2 py-1 xl:text-lg  border-b border-black text-xs text-black  hover:bg-green-200"
+                          className="block px-2 py-1 xl:text-lg border-b border-black text-xs text-black hover:bg-green-200"
                           onMouseEnter={toggleDropdown3}
                           onMouseLeave={toggleDropdown3}
                         >
                           Cosmecuticals
                           {dropdown3 && (
-                            <>
-                              <div
-                                data-aos="fade-left"
-                                className="grid grid-cols-1  rounded-md absolute w-max h-96 overflow-scroll  md:mt-[-20px] xl:-mt-[32.5px] xl:left-[220px] md:left-[150px] bg-green-200  shadow-md "
-                              >
-                                {product
-                                  .sort((a, b) => a.name.localeCompare(b.name)) // Sort the product array alphabetically by name
-                                  .map((ele, index) => (
-                                    <div key={index} className="flex-1 p-1 ">
-                                      <div>
-                                        <NavLink
-                                          to={ele.link}
-                                          onClick={() => {
-                                            toggleDropdown();
-                                            toggleDropdown3(); // Assuming you want to toggle both dropdowns
-                                          }}
-                                          className="block px-2 w-48   text-left font-sans py-1  text-lg  pl-3 text-black hover:bg-white"
-                                        >
-                                          {ele.name}
-                                        </NavLink>
-                                      </div>
-                                    </div>
-                                  ))}
-                              </div>
-                            </>
+                            <div
+                              data-aos="fade-left"
+                              className="grid grid-cols-1 rounded-md absolute w-max h-96 overflow-scroll md:mt-[-20px] xl:-mt-[32.5px] xl:left-[220px] md:left-[150px] bg-green-200 shadow-md"
+                            >
+                              {product
+                                .sort((a, b) => a.name.localeCompare(b.name)) // Sort the product array alphabetically by name
+                                .map((ele, index) => (
+                                  <div key={index} className="flex-1 p-1">
+                                    <NavLink
+                                      to={ele.link}
+                                      onClick={() => {
+                                        toggleDropdown();
+                                        toggleDropdown3(); // Assuming you want to toggle both dropdowns
+                                      }}
+                                      className="block px-2 w-48 text-left font-sans py-1 text-lg pl-3 text-black hover:bg-white"
+                                    >
+                                      {ele.name}
+                                    </NavLink>
+                                  </div>
+                                ))}
+                            </div>
                           )}
                         </div>
-                        <a
-                          href="/Cosmeceuticals_Brochure.pdf"
-                          target="_blank"
-                          className="block px-2  py-1 xl:text-lg text-xs text-black hover:bg-green-200"
+                        <div
+                          className="block px-2 py-1 xl:text-lg border-b border-black text-xs text-black hover:bg-green-200"
+                          onMouseEnter={toggleDropdown4}
+                          onMouseLeave={toggleDropdown4}
                         >
-                          Cosmeceuticals Brochure
-                        </a>
+                          Cosmecuticals Brochure
+                          {dropdown4 && (
+                            <div
+                              data-aos="fade-left"
+                              className="grid grid-cols-1 rounded-md absolute w-max md:mt-[-20px] xl:-mt-[32.5px] xl:left-[220px] md:left-[150px] bg-green-200 shadow-md"
+                            >
+                              <div className="flex-1 p-2">
+                                <a
+                                  href="https://www.vyomchem.com/pdf/Cosmeceuticals-Brochure.pdf"
+                                  target="_blank"
+                                  className="text-black hover:bg-green-200"
+                                >
+                                  Category Wise
+                                </a>
+                              </div>
+                              <div className="flex-1 p-2">
+                                <a
+                                  href="https://www.vyomchem.com/pdf/Cosmeceuticals-Brochure.pdf"
+                                  target="_blank"
+                                  className="text-black hover:bg-green-200"
+                                >
+                                  Manufacturer Wise
+                                </a>
+                              </div>
+                            </div>
+                          )}
+                        </div>
                       </div>
                     )}
-                  </a>
+                  </div>
                 </div>
                 <div className="relative hidden md:block">
                   <a
@@ -461,24 +482,24 @@ const Navbar = () => {
             </div>
           </div>
         </nav>
-      <div>
-        <marquee className="bg-white border-t-2">
-          <img
-            src="/marqueeimage.jpg"
-            alt="Marquee"
-            className="h-10 mr-2 inline"
-          />
-          <span className=" text-xl text-black">
-            Proud exhibitor of Cosmohome Tech Expo, to be held at Pragati Maidan
-            Delhi on 26th & 27th June24.
-          </span>
-          <img
-            src="/marqueeimage.jpg"
-            alt="Marquee"
-            className="h-10 mr-2 inline"
-          />
-        </marquee>
-      </div>
+        <div>
+          <marquee className="bg-white border-t-2">
+            <img
+              src="/marqueeimage.jpg"
+              alt="Marquee"
+              className="h-10 mr-2 inline"
+            />
+            <span className=" text-xl text-black">
+              Proud exhibitor of Cosmohome Tech Expo, to be held at Pragati
+              Maidan Delhi on 26th & 27th June24.
+            </span>
+            <img
+              src="/marqueeimage.jpg"
+              alt="Marquee"
+              className="h-10 mr-2 inline"
+            />
+          </marquee>
+        </div>
       </div>
     </>
   );

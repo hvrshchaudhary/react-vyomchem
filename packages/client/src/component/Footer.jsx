@@ -10,13 +10,22 @@ const Footer = () => {
       <div className="container mx-auto flex flex-wrap   w-[80%]">
         <div className=" xl:flex  w-full justify-between xl:pb-10 pb-1 xl:border-b-[1px] border-white">
           <div className="phone flex xl:mb-0 mb-8">
-            <img src="/image/phone-logo.png" className="xl:w-12 w-8 h-8 xl:h-auto mt-1 xl:mt-0 mr-2 " alt="" />
+            <img
+              src="/image/phone-logo.png"
+              className="xl:w-12 w-8 h-8 xl:h-auto mt-1 xl:mt-0 mr-2 "
+              alt=""
+            />
             <div className="flex flex-col ">
-              <NavLink className={"font-bold text-sm xl:text-xl"} to="tel:+919882020609">
+              <NavLink
+                className={"font-bold text-sm xl:text-xl"}
+                to="tel:+919882020609"
+              >
                 +91-9882020609
               </NavLink>
 
-              <h5 className="xl:text-sm text-xs">Contact us if you have a question</h5>
+              <h5 className="xl:text-sm text-xs">
+                Contact us if you have a question
+              </h5>
             </div>
           </div>
           <div className="mail flex xl:mb-0 mb-9">
@@ -38,16 +47,22 @@ const Footer = () => {
             </div>
           </div>
           <div className="time flex xl:mb-0 mb-8">
-            <img src="/image/clock-logo.png" alt="" className="xl:w-12 w-8 h-8 xl:h-auto mt-1 xl:mt-0 mr-2" />
+            <img
+              src="/image/clock-logo.png"
+              alt=""
+              className="xl:w-12 w-8 h-8 xl:h-auto mt-1 xl:mt-0 mr-2"
+            />
             <div className="flex flex-col ">
-              <span className="font-bold text-sm xl:text-xl">Monday to Saturday</span>
-              <h5 className="xl:text-sm text-xs">We are open from 9:30 AM to 6:00 PM</h5>
+              <span className="font-bold text-sm xl:text-xl">
+                Monday to Saturday
+              </span>
+              <h5 className="xl:text-sm text-xs">
+                We are open from 9:30 AM to 6:00 PM
+              </h5>
             </div>
           </div>
         </div>
         <div className="xl:flex justify-evenly xl:pt-10 pt-1">
-      
-
           {/* Quick Links Section */}
           <div className="w-full xl:w-1/2 xl::w-1/4 px-2 xl:px-4 mb-8">
             <h2 className="text-xl: text-orange-400 font-semibold mb-4">
@@ -60,9 +75,8 @@ const Footer = () => {
                 }}
                 className="flex items-center font-semibold hover:text-green-500"
               >
-                <FaGreaterThan className="w-2"/>
-                <FaGreaterThan className="mr-2 w-2"/>
-
+                <FaGreaterThan className="w-2" />
+                <FaGreaterThan className="mr-2 w-2" />
                 Home
               </NavLink>
               <NavLink
@@ -71,8 +85,8 @@ const Footer = () => {
                 }}
                 className="flex items-center font-semibold hover:text-green-500"
               >
-                 <FaGreaterThan className="w-2"/>
-                <FaGreaterThan className="mr-2 w-2"/>
+                <FaGreaterThan className="w-2" />
+                <FaGreaterThan className="mr-2 w-2" />
                 Contact Us
               </NavLink>
               <NavLink
@@ -80,8 +94,8 @@ const Footer = () => {
                 className="flex items-center font-semibold hover:text-green-500"
                 target="_blank"
               >
-                 <FaGreaterThan className="w-2"/>
-                <FaGreaterThan className="mr-2 w-2"/>
+                <FaGreaterThan className="w-2" />
+                <FaGreaterThan className="mr-2 w-2" />
                 Exclusive Product
               </NavLink>
               {/* <NavLink
@@ -107,19 +121,36 @@ const Footer = () => {
                 }}
                 className="flex items-center font-semibold hover:text-green-500"
               >
-               <FaGreaterThan className="w-2"/>
-                <FaGreaterThan className="mr-2 w-2"/>
-               Cosmecuticals
+                <FaGreaterThan className="w-2" />
+                <FaGreaterThan className="mr-2 w-2" />
+                Cosmecuticals
               </NavLink>
-              <NavLink
-                to="https://www.vyomchem.com/pdf/Cosmeceuticals-Brochure.pdf"
-                className="flex items-center font-semibold hover:text-green-500"
-                target="_blank"
-              >
-                 <FaGreaterThan className="w-2"/>
-                <FaGreaterThan className="mr-2 w-2"/>
-                Cosmeceuticals Brochure
-              </NavLink>
+              <div className="space-y-2">
+                <div
+                  to="#"
+                  className="flex items-center font-semibold "
+                  // target="_blank"
+                >
+                  <FaGreaterThan className="w-2" />
+                  <FaGreaterThan className="mr-2 w-2" />
+                  Cosmeceuticals Brochure
+                </div>
+                <NavLink
+                  to="https://www.vyomchem.com/pdf/Cosmeceuticals-Brochure.pdf"
+                  className="flex items-center font-semibold hover:text-green-500 bullet-point"
+                  target="_blank"
+                >
+                  Manufacturer Wise
+                </NavLink>
+
+                <NavLink
+                  to="https://www.vyomchem.com/pdf/Cosmeceuticals-Brochure.pdf"
+                  className="flex items-center font-semibold hover:text-green-500 bullet-point"
+                  target="_blank"
+                >
+                  Category Wise
+                </NavLink>
+              </div>
             </div>
           </div>
 

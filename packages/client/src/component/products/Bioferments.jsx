@@ -27,6 +27,10 @@ const Bioferments = () => {
             product: "Soya bean ferment",
             comment : "A  water soluble ingredient can be readily used in both emulsion based and water based formulation of cosmetic and personal care products"
           },
+          {
+            product: "For More Products Contact Us",
+            // comment : "Millicapsules are synthesized by interfacial polymerization,Used to make  herbal facial cleanser. It mainly contains natural ingredients"
+          },
         ],
       },
   ];

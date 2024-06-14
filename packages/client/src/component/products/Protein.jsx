@@ -42,6 +42,10 @@ const Protein = () => {
             product: "Hydrolyzed Soy protein",
             comment :  "It promotes skin tissue metabolism and repair functions. Acts as conditioning, hair softening and moisture retentive agent"
           },
+          {
+            product: "For More Products Contact Us",
+            // comment : "Millicapsules are synthesized by interfacial polymerization,Used to make  herbal facial cleanser. It mainly contains natural ingredients"
+          },
         ],
       },
   ];

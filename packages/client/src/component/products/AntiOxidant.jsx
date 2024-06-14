@@ -55,6 +55,10 @@ const AntiOxidant = () => {
             product: "Vitamin E Acetate",
             comment :"It prevent premature aging of the skin induced by UV irradiation, proven antioxidant effects, enhances moisturization and strengthens the skin"
           },
+          {
+            product: "For More Products Contact Us",
+            // comment : "Millicapsules are synthesized by interfacial polymerization,Used to make  herbal facial cleanser. It mainly contains natural ingredients"
+          },
         ],
       },
   ];

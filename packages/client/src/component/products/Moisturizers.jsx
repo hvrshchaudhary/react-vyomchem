@@ -46,6 +46,10 @@ const Moisturizers = () => {
             product: "Zinc PCA",
             comment : "It is derived from Zinc and is used for conditioning the skin"
           },
+          {
+            product: "For More Products Contact Us",
+            // comment : "Millicapsules are synthesized by interfacial polymerization,Used to make  herbal facial cleanser. It mainly contains natural ingredients"
+          },
         ],
       },
   ];

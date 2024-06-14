@@ -11,14 +11,28 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./component/Home";
 import OurPrinciplepage from "./component/OurPrinciplepage";
 import Form from "./component/resumeform/Form";
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
 import Gallery from "./component/gallery/Gallery";
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 function App() {
   useLayoutEffect(() => {
     AOS.init();
   });
+  
   return (
     <>
       <BrowserRouter>
+      <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

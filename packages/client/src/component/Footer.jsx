@@ -136,20 +136,20 @@ const Footer = () => {
                   Cosmeceuticals Brochure
                 </div>
                 <NavLink
-                  to="https://www.vyomchem.com/pdf/Cosmeceuticals-Brochure.pdf"
-                  className="flex items-center font-semibold hover:text-green-500 bullet-point"
-                  target="_blank"
-                >
-                  Manufacturer Wise
-                </NavLink>
-
-                <NavLink
-                  to="https://www.vyomchem.com/pdf/Cosmeceuticals-Brochure.pdf"
+                  to="/pdf/CosmeceuticalsBrochure.pdf"
                   className="flex items-center font-semibold hover:text-green-500 bullet-point"
                   target="_blank"
                 >
                   Category Wise
                 </NavLink>
+                <NavLink
+                  to="https://www.vyomchem.com/pdf/Cosmeceuticals-Brochure.pdf"
+                  className="flex items-center font-semibold hover:text-green-500 bullet-point"
+                  target="_blank"
+                >
+                  Brand Wise
+                </NavLink>
+
               </div>
             </div>
           </div>

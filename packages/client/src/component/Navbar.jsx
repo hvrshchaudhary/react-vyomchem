@@ -219,7 +219,7 @@ const Navbar = () => {
                 <button
                   onClick={toggleMenu}
                   className="text-black hover:text-gray-500 px-3 py-2"
-                >
+                >Dono brochure k qr code aur bana dena.
                   {isOpen ? (
                     <IoClose className="h-6 w-6" />
                   ) : (
@@ -309,7 +309,7 @@ const Navbar = () => {
                             >
                               <div className="flex-1 p-2">
                                 <a
-                                  href="https://www.vyomchem.com/pdf/Cosmeceuticals-Brochure.pdf"
+                                  href="/pdf/CosmeceuticalsBrochure.pdf"
                                   target="_blank"
                                   className="text-black hover:bg-green-200"
                                 >
@@ -322,7 +322,7 @@ const Navbar = () => {
                                   target="_blank"
                                   className="text-black hover:bg-green-200"
                                 >
-                                  Manufacturer Wise
+                                  Brand Wise
                                 </a>
                               </div>
                             </div>

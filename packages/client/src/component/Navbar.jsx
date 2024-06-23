@@ -219,7 +219,7 @@ const Navbar = () => {
                 <button
                   onClick={toggleMenu}
                   className="text-black hover:text-gray-500 px-3 py-2"
-                >Dono brochure k qr code aur bana dena.
+                >
                   {isOpen ? (
                     <IoClose className="h-6 w-6" />
                   ) : (

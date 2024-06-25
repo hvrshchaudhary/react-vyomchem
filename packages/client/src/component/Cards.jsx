@@ -27,9 +27,10 @@ const Cards = () => {
         style={{ width: "90%" }}
         className="md:flex  bg-gray-100 justify-center md:px-10 md:py-4 flex-wrap "
       >
-        {cardsDetails.map((ele) => {
+        {cardsDetails.map((ele, index) => {
           return (
             <div
+              key={index.toString()}
               data-aos-offset="300"
               data-aos="flip-up"
               className="bg-white p-4   pt-6 w-full xl:flex-1  m-5"

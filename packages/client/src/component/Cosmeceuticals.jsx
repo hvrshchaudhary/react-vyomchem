@@ -10,40 +10,40 @@ const Cosmeceuticals = () => {
       text: "WAX AND BUTTER",
       URL: "/cosmeceuticals/#Wax-&-Butter",
       text2: "Pearlising Agents",
-      URL2:"/cosmeceuticals/#Pearlising-Agents"
+      URL2: "/cosmeceuticals/#Pearlising-Agents",
     },
     {
       image: "/image/extract.jpg",
       image2: "/image/extract.jpg",
       text: "Bio Ferments",
-      URL:"/cosmeceuticals/#Bio-Ferments",
+      URL: "/cosmeceuticals/#Bio-Ferments",
       text2: "Bio Ferments",
-      URL2:"/cosmeceuticals/#Bio-Ferments"
+      URL2: "/cosmeceuticals/#Bio-Ferments",
     },
     {
       image: "/image/algae-extract-3.jpg",
       image2: "/image/algae-extract-3.jpg",
       text: "Alcohol Sulphate",
-      URL:"/cosmeceuticals/#Alcohol-Sulphate",
+      URL: "/cosmeceuticals/#Alcohol-Sulphate",
       text2: "Alcohol Sulphate",
-      URL2:"/cosmeceuticals/#Alcohol-Sulphate",
+      URL2: "/cosmeceuticals/#Alcohol-Sulphate",
     },
     {
       image: "/image/melligolubous.jpg",
       image2: "/image/melligolubous.jpg",
       text: "Milliglobules /Microbeads",
-      URL:"/cosmeceuticals/#Milliglobules",
+      URL: "/cosmeceuticals/#Milliglobules",
       text2: "Milliglobules ",
       text3: "/Microbeads",
-      URL2:"/cosmeceuticals/#Milliglobules",
+      URL2: "/cosmeceuticals/#Milliglobules",
     },
     {
       image: "/image/Bambooextract.jpg",
       image2: "/image/Bambooextract.jpg",
       text: "Active & Miscellaneous",
-      URL:"/cosmeceuticals/#Active-&-Miscellaneous",
+      URL: "/cosmeceuticals/#Active-&-Miscellaneous",
       text2: "Active & Miscellaneous",
-      URL2:"/cosmeceuticals/#Active-&-Miscellaneous"
+      URL2: "/cosmeceuticals/#Active-&-Miscellaneous",
     },
     {
       image: "/image/more.jpg",
@@ -63,7 +63,10 @@ const Cosmeceuticals = () => {
       }}
       className=" h-auto  xl:h-screen "
     >
-      <div className="container md:flex md:w-[100%] lg:w-[90%]" style={{ alignSelf: "center" }}>
+      <div
+        className="container md:flex md:w-[100%] lg:w-[90%]"
+        style={{ alignSelf: "center" }}
+      >
         <div
           className="flex flex-1 flex-col justify-between  "
           style={{ flex: 2 }}
@@ -117,28 +120,32 @@ const Cosmeceuticals = () => {
                   zIndex: 1,
                 }}
               >
-               Wax and butter
+                Wax and butter
               </span>
               {/* image for display view  */}
               <NavLink to="/cosmeceuticals/#Wax-&-Butter">
-              <img
-                src="/image/WAX.jpg"
-                className="md:block hidden"
-                alt=""
-                style={{
-                  boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.1)",
-                  borderRadius: 10,
-                  filter: "brightness(60%)",
-                }}
-              />
-              </NavLink> 
+                <img
+                  src="/image/WAX.jpg"
+                  className="md:block hidden"
+                  alt=""
+                  style={{
+                    boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.1)",
+                    borderRadius: 10,
+                    filter: "brightness(60%)",
+                  }}
+                />
+              </NavLink>
 
               {/* comsecetical section for mobile view this section is extra added for mobile view  */}
-              <div className="  justify-center flex mt-4 mb-2 md:hidden  flex-wrap">
-                {products.map((ele) => {
+              <div className="justify-center flex mt-4 mb-2 md:hidden flex-wrap">
+                {products.map((ele, index) => {
                   return (
-                    <div className="md:m-4 m-2  relative md:hidden  ">
-                      <NavLink  onClick={() => { window.location.href = ele.URL; }}>
+                    <div key={index.toString()} className="md:m-4 m-2 relative md:hidden">
+                      <NavLink
+                        onClick={() => {
+                          window.location.href = ele.URL;
+                        }}
+                      >
                         <img
                           className="rounded-2xl w-72 h-60 object-cover"
                           style={{
@@ -175,10 +182,14 @@ const Cosmeceuticals = () => {
               alignSelf: "end",
             }}
           >
-            {products.map((ele) => {
+            {products.map((ele, index) => {
               return (
-                <div className="md:m-4 m-2 relative md:w-36 md:h-40 lg:w-48 lg:h-52 object-cover hover:scale-125 transition-all">
-                  <NavLink  onClick={() => { window.location.href = ele.URL2; }}>
+                <div key={index.toString()} className="md:m-4 m-2 relative md:w-36 md:h-40 lg:w-48 lg:h-52 object-cover hover:scale-125 transition-all">
+                  <NavLink
+                    onClick={() => {
+                      window.location.href = ele.URL2;
+                    }}
+                  >
                     <img
                       style={{
                         boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.1)",

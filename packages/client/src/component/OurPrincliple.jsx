@@ -28,7 +28,7 @@ const ImageSlider = () => {
   return (
     <div className="flex-1 justify-center flex flex-col bg-gray-100 md:pt-7 md:pb-0 pt-10 pb-10 ">
       <h1 className="text-center mt-2 md:mt-0 font-bold text-3xl md:text-5xl  md:mb-6 mb-4  ">
-        Brandcipals
+        Major Principals
       </h1>
       <div className="  flex justify-center text-center md:mt-6 md:ml-14 md:mr-14 xl:mt-2 ">
         <div className="md:relative  bg-white ">

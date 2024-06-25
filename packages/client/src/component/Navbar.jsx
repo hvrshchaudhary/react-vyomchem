@@ -307,7 +307,7 @@ const Navbar = () => {
                               data-aos="fade-left"
                               className="grid grid-cols-1 rounded-md absolute w-max md:mt-[-20px] xl:-mt-[32.5px] xl:left-[220px] md:left-[150px] bg-green-200 shadow-md"
                             >
-                              <div className="flex-1 p-2">
+                              <div className="flex-1 px-4 py-2">
                                 <a
                                   href="/pdf/CosmeceuticalsBrochure.pdf"
                                   target="_blank"
@@ -316,9 +316,9 @@ const Navbar = () => {
                                   Category Wise
                                 </a>
                               </div>
-                              <div className="flex-1 p-2">
+                              <div className="flex-1 px-4 py-2">
                                 <a
-                                  href="https://www.vyomchem.com/pdf/Cosmeceuticals-Brochure.pdf"
+                                  href="/pdf/BrandWiseCosmeceuticalsBrochure.pdf"
                                   target="_blank"
                                   className="text-black hover:bg-green-200"
                                 >
@@ -422,7 +422,7 @@ const Navbar = () => {
                           Cosmecuticals
                         </NavLink>
                         <a
-                          href="https://www.vyomchem.com/pdf/Cosmeceuticals-Brochure.pdf"
+                          href="#"
                           target="_blank"
                           className="block px-4 py-2 text-sm bg-green-300 text-black hover:bg-gray-100"
                         >

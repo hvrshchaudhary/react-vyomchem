@@ -170,12 +170,12 @@ const Navbar = () => {
             </span>
           </div>
           {/* Quote Button */}
-          <NavLink
+          {/* <NavLink
             to="/contact"
             className="font-semibold text-xs p-1 rounded-md px-4 bg-green-500 text-white"
           >
             GET A QUOTE
-          </NavLink>
+          </NavLink> */}
           {/* Product Selector */}
 
           {/* <SelectPicker style={{ width: '300px' }} data={ProductList} onSelect={handleSelect}/> */}
@@ -351,12 +351,33 @@ const Navbar = () => {
                         >
                           Undenatured Chicken collagen Type II (Smarticol)
                         </a>
+                        <a
+                          href="https://www.vionabiopharma.com/elasticol-hydrolyzed-elastin.php"
+                          className="block px-5 py-3 hover:bg-green-200  xl:text-sm text-xs text-black hover:text-black "
+                          target="_blank"
+                        >
+                          Hydrolyzed Elastin
+                        </a>
+                        <a
+                          href="https://www.vionabiopharma.com/native-undenatured-salmon-proteoglycan.php"
+                          className="block px-5 py-3 hover:bg-green-200  xl:text-sm text-xs text-black hover:text-black "
+                          target="_blank"
+                        >
+                          Native Undenatured Salmon Proteoglycan
+                        </a>
+                        <a
+                          href="https://www.vionabiopharma.com/native-undenatured-tertiary-intact-collagen-type-ii.php"
+                          className="block px-5 py-3 hover:bg-green-200  xl:text-sm text-xs text-black hover:text-black "
+                          target="_blank"
+                        >
+                          Native Undenatured Tertiary Intact Collagen Type II
+                        </a>
                       </div>
                     )}
                   </a>
                 </div>
 
-                <div className="relative hidden md:block">
+                {/* <div className="relative hidden md:block">
                   <NavLink
                     to="/Principal"
                     className="z-10 font-sans xl:text-lg text-sm text-black font-semibold hover:text-green-800 px-3 py-2"
@@ -365,7 +386,7 @@ const Navbar = () => {
                   >
                     Major Principals
                   </NavLink>
-                </div>
+                </div> */}
                 <div className="relative hidden md:block">
                   <NavLink
                     to="/gallery"
@@ -483,7 +504,7 @@ const Navbar = () => {
           </div>
         </nav>
         <div>
-          <marquee className="bg-white border-t-2">
+          {/* <marquee className="bg-white border-t-2">
             <img
               src="/marqueeimage.jpg"
               alt="Marquee"
@@ -498,7 +519,7 @@ const Navbar = () => {
               alt="Marquee"
               className="h-10 mr-2 inline"
             />
-          </marquee>
+          </marquee> */}
         </div>
       </div>
     </>

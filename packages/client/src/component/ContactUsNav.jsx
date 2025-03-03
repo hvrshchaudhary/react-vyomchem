@@ -11,9 +11,7 @@ const ContactUsNav = () => {
               <h5 className="text-4xl md:text-5xl font-bold text-black font-sans mb-3"  >
                 Get in touch
               </h5>
-              <h2 className="text-2xl  font-bold  mb-3"  style={{
-                color: "#7CE6B3",
-                }}>
+              <h2 className="text-2xl  font-bold  mb-3"  style={{ color: '#00B989' }}>
                 We would like to hear <br className="" /> from you!
               </h2>
               <p className="mb-5">

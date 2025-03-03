@@ -17,7 +17,7 @@ const Banner = () => {
           </div>
           <div className="flex items-center text-xl font-semibold pb-[2px] md:pb-0 md:text-3xl">
             Welcome to
-            <h1 className="ml-1 text-green-800 font-bold md:text-3xl text-xl">Vyomchem</h1>
+            <h1 className="ml-1 font-bold md:text-3xl text-xl" style={{ color: '#00B989' }}>Vyomchem</h1>
           </div>
           <p className="font-mono xl:text-base text-sm 2xl:text-xl pb-2 leading-normal md:my-4">
             This group is the brainchild of professionals who, during their
@@ -34,10 +34,10 @@ const Banner = () => {
           </div>
           <NavLink
             to="/About"
-            className="text-white rounded-sm py-1 px-2 md:px-4 bg-green-800 font-bold text-xs hover:bg-green-600 md:text-base self-start w-max"
-            // data-aos="fade-left"
+            className="text-white rounded-sm py-1 px-2 md:px-4 font-medium hover:bg-green-600 self-start w-max"
+            style={{ backgroundColor: '#00B989', fontSize: '0.75rem' }}
           >
-            READ MORE....
+            READ MORE...
           </NavLink>
         </div>
       </div>

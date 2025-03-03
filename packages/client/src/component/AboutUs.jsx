@@ -17,7 +17,7 @@ const AboutUs = () => {
           </div>
         </div>
         <div className='flex flex-col w-4/5 mt-3 md:w-8/12'>
-          <p><span className='text-green-800 font-bold'>VYOMCHEM SPECIALTIES</span> is a single stop source of best in class quality, reasonable pricing and unrivaled service.</p>
+          <p><span className='font-bold' style={{ color: '#12916F' }}>VYOMCHEM SPECIALTIES</span> is a single stop source of best in class quality, reasonable pricing and unrivaled service.</p>
           <p className='mb-2'>They carefully collect all possible information and data like honey bees collecting the nectar to cater the need of the clients. The importance of this idea in this fast changing and competitive world cannot be overstated and the group with this deep conviction has been keeping close touch with all its client and sources. To sum up the group takes serious care about quality, pricing, packing and promptness in service through regular and active interactions.</p>
         </div>
         <div className='flex flex-1 flex-col mt-5 w-4/5 md:w-8/12 justify-between text-justify'>

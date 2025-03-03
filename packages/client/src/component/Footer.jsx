@@ -1,20 +1,18 @@
-import { FiMail, FiPhone, FiExternalLink } from "react-icons/fi";
+import { FiMail, FiPhone, FiExternalLink, FiClock } from "react-icons/fi";
 import { FaGreaterThan } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="bg-green-950 text-white pt-8 pb-5">
+    <div className="text-white pt-8 pb-5" style={{ backgroundColor: '#12916F' }}>
       {" "}
       {/* Increase or decrease py-16 to adjust height */}
       <div className="container mx-auto flex flex-wrap   w-[80%]">
         <div className=" xl:flex  w-full justify-between xl:pb-10 pb-1 xl:border-b-[1px] border-white">
           <div className="phone flex xl:mb-0 mb-8">
-            <img
-              src="/image/phone-logo.png"
-              className="xl:w-12 w-8 h-8 xl:h-auto mt-1 xl:mt-0 mr-2 "
-              alt=""
-            />
+            <FiPhone
+              className="xl:w-12 w-8 h-8 xl:h-auto mt-1 xl:mt-0 mr-2 text-white"
+             />
             <div className="flex flex-col ">
               <NavLink
                 className={"font-bold text-sm xl:text-xl"}
@@ -29,10 +27,8 @@ const Footer = () => {
             </div>
           </div>
           <div className="mail flex xl:mb-0 mb-9">
-            <img
-              src="/image/email-logo.png"
-              alt=""
-              className="xl:w-12 w-8 h-8 xl:h-auto mt-1 xl:mt-1 mr-2"
+             <FiMail
+              className="xl:w-12 w-8 h-8 xl:h-auto mt-1 xl:mt-1 mr-2 text-white"
             />
             <div className="flex flex-col ">
               <NavLink
@@ -47,10 +43,8 @@ const Footer = () => {
             </div>
           </div>
           <div className="time flex xl:mb-0 mb-8">
-            <img
-              src="/image/clock-logo.png"
-              alt=""
-              className="xl:w-12 w-8 h-8 xl:h-auto mt-1 xl:mt-0 mr-2"
+            <FiClock
+              className="xl:w-12 w-8 h-8 xl:h-auto mt-1 xl:mt-0 mr-2 text-white"
             />
             <div className="flex flex-col ">
               <span className="font-bold text-sm xl:text-xl">

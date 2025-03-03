@@ -86,7 +86,7 @@ const Cosmeceuticals = () => {
               <div
                 className="forline relative  rounded mr-1 md:p-1 md:-mt-2 md:h-16 w-2 "
                 style={{
-                  backgroundColor: "#7CE6B3",
+                  backgroundColor: "#00B989",
                 }}
               ></div>
               <span

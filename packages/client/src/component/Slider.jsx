@@ -97,7 +97,7 @@ const YourComponent = () => {
           className=" md:p-1 p-1 mr-5 sm:mb-0"
           style={{
           
-            background: "#7CE6B3",
+            background: "#00B989",
             marginTop: 3,
           
           }}
@@ -126,7 +126,8 @@ const YourComponent = () => {
         <button className=" text-xl  font-bold py-2 px-6   sm:py-3 sm:px-8 md:py-2 md:px-10 lg:py-2 lg:px-8 xl:py-3 xl:px-12 text-black "
         style={{
           boxShadow: "0 4px 6px rgba(5, 5, 0, 0.8) white",
-          backgroundColor: "#7CE6B3"
+          backgroundColor: "#00B989",
+          color: "white", 
         }}
         >
          Contact Us
